@@ -43,7 +43,6 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
     private String[] navMenuTitles;
     private TypedArray navMenuIcons;
     DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
-    public static Patient p1 = new Patient();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

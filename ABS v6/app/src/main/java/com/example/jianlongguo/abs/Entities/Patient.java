@@ -1,7 +1,5 @@
 package com.example.jianlongguo.abs.Entities;
 
-import java.util.Date;
-
 /**
  * Created by jianlongguo on 11/4/15.
  */
@@ -12,7 +10,7 @@ public class Patient{
     String contact;
     String test, apptdental, apptent, apptwomen;
 
-    public Patient(){};
+    public Patient(){}
 
     public Patient(String nric, String name,String password, String email, String address, String gender, String contact, String mode, String dob, String test, String apptdental,String apptent, String apptwomen){
         this.nric = nric;
@@ -38,6 +36,11 @@ public class Patient{
         this.gender = gender;
         this.mode = mode;
         this.name = name;
+    }
+
+    public Patient(String nric, String password){
+        this.nric = nric;
+        this.password = password;
     }
 
     public String getName() {

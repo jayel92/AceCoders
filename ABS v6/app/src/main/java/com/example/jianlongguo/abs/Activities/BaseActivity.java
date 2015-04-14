@@ -18,7 +18,6 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.example.jianlongguo.abs.DB.PatientTest;
 import com.example.jianlongguo.abs.Drawer.DrawerAdapter;
 import com.example.jianlongguo.abs.Drawer.NavItem;
 import com.example.jianlongguo.abs.Entities.Patient;
@@ -133,9 +132,6 @@ public class BaseActivity extends ActionBarActivity implements View.OnClickListe
                 Gson gson1 = new Gson();
                 String myJson1 = gson1.toJson(p1);
                 intent1.putExtra("Patient",myJson1);
-                //Bundle c = new Bundle();
-                //c.putString("id",userid);
-                //intent1.putExtras(c);
                 startActivity(intent1);
                 finish();
                 break;
@@ -155,17 +151,6 @@ public class BaseActivity extends ActionBarActivity implements View.OnClickListe
                 intent3.putExtra("Patient",myJson3);
                 startActivity(intent3);
                 finish();
-                break;
-         /*   case 4:
-                Intent intent4 = new Intent(this, fifth.class);
-                startActivity(intent4);
-                finish();
-                break;
-            case 5:
-                Intent intent5 = new Intent(this, sixth.class);
-                startActivity(intent5);
-                finish();
-                break;*/
             default:
                 break;
         }
@@ -271,23 +256,6 @@ public class BaseActivity extends ActionBarActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-     /*   Intent j = new Intent();
-        Bundle bun = new Bundle();
-        bun.putString("id",id);
-        j.putExtras(bun);
-
-        switch (v.getId()){
-            case R.id.apptBut:
-                j.setClass(this,ManageAppt.class);
-                startActivity(j);
-                break;
-            case R.id.profileBut:
-                j.setClass(this,ManageProfile.class);
-                startActivity(j);
-                break;
-            default:
-                break;
-        }*/
     }
 
     @Override

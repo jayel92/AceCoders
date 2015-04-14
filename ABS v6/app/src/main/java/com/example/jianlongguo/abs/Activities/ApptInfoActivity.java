@@ -1,21 +1,26 @@
 package com.example.jianlongguo.abs.Activities;
 
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.jianlongguo.abs.Entities.Appointment;
 import com.example.jianlongguo.abs.Entities.Patient;
 import com.google.gson.Gson;
 
-public class ApptInfoActivity extends BaseActivity {
+public class ApptInfoActivity extends BaseActivity implements View.OnClickListener {
 
     TextView clinicLabel,typeLabel,locLabel,timeLabel,dateLabel,remarksLabel,remarksTxt;
+    ImageButton changeApptBut, cancelApptBut;
     private String[] navMenuTitles;
     private TypedArray navMenuIcons;
+    Appointment appt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +28,8 @@ public class ApptInfoActivity extends BaseActivity {
         setContentView(R.layout.activity_appt_info);
 
         Gson gson = new Gson();
-        Appointment appt = gson.fromJson(getIntent().getStringExtra("myjson"), Appointment.class);
-        Patient p1 = gson.fromJson(getIntent().getStringExtra("patient"), Patient.class);
+        appt = gson.fromJson(getIntent().getStringExtra("myjson"), Appointment.class);
+        p1 = gson.fromJson(getIntent().getStringExtra("patient"), Patient.class);
 
         clinicLabel = (TextView)findViewById(R.id.clinicLabel);
         typeLabel = (TextView)findViewById(R.id.typeLabel);
@@ -33,7 +38,11 @@ public class ApptInfoActivity extends BaseActivity {
         timeLabel = (TextView)findViewById(R.id.dateLabel);
         remarksLabel = (TextView)findViewById(R.id.remarksLabel);
         remarksTxt = (TextView)findViewById(R.id.remarksTxt);
+        changeApptBut = (ImageButton)findViewById(R.id.changeApptBut);
+        cancelApptBut = (ImageButton)findViewById(R.id.cancelApptBut);
 
+        changeApptBut.setOnClickListener(this);
+        cancelApptBut.setOnClickListener(this);
         //set up the drawer
         navMenuTitles = getResources().getStringArray(R.array.nav_drawer_items);
         navMenuIcons = getResources().obtainTypedArray(R.array.nav_drawer_icons);
@@ -78,5 +87,24 @@ public class ApptInfoActivity extends BaseActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onClick(View v){
+        switch(v.getId()){
+            case R.id.cancelApptBut:
+                CancelApptDialog dia = new CancelApptDialog(this);
+                dia.show();
+                break;
+            case R.id.changeApptBut:
+                Intent k;
+                Gson gson = new Gson();
+                String myJson = gson.toJson(appt);
+                String pat = gson.toJson(p1);
+                k = new Intent(this,ChangeAppt.class);
+                k.putExtra("myjson",myJson);
+                k.putExtra("patient",pat);
+                startActivity(k);
+                break;
+        }
     }
 }

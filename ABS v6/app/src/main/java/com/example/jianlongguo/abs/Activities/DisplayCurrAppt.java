@@ -1,6 +1,5 @@
 package com.example.jianlongguo.abs.Activities;
 
-import android.annotation.TargetApi;
 import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.AsyncTask;
@@ -12,7 +11,6 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.jianlongguo.abs.DB.DisplayBackground;
 import com.example.jianlongguo.abs.DB.DisplayDentalBackground;
@@ -23,12 +21,11 @@ import com.example.jianlongguo.abs.Entities.Patient;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
-import java.util.concurrent.ExecutionException;
 
 
 public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemClickListener,View.OnClickListener,AsyncResponse{
 
-    TextView currentApptTxt;
+    TextView currentApptTxt,nilAppt;
     GridView currApptGrid;
     ListView list;
 
@@ -54,6 +51,8 @@ public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_curr_appt);
+
+        nilAppt = (TextView)findViewById(R.id.nilAppt);
 
         context = getApplicationContext();
         String jsonpatient = null;
@@ -107,14 +106,6 @@ public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemC
         //PUT APPT INFO INTO AN ARRAY TO DISPLAY LATER
         // Appointment appt[] = ...
 
-        //KOK CHIN, LOOK HERE!
-        //KOK CHIN, LOOK HERE!
-        // KOK CHIN, LOOK HERE!
-        // KOK CHIN, LOOK HERE!
-        // KOK CHIN, LOOK HERE!
-        // KOK CHIN, LOOK HERE! Following are Temporary display.... if can put each appointment out
-        //as an object then can just .add them!
-
    //     if (ent.getId() != null)
    //         apptArray.add(ent);
     //    if (den.getId() != null)
@@ -126,18 +117,20 @@ public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemC
 
      //   apptArray.add(app4);
         myAdapter = new ApptAdapter(this, R.layout.appt_list, apptArray);
-        list.setAdapter(myAdapter);
-        list.setItemsCanFocus(true);
 
-        AdapterView.OnItemClickListener listener = new AdapterView.OnItemClickListener() {
+
+            list.setAdapter(myAdapter);
+            list.setItemsCanFocus(true);
+            AdapterView.OnItemClickListener listener = new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                goNext(position);
-            }
-        };
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    goNext(position);
+                }
+            };
 
-        list.setOnItemClickListener(listener);
+            list.setOnItemClickListener(listener);
 
+        //nilAppt.setText(Html.fromHtml("<i>" + "<h3>" + "You do not have any appointments scheduled." + "</h3>" + "</i>"));
     }
 
     @Override
@@ -172,23 +165,6 @@ public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemC
                 finish();
     }
 
-    private void displayView(int position) {
-// update the main content by replacing fragments
-        switch (position) {
-            case 2:
-                Intent k;
-                Appointment appt = apptArray.get(position);
-                Gson gson = new Gson();
-                String myJson = gson.toJson(appt);
-                k = new Intent(this,ManageProfile.class);
-                k.putExtra("myjson",myJson);
-
-                startActivity(k);
-                finish();
-                break;
-        }
-    }
-
     public void processFinish(Appointment result){
         if(result.getClinic() != null) {
             if (result.getClinic() == "ENT")
@@ -201,6 +177,7 @@ public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemC
             apptArray.add(result);
             myAdapter.notifyDataSetChanged();
         }
+
     }
 
     public Patient getPatient() {

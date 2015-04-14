@@ -46,7 +46,11 @@
         </activity>
         <activity
             android:name=".ApptInfoActivity"
-            android:label="@string/title_activity_appt_info" >
+            android:label="Appointment Details" >
+        </activity>
+        <activity
+            android:name=".ChangeAppt"
+            android:label="Change Appointment">
         </activity>
     </application>
 

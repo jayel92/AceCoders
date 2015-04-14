@@ -9,6 +9,7 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context=".MainActivity"
+        android:background="#ffffff"
     >
 
     <EditText
@@ -16,10 +17,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/usernameTxt"
         android:text="S9288775A"
-        android:layout_centerVertical="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:singleLine="true"/>
+        android:singleLine="true"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -39,7 +41,7 @@
         android:id="@+id/registerBut"
         android:layout_below="@+id/loginBut"
         android:layout_alignLeft="@+id/loginBut"
-        android:layout_alignStart="@+id/loginBut" />
+        android:layout_alignStart="@+id/loginBut"/>
 
     <Button
         android:layout_width="300dp"
@@ -48,18 +50,15 @@
         android:id="@+id/loginBut"
         android:layout_below="@+id/passwordTxt"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp" />
+        android:layout_marginTop="5dp"/>
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         android:id="@+id/imageView"
-        android:src="@drawable/logo"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/forgotPassBut"
-        android:layout_alignEnd="@+id/forgotPassBut"
-        android:layout_above="@+id/usernameTxt" />
+        android:src="@drawable/greenhealth"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="135dp"
@@ -68,7 +67,8 @@
         android:id="@+id/forgotPassBut"
         android:layout_alignTop="@+id/registerBut"
         android:layout_alignRight="@+id/loginBut"
-        android:layout_alignEnd="@+id/loginBut" />
+        android:layout_alignEnd="@+id/loginBut"
+        android:backgroundTint="#DEF867"/>
 
 
 </RelativeLayout>

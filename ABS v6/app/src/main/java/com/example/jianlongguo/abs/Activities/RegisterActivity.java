@@ -80,15 +80,15 @@ public class RegisterActivity extends ActionBarActivity implements View.OnClickL
                     chkpassword.getText().clear();
                 }
                 else{
-                //    Patient p1 = new Patient(user,pwd);
-               //     Gson gson = new Gson();
-                //    String myjson = gson.toJson(p1);
-                //    Intent i = new Intent(this,RegisterActivity2.class);
+                    Patient p1 = new Patient(user,pwd);
+                    Gson gson = new Gson();
+                    String myjson = gson.toJson(p1);
+                    Intent i = new Intent(this,RegisterActivity2.class);
                     //Bundle b = new Bundle();
                     //b.putString("user",user);
                     //b.putString("pwd",pwd);
-                //    i.putExtra("myjson",myjson);
-                //    startActivity(i);
+                    i.putExtra("myjson",myjson);
+                    startActivity(i);
                 }
                 break;
 

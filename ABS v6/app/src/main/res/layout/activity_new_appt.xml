@@ -106,7 +106,7 @@
                         android:prompt="@string/timing_prompt"
                         android:spinnerMode="dialog"
                         android:layout_alignTop="@+id/apptTimeLabel"
-                        android:layout_toEndOf="@+id/clinicLabel"
+                        android:layout_toRightOf="@+id/clinicLabel"
                         android:layout_alignLeft="@+id/clinicDD"
                         android:layout_alignStart="@+id/clinicDD"
                         android:background="@drawable/text"/>
@@ -144,7 +144,7 @@
                         android:textColor="#000000"
                         android:gravity="start"
                         android:background="@drawable/text"
-                        android:layout_toEndOf="@+id/apptDateLabel"
+                        android:layout_toRightOf="@+id/apptDateLabel"
                         android:layout_above="@+id/apptTimeLabel"
                         android:layout_alignLeft="@+id/clinicDD"
                         android:layout_alignStart="@+id/clinicDD" />
@@ -162,7 +162,7 @@
                         android:layout_alignLeft="@+id/clinicDD"
                         android:layout_alignStart="@+id/clinicDD"
                         android:layout_marginTop="8dp"
-                        android:layout_alignParentEnd="false"
+                        android:layout_alignParentRight="false"
                         android:paddingBottom="-25dp" />
 
                     <TextView

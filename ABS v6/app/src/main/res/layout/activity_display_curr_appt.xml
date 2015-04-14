@@ -33,6 +33,17 @@
                 android:choiceMode="singleChoice"
                 android:layout_below="@+id/currentApptTxt" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nilAppt"
+                android:layout_below="@+id/currentApptTxt"
+                android:layout_marginTop="33dp"
+                android:layout_alignRight="@+id/listView"
+                android:layout_alignEnd="@+id/listView"
+                android:textAlignment="center"
+                android:focusableInTouchMode="true"/>
+
         </RelativeLayout>
 
     </FrameLayout>
