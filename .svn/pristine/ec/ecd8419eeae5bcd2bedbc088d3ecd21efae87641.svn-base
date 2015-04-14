@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.jianlongguo.abs.Activities.ContactUsActivity">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/logout"
+        android:icon="@drawable/logouticon"
+        android:title="Logout"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+</menu>
+<!-- From: file:/Users/jianlongguo/Desktop/ABS/app/src/main/res/menu/menu_contact_us.xml -->

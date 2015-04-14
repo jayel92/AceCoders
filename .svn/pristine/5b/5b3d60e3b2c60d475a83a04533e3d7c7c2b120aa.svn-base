@@ -1,0 +1,110 @@
+package com.example.jianlongguo.abs.Entities;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import java.util.Date;
+
+/**
+ * Created by jianlongguo on 11/4/15.
+ */
+public class Patient2 implements Parcelable{
+
+    String name, email, address, gender, mode, nric, password;
+    Date dob;
+    int contact;
+
+    public Patient2(){};
+
+    public Patient2(String nric, String password){
+        this.nric = nric;
+        this.password = password;
+        this.email = this.address = this.gender = this.mode = this.name = null;
+        this.dob = null;
+        this.contact = 0;
+    }
+
+    public void setDetails(String name, String address, String gender, String mode, String email, Date dob, int contact){
+        this.email = email;
+        this.address = address;
+        this.contact = contact;
+        this.dob = dob;
+        this.gender = gender;
+        this.mode = mode;
+        this.name = name;
+    }
+
+    private String getName() {
+        return this.name;
+    }
+
+    private String getEmail() {
+        return this.email;
+    }
+
+    private String getAddress() {
+        return this.address;
+    }
+
+    private String getGender() {
+        return this.gender;
+    }
+
+    private String getMode() {
+        return this.mode;
+    }
+
+    private Date getDob(){
+        return this.dob;
+    }
+
+    private int getContact() {
+        return this.contact;
+    }
+
+    public String getNric() {
+        return this.nric;
+    }
+
+    public String getPassword() {
+        return this.password;
+    }
+
+    public void setNric(String nric){
+        this.nric = nric;
+    }
+
+    public void setPassword(String password){
+        this.password = password;
+    }
+
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeStringArray(new String[]{this.nric,this.password,this.name,this.address,this.email,this.gender,this.mode,
+                String.valueOf(this.dob),String.valueOf(this.contact)});
+    }
+
+    // this is used to regenerate your object. All Parcelables must have a CREATOR that implements these two methods
+    public static final Creator<Patient2> CREATOR = new Creator<Patient2>() {
+        public Patient2 createFromParcel(Parcel in) {
+            return new Patient2(in);
+        }
+
+        public Patient2[] newArray(int size) {
+            return new Patient2[size];
+        }
+    };
+
+    private Patient2(Parcel in){
+    }
+    //User fields
+
+
+
+}
