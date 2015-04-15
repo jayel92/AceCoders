@@ -141,6 +141,10 @@ public class BaseActivity extends ActionBarActivity implements View.OnClickListe
                 String myJson2 = gson2.toJson(p1);
                 k = new Intent(this,ManageProfile.class);
                 k.putExtra("Patient",myJson2);
+                if (this instanceof NewAppt){
+                    onBackPressed();
+                    onPause();
+                }
                 startActivity(k);
                 finish();
                 break;

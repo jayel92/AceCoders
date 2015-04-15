@@ -46,7 +46,7 @@
         </activity>
         <activity
             android:name=".ApptInfoActivity"
-            android:label="Appointment Details" >
+            android:label="Details" >
         </activity>
         <activity
             android:name=".ChangeAppt"

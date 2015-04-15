@@ -3,7 +3,6 @@ package com.example.jianlongguo.abs.Activities;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +10,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -26,7 +26,8 @@ public class ManageProfile extends BaseActivity implements View.OnClickListener 
     EditText result;
     RadioGroup mocRadio;
     RadioButton smsRadio, emailRadio;
-    Button changeBut, changeAddBut, changeConBut, saveBut;
+    ImageButton changeContBut, changePwdBut, changeAddBut, changeEmailBut;
+    Button saveBut;
     String id = "";
     String mode = "";
 
@@ -81,6 +82,16 @@ public class ManageProfile extends BaseActivity implements View.OnClickListener 
         emailRadio = (RadioButton) findViewById(R.id.emailRadio);
         saveBut = (Button) findViewById(R.id.saveBut);
 
+        changePwdBut = (ImageButton)findViewById(R.id.changePwdBut);
+        changeContBut = (ImageButton)findViewById(R.id.changeContBut);
+        changeAddBut = (ImageButton)findViewById(R.id.changeAddBut);
+        changeEmailBut = (ImageButton)findViewById(R.id.changeEmailBut);
+
+        changePwdBut.setOnClickListener(this);
+        changeAddBut.setOnClickListener(this);
+        changeEmailBut.setOnClickListener(this);
+        changeContBut.setOnClickListener(this);
+
         mocRadio.setOnClickListener(radioHandler);
         smsRadio.setOnClickListener(radioHandler);
         emailRadio.setOnClickListener(radioHandler);
@@ -112,31 +123,49 @@ public class ManageProfile extends BaseActivity implements View.OnClickListener 
     public void onClick(final View v) {
         //gets activity_manage_profile.xml view
         LayoutInflater li = LayoutInflater.from(context);
-        View promptsView = li.inflate(R.layout.prompts, null);
+        View promptsView;
+
+        if (v.getId()==R.id.changePwdBut)
+            promptsView = li.inflate(R.layout.password_prompt, null);
+        else
+            promptsView = li.inflate(R.layout.prompts, null);
+
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
 
         //set activity_manage_profile.xml to alertdialog builder
         alertDialogBuilder.setView(promptsView);
-        final EditText userInput = (EditText) promptsView.findViewById(R.id.editTextDialogUserInput);
 
         //set dialog message
-        alertDialogBuilder.setCancelable(false)
+        alertDialogBuilder.setCancelable(true)
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
 
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        TextView enter1 = (TextView)findViewById(R.id.enter1);
+                        EditText userInput1 = (EditText)findViewById(R.id.userInput1);
                         switch (v.getId()) {
-                            /*case R.id.changeAddBut:
-                                ((InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE))
-                                        .showSoftInput(addTxt, InputMethodManager.SHOW_FORCED);
-                               // addTxt.setText(userInput.getText());
+                            case R.id.changeAddBut:
+                               // ((InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE))
+                                 //       .showSoftInput(addTxt, InputMethodManager.SHOW_FORCED);
+                                addTxt.setText(userInput1.getText());
                                 break;
                             case R.id.changeEmailBut:
-                                emailTxt.setText(userInput.getText());
+                                emailTxt.setText(userInput1.getText());
                                 break;
-                            case R.id.changeConBut:
-                                contactTxt.setText(userInput.getText());
-                                break;**/
+                            case R.id.changeContBut:
+                                contactTxt.setText(userInput1.getText());
+                                break;
+                            case R.id.changePwdBut:
+                                TextView enter2 = (TextView)findViewById(R.id.enter2);
+                                TextView enter3 = (TextView)findViewById(R.id.enter3);
+                                EditText userInput2 = (EditText)findViewById(R.id.userInput2);
+                                EditText userInput3 = (EditText)findViewById(R.id.userInput3);
+
+                                if (userInput2 == userInput3){
+                                    pwdTxt.setText(userInput2.getText());
+                                }
+                            default:
+                                break;
                         }
 
                     }

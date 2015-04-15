@@ -14,7 +14,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.jianlongguo.abs.DB.LoginBackground;
-import com.example.jianlongguo.abs.Entities.Patient;
 import com.google.gson.Gson;
 
 
@@ -114,7 +113,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 startActivity(k);
                 break;
             case R.id.forgotPassBut:
-                Toast.makeText(getApplicationContext(), "Why you forget your password!",Toast.LENGTH_SHORT).show();
+                ResetPasswordDialog dia = new ResetPasswordDialog(this);
+                dia.show();
             default:
                 break;
         }
