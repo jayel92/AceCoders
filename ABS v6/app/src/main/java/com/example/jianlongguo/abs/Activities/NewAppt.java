@@ -19,12 +19,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.jianlongguo.abs.DB.NewApptBackground;
+import com.example.jianlongguo.abs.DB.TypeCheck;
+import com.example.jianlongguo.abs.Drawer.ApptAdapter;
 import com.example.jianlongguo.abs.Entities.Patient;
 import com.google.gson.Gson;
 
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -43,6 +46,8 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
     private String[] navMenuTitles;
     private TypedArray navMenuIcons;
     DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
+    private ApptAdapter myAdapter;
+    ArrayList<String> apptArray = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +55,7 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
         setContentView(R.layout.activity_new_appt);
 
         String jsonMyObject = null;
+
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             jsonMyObject = extras.getString("Patient");
@@ -102,7 +108,7 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
         //get current date
         Bundle args = new Bundle();
         args.putInt("Year",calendar.get(Calendar.YEAR));
-        args.putInt("Month",calendar.get(Calendar.MONTH)+1);
+        args.putInt("Month",calendar.get(Calendar.MONTH));
         args.putInt("Day",calendar.get(Calendar.DAY_OF_MONTH));
         date.setArguments(args);
 
@@ -114,7 +120,7 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
         @Override
         public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
 
-            String dateStr = (String.valueOf(dayOfMonth) + "-" + String.valueOf(monthOfYear + 1) + "-" + String.valueOf(year));
+            String dateStr = (String.valueOf(dayOfMonth) + "-" + String.valueOf(monthOfYear+1) + "-" + String.valueOf(year));
             DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
             Date startDate = null;
             try {
@@ -129,7 +135,7 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
             int apptWeek = cal.get(Calendar.WEEK_OF_YEAR);
 
             //to allow appointments for at least 2 weeks in advance
-            if ((curWeek < apptWeek && curYear == year) || curYear < year) {
+            if ((curWeek < apptWeek-1 && curYear == year) || curYear < year) {
                 String newDateString = df.format(startDate);
                 apptDateTxt.setText(newDateString);
             } else {
@@ -152,6 +158,7 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
             case R.id.clinicDD:
                 clinicDD.setSelection(position);
                 clinicDD.getSelectedItem();
+                new TypeCheck(context).execute(clinicDD.getSelectedItem().toString());
                 break;
             case R.id.timeSpinner:
                 timeSpinner.setSelection(position);

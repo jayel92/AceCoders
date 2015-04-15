@@ -52,6 +52,10 @@
             android:name=".ChangeAppt"
             android:label="Change Appointment">
         </activity>
+        <activity
+            android:name=".DatePickerTestActivity"
+            android:label="Pick a Date">
+        </activity>
     </application>
 
 </manifest>

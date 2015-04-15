@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.jianlongguo.abs.DB.ForgetPassBackground;
+
 /**
  * Created by jianlongguo on 15/4/15.
  */
@@ -47,7 +49,7 @@ public class ResetPasswordDialog extends Dialog implements View.OnClickListener 
                 dismiss();
                 break;
             case R.id.submitBut:
-                //do something
+                new ForgetPassBackground(this.getContext()).execute(userInput1.getText().toString());
                 break;
             default:
                 break;

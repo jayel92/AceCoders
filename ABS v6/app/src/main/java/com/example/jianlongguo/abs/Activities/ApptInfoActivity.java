@@ -57,7 +57,7 @@ public class ApptInfoActivity extends BaseActivity implements View.OnClickListen
         //ss = new SpannableString("Date: " + appt.getDate());
         //ss.setSpan(new RelativeSizeSpan(1.2f),0,5,0);
         //ss.setSpan(new ForegroundColorSpan(Color.BLUE),6,ss.length(),0);
-        typeLabel.setText(Html.fromHtml("<h2>"+appt.getType()+"</h2>"));
+        typeLabel.setText(Html.fromHtml("<h3>"+appt.getType()+"</h3>"));
         clinicLabel.setText(Html.fromHtml("<b>"+"Clinic: "+"</b>"+"<i>"+appt.getClinic()+"</i>"));
      //   appt.setLocation("Treatment Room 1, Level 3-1");
       //  locLabel.setText(Html.fromHtml("<b>"+"Location: "+"</b>"+"<i>"+appt.getLocation()+"</i>"));

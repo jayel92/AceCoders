@@ -7,11 +7,11 @@ package com.example.jianlongguo.abs.DB;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.os.Bundle;
 import android.widget.Toast;
 
 import com.example.jianlongguo.abs.Activities.DisplayCurrAppt;
 import com.example.jianlongguo.abs.Entities.Patient;
+import com.google.gson.Gson;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -19,7 +19,6 @@ import java.io.OutputStreamWriter;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
-import com.google.gson.Gson;
 
 public class LoginBackground extends AsyncTask<String, Void, String> {
 
@@ -77,6 +76,8 @@ public class LoginBackground extends AsyncTask<String, Void, String> {
         }
         else
             Toast.makeText(context, "Sorry! Incorrect Username or Password.", Toast.LENGTH_SHORT).show();
+
+
 
     }
 }

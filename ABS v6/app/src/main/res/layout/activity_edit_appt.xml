@@ -76,7 +76,7 @@
                     android:layout_marginBottom="20dp" />
 
                 <Spinner
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/timeSpinner"
                     android:entries="@array/timeslots"
@@ -121,11 +121,12 @@
                     android:textColor="#000000"
                     android:gravity="start"
                     android:background="@drawable/text"
-                    android:layout_toRightOf="@+id/apptDateLabel"
-                    android:layout_above="@+id/apptTimeLabel"
-                    android:layout_alignLeft="@+id/clinicDD"
-                    android:layout_alignStart="@+id/clinicDD"
-                    android:paddingLeft="7dp"/>
+                    android:paddingLeft="7dp"
+                    android:layout_toRightOf="@+id/exitNewBut"
+                    android:layout_alignTop="@+id/apptDateLabel"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="-10dp" />
 
                 <Spinner
                     android:layout_width="match_parent"
