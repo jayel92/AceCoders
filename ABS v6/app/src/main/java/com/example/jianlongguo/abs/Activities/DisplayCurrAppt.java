@@ -171,7 +171,7 @@ public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemC
                 this.ent = result;
             else if (result.getClinic() == "Dental")
                 this.den = result;
-            else if (result.getClinic() == "Women")
+            else if (result.getClinic() == "Women's Health")
                 this.women = result;
 
             apptArray.add(result);

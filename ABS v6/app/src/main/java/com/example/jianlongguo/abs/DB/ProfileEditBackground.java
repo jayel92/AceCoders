@@ -3,11 +3,11 @@ package com.example.jianlongguo.abs.DB;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.os.Bundle;
 import android.widget.Toast;
 
 import com.example.jianlongguo.abs.Activities.ManageProfile;
 import com.example.jianlongguo.abs.Entities.Patient;
+import com.google.gson.Gson;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -15,7 +15,6 @@ import java.io.OutputStreamWriter;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
-import com.google.gson.Gson;
 
 /**
  * Created by Boonyh on 3/22/2015.
@@ -40,7 +39,7 @@ public class ProfileEditBackground extends AsyncTask<Void, Void, String> {
 
         protected String doInBackground(Void... arg0) {
             try {
-               ;
+
 
 
                 String link = "http://acecoders.netau.net/editProfile.php";

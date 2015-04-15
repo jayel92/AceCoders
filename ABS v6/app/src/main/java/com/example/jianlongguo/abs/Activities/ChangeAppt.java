@@ -7,6 +7,7 @@ import com.example.jianlongguo.abs.Entities.Appointment;
 import com.example.jianlongguo.abs.Entities.Patient;
 import com.google.gson.Gson;
 
+
 /**
  * Created by jianlongguo on 15/4/15.
  */
@@ -18,7 +19,7 @@ public class ChangeAppt extends NewAppt {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_appt);
+        setContentView(R.layout.activity_edit_appt);
 
         String jsonMyObject = null;
         Bundle extras = getIntent().getExtras();

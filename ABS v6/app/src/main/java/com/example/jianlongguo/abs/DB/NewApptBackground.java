@@ -3,11 +3,11 @@ package com.example.jianlongguo.abs.DB;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.os.Bundle;
 import android.widget.Toast;
 
 import com.example.jianlongguo.abs.Activities.DisplayCurrAppt;
-import com.example.jianlongguo.abs.Activities.ManageAppt;
+import com.example.jianlongguo.abs.Entities.Patient;
+import com.google.gson.Gson;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -27,10 +27,12 @@ public class NewApptBackground extends AsyncTask<String, Void, String> {
     private Exception exception;
     private String response = null;
     private String id = "";
-    public NewApptBackground(Context context) {
+    private Patient p1 = new Patient();
+    public NewApptBackground(Context context,Patient p1) {
         this.context = context;
+        this.p1 = p1;
     }
-    protected String doInBackground(String... arg0) {
+        protected String doInBackground(String... arg0) {
         try {
             String nric = (String)arg0[0];
             String desStr = (String)arg0[1];
@@ -89,9 +91,8 @@ public class NewApptBackground extends AsyncTask<String, Void, String> {
     protected void onPostExecute(String result) {
         if(response.length() == 4) {
             Intent c = new Intent(context,DisplayCurrAppt.class);
-            Bundle d = new Bundle();
-            d.putString("id",id);
-            c.putExtras(d);
+            c.putExtra("Patient",new Gson().toJson(p1));
+
             context.startActivity(c);
             Toast.makeText(context.getApplicationContext(), "Appointment successfully booked.", Toast.LENGTH_LONG).show();
         }

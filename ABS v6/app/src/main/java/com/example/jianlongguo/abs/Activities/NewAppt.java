@@ -185,7 +185,7 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
                     else
                         referral = "0";
                     try {
-                        new NewApptBackground(this).execute(p1.getNric(),desStr,dateStr,time,referral,type,clinic);
+                        new NewApptBackground(this,p1).execute(p1.getNric(),desStr,dateStr,time,referral,type,clinic);
 
                     } catch (Exception e) {
                         descTxt.setText(e.toString());

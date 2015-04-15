@@ -44,7 +44,7 @@ public class ResetPasswordDialog extends Dialog implements View.OnClickListener 
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.cancelBut:
-                c.finish();
+                dismiss();
                 break;
             case R.id.submitBut:
                 //do something

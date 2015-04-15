@@ -92,7 +92,7 @@ public class ApptInfoActivity extends BaseActivity implements View.OnClickListen
     public void onClick(View v){
         switch(v.getId()){
             case R.id.cancelApptBut:
-                CancelApptDialog dia = new CancelApptDialog(this);
+                CancelApptDialog dia = new CancelApptDialog(this,p1,appt);
                 dia.show();
                 break;
             case R.id.changeApptBut:

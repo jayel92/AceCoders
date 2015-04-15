@@ -2,13 +2,10 @@ package com.example.jianlongguo.abs.DB;
 
 import android.content.Context;
 import android.os.AsyncTask;
-import android.widget.Toast;
 
 import com.example.jianlongguo.abs.Activities.AsyncResponse;
-import com.example.jianlongguo.abs.Drawer.ApptAdapter;
 import com.example.jianlongguo.abs.Entities.Appointment;
 import com.example.jianlongguo.abs.Entities.Patient;
-
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -65,7 +62,7 @@ public class DisplayDentalBackground extends AsyncTask<Object, String, Appointme
                 for(int i=0;i<14; i++)
                     arr[i] = "";
                 arr = res.split("<br>",-1);
-                appt  = new Appointment("Dental",arr[0],arr[1],arr[2],arr[3],arr[4],arr[5],arr[6]);
+                appt  = new Appointment(arr[0],arr[1],arr[2],arr[3],arr[4],arr[5],arr[6],arr[7]);
 
                 return appt;
             }

@@ -7,6 +7,10 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 
+import com.example.jianlongguo.abs.DB.DeleteBackground;
+import com.example.jianlongguo.abs.Entities.Appointment;
+import com.example.jianlongguo.abs.Entities.Patient;
+
 /**
  * Created by jianlongguo on 15/4/15.
  */
@@ -15,10 +19,14 @@ public class CancelApptDialog extends Dialog implements View.OnClickListener{
     public Activity c;
     public Dialog d;
     public Button yes, no;
+    private Patient p1 = new Patient();
+    private Appointment appt = new Appointment();
 
-    public CancelApptDialog(Activity a) {
+    public CancelApptDialog(Activity a,Patient p1, Appointment appt) {
         super(a);
         this.c = a;
+        this.p1 = p1;
+        this.appt = appt;
     }
 
     @Override
@@ -37,7 +45,9 @@ public class CancelApptDialog extends Dialog implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_yes:
-                c.finish();
+                DeleteBackground delete = new DeleteBackground(super.getContext(),p1,appt);
+                delete.execute();
+
                 break;
             case R.id.btn_no:
                 dismiss();
