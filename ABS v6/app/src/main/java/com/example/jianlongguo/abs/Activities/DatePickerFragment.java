@@ -35,11 +35,10 @@ public class DatePickerFragment extends DialogFragment {
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        //double max = 2629740000;
         Date minDate = new Date();
         DatePickerDialog datePickerDialog = new DatePickerDialog(getActivity(), onDateSet, year, month, day);
         datePickerDialog.getDatePicker().setMinDate(minDate.getTime());
-        datePickerDialog.getDatePicker().setMaxDate(minDate.getTime()+minDate.getTime()%(720*60*60*1000));
+
         return datePickerDialog;
     }
 }

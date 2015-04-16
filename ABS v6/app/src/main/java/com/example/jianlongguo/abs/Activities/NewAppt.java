@@ -34,14 +34,13 @@ import java.util.Date;
 
 public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnClickListener {
 
+    final static int WEEKSINADV = 8, MINWEEKS = 2, TOTALWEEKS = 52;
     Spinner clinicDD,timeSpinner,dateSpinner,typeSpinner;
     TextView apptDateTxt, apptTimeTxt, clinicLabel,typeLabel;
     EditText descTxt;
     Button apptDateBut, apptTimeBut, confirmBut, exitNewBut;
     CheckBox referralChk;
     private String[] clinicSel = {"Dental","ENT","Women's Health"};
-    private Date date;
-    final int Date_Dialog_ID=0;
     Calendar calendar = Calendar.getInstance();
     private String[] navMenuTitles;
     private TypedArray navMenuIcons;
@@ -135,9 +134,14 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
             int apptWeek = cal.get(Calendar.WEEK_OF_YEAR);
 
             //to allow appointments for at least 2 weeks in advance
-            if ((curWeek < apptWeek-1 && curYear == year) || curYear < year) {
+            if ((curWeek + MINWEEKS < apptWeek && apptWeek <= curWeek + WEEKSINADV && curYear == year)
+                    || (curYear < year && TOTALWEEKS - curWeek + apptWeek < WEEKSINADV)) {
                 String newDateString = df.format(startDate);
                 apptDateTxt.setText(newDateString);
+
+            } else if (apptWeek > curWeek + WEEKSINADV || (curYear < year && TOTALWEEKS - curWeek + apptWeek > WEEKSINADV)) {
+                Toast.makeText(getApplicationContext(), "Appointment can only be booked 2 months in advance!", Toast.LENGTH_SHORT).show();
+                showDatePicker();
             } else {
                 Toast.makeText(getApplicationContext(), "Appointment must be booked at least 2 weeks in advance!", Toast.LENGTH_SHORT).show();
                 showDatePicker();

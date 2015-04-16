@@ -1,5 +1,7 @@
 package com.example.jianlongguo.abs.Activities;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
@@ -21,11 +23,13 @@ public class ApptInfoActivity extends BaseActivity implements View.OnClickListen
     private String[] navMenuTitles;
     private TypedArray navMenuIcons;
     Appointment appt;
+    Patient p1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_appt_info);
+
 
         Gson gson = new Gson();
         appt = gson.fromJson(getIntent().getStringExtra("myjson"), Appointment.class);
@@ -48,19 +52,10 @@ public class ApptInfoActivity extends BaseActivity implements View.OnClickListen
         navMenuIcons = getResources().obtainTypedArray(R.array.nav_drawer_icons);
         set(navMenuTitles, navMenuIcons);
 
-        //SpannableString ss = new SpannableString("Clinic: "+appt.getClinic());
-        //ss.setSpan(new RelativeSizeSpan(1.2f),0,6,0);
-        //ss.setSpan(new ForegroundColorSpan(Color.BLUE),7,ss.length(),0);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        //ss = new SpannableString(appt.getType());
-
-        //ss = new SpannableString("Date: " + appt.getDate());
-        //ss.setSpan(new RelativeSizeSpan(1.2f),0,5,0);
-        //ss.setSpan(new ForegroundColorSpan(Color.BLUE),6,ss.length(),0);
         typeLabel.setText(Html.fromHtml("<h3>"+appt.getType()+"</h3>"));
         clinicLabel.setText(Html.fromHtml("<b>"+"Clinic: "+"</b>"+"<i>"+appt.getClinic()+"</i>"));
-     //   appt.setLocation("Treatment Room 1, Level 3-1");
-      //  locLabel.setText(Html.fromHtml("<b>"+"Location: "+"</b>"+"<i>"+appt.getLocation()+"</i>"));
         dateLabel.setText(Html.fromHtml("<b>"+"Date: "+"</b>"+"<i>"+appt.getDate()+"</i>"));
         timeLabel.setText(Html.fromHtml("<b>"+"Time: "+"</b>"+"<i>"+appt.getTime()+"hrs"+"</i>"));
 
@@ -86,6 +81,15 @@ public class ApptInfoActivity extends BaseActivity implements View.OnClickListen
             return true;
         }
 
+        switch (id) {
+            case R.id.home:
+                onBackPressed();
+                return true;
+            case R.id.logout:
+                super.createLogoutDialog();
+                break;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -107,4 +111,32 @@ public class ApptInfoActivity extends BaseActivity implements View.OnClickListen
                 break;
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        createDialog();
+    }
+
+    private void createDialog() {
+        AlertDialog.Builder alertDlg = new AlertDialog.Builder(this);
+        alertDlg.setMessage("Are you sure you want to exit?");
+        alertDlg.setCancelable(false); // We avoid that the dialog can be cancelled, forcing the user to choose one of the options
+
+        alertDlg.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                ApptInfoActivity.super.onBackPressed();
+            }
+        });
+
+        alertDlg.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // We do nothing
+            }
+        });
+        alertDlg.create().show();
+        onPause();
+    }
+
 }

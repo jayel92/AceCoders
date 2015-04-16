@@ -28,7 +28,7 @@ public class DatePickerTestActivity extends BaseActivity {
         setContentView(R.layout.datepicker_layout);
         // Button to show datepicker
         datePickerShowDialogButton =
-                (Button) getSupportActionBar().getCustomView().findViewById(R.id.activity_datepickertest_datebutton);
+                (Button) findViewById(R.id.activity_datepickertest_datebutton);
         datePickerShowDialogButton.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View v) {

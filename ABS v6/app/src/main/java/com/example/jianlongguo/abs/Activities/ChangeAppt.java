@@ -1,5 +1,6 @@
 package com.example.jianlongguo.abs.Activities;
 
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.View;
@@ -23,8 +24,8 @@ public class ChangeAppt extends BaseActivity {
     private String[] navMenuTitles;
     private TypedArray navMenuIcons;
     Appointment appt;
-    Spinner clinicDD,timeSpinner,dateSpinner,typeSpinner;
-    TextView apptDateTxt, apptTimeTxt, clinicLabel,typeLabel;
+    Spinner clinicDD, timeSpinner, dateSpinner, typeSpinner;
+    TextView apptDateTxt, apptTimeTxt, clinicLabel, typeLabel;
     EditText descTxt;
     Button apptDateBut, apptTimeBut, confirmBut, exitNewBut;
     CheckBox referralChk;
@@ -35,24 +36,24 @@ public class ChangeAppt extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_appt);
 
-        timeSpinner = (Spinner)findViewById(R.id.timeSpinner);
-        typeSpinner = (Spinner)findViewById(R.id.typeSpinner);
+        timeSpinner = (Spinner) findViewById(R.id.timeSpinner);
+        typeSpinner = (Spinner) findViewById(R.id.typeSpinner);
         //dateSpinner = (Spinner)findViewById(R.id.dateSpinner);
-        descTxt = (EditText)findViewById(R.id.descTxt);
-        referralChk = (CheckBox)findViewById(R.id.referralChk);
-        typeLabel = (TextView)findViewById(R.id.typeLabel);
+        descTxt = (EditText) findViewById(R.id.descTxt);
+        referralChk = (CheckBox) findViewById(R.id.referralChk);
+        typeLabel = (TextView) findViewById(R.id.typeLabel);
         // apptDateTxt = (TextView)findViewById(R.id.apptDateLabel);
-        apptTimeTxt = (TextView)findViewById(R.id.apptTimeLabel);
-        apptDateTxt = (TextView)findViewById(R.id.apptDateTxt);
-        confirmBut = (Button)findViewById(R.id.confirmBut);
-        exitNewBut = (Button)findViewById(R.id.exitNewBut);
+        apptTimeTxt = (TextView) findViewById(R.id.apptTimeLabel);
+        apptDateTxt = (TextView) findViewById(R.id.apptDateTxt);
+        confirmBut = (Button) findViewById(R.id.confirmBut);
+        exitNewBut = (Button) findViewById(R.id.exitNewBut);
         confirmBut.setOnClickListener(this);
         exitNewBut.setOnClickListener(this);
 
         String jsonMyObject = null;
         Bundle extras = getIntent().getExtras();
-       // if (extras != null) {
-         //   jsonMyObject = extras.getString("Patient");
+        // if (extras != null) {
+        //   jsonMyObject = extras.getString("Patient");
         //}
         Gson gson = new Gson();
         p1 = gson.fromJson(getIntent().getStringExtra("patient"), Patient.class);
@@ -83,7 +84,8 @@ public class ChangeAppt extends BaseActivity {
             @Override
             public void onClick(View v) {
                 //triggers the date picker dialog
-                datePickerFragment.showDatePicker();
+                Intent k = new Intent(getApplication(), DatePickerTestActivity.class);
+                startActivity(k);
             }
         });
     }
