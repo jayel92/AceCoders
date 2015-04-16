@@ -8,5 +8,4 @@ import com.example.jianlongguo.abs.Entities.Appointment;
 public interface AsyncResponse {
     void processFinish(Appointment output);
 
-    void processFinish(String output);
 }

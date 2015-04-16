@@ -11,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.jianlongguo.abs.DB.DisplayBackground;
 import com.example.jianlongguo.abs.DB.DisplayDentalBackground;
@@ -75,27 +76,18 @@ public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemC
         taskwomen.delegate = this;
         startMyTask(taskwomen);
 
-
-        //   Gson gson = new Gson();
-        //   p1 = gson.fromJson(getIntent().getStringExtra("myjson"), Patient.class);
-
-
-        //  userid = p1.getNric();
-
-        //Bundle b = getIntent().getExtras();
-        //if (b!=null)
-        //{
-        //  userid = b.getString("id");
-        //}
-
         //set up the drawer
         navMenuTitles = getResources().getStringArray(R.array.nav_drawer_items);
         navMenuIcons = getResources().obtainTypedArray(R.array.nav_drawer_icons);
         set(navMenuTitles, navMenuIcons);
 
         currentApptTxt = (TextView) findViewById(R.id.currentApptTxt);
-        //currApptGrid = (GridView)findViewById(R.id.currApptGrid);
 
+        if (apptArray == null){
+            Toast.makeText(getApplicationContext(), "Please enter all fields!", Toast.LENGTH_LONG).show();
+
+            nilAppt.setText("You have no scheduled appointment");
+        }
 
         list = (ListView) findViewById(R.id.listView);
         //ArrayList<String> myArrayList = new ArrayList<String>();
@@ -165,19 +157,17 @@ public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemC
                 this.ent = result;
             else if (result.getClinic() == "Dental")
                 this.den = result;
-            else if (result.getClinic() == "Women's Health")
+            else if (result.getClinic() == "Women Health")
                 this.women = result;
 
             apptArray.add(result);
+            Toast.makeText(getApplicationContext(),result.toString(), Toast.LENGTH_LONG).show();
+
             myAdapter.notifyDataSetChanged();
         }
 
     }
 
-    @Override
-    public void processFinish(String output) {
-
-    }
 
     public Patient getPatient() {
         return p1;

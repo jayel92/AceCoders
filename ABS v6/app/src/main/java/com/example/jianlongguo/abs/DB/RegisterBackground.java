@@ -13,8 +13,6 @@ import java.io.OutputStreamWriter;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 /**
  * Created by Boonyh on 3/22/2015.
@@ -37,12 +35,7 @@ public class RegisterBackground extends AsyncTask<String, Void, String> {
             String gender = (String)arg0[5];
             String contact = (String) arg0[6];
             String mode = ((String)arg0[7]);
-
-            SimpleDateFormat from = new SimpleDateFormat("dd/MM/yyyy");
-            SimpleDateFormat to = new SimpleDateFormat("yyyy-MM-dd");
-
-            Date date = from.parse((String) arg0[8]);       // 01-02-2014
-            String mysqlString = to.format(date);     // 2014-02-01
+            String mysqlString = ((String)arg0[8]);
 
             String link = "http://acecoders.netau.net/newAcct.php";
             String data = URLEncoder.encode("username", "UTF-8")
@@ -94,7 +87,7 @@ public class RegisterBackground extends AsyncTask<String, Void, String> {
         else {
 
             Toast.makeText(context, "Sorry! Registration Failed. Please try again.", Toast.LENGTH_SHORT).show();
-            Toast.makeText(context, "Please ensure that your NRIC is unique.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, result, Toast.LENGTH_SHORT).show();
         }
     }
 }

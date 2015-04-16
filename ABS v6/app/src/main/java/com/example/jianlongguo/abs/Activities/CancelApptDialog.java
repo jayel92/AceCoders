@@ -34,6 +34,7 @@ public class CancelApptDialog extends Dialog implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.dialog_cancel_appt);
+
         yes = (Button) findViewById(R.id.btn_yes);
         no = (Button) findViewById(R.id.btn_no);
         yes.setOnClickListener(this);
@@ -47,7 +48,7 @@ public class CancelApptDialog extends Dialog implements View.OnClickListener{
             case R.id.btn_yes:
                 DeleteBackground delete = new DeleteBackground(super.getContext(),p1,appt);
                 delete.execute();
-
+                dismiss();
                 break;
             case R.id.btn_no:
                 dismiss();

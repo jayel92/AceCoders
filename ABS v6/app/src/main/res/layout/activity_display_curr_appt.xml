@@ -42,7 +42,8 @@
                 android:layout_alignRight="@+id/listView"
                 android:layout_alignEnd="@+id/listView"
                 android:textAlignment="center"
-                android:focusableInTouchMode="true"/>
+                android:focusableInTouchMode="false"/>
+
 
         </RelativeLayout>
 

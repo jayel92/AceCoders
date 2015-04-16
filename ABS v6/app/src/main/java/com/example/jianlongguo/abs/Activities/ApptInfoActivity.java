@@ -5,18 +5,21 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.jianlongguo.abs.DB.DeleteBackground;
 import com.example.jianlongguo.abs.Entities.Appointment;
 import com.example.jianlongguo.abs.Entities.Patient;
 import com.google.gson.Gson;
 
-public class ApptInfoActivity extends BaseActivity implements View.OnClickListener {
+public class ApptInfoActivity extends ActionBarActivity implements View.OnClickListener {
 
     TextView clinicLabel, typeLabel, locLabel, timeLabel, dateLabel, remarksLabel, remarksTxt;
     ImageButton changeApptBut, cancelApptBut;
@@ -48,11 +51,12 @@ public class ApptInfoActivity extends BaseActivity implements View.OnClickListen
         changeApptBut.setOnClickListener(this);
         cancelApptBut.setOnClickListener(this);
         //set up the drawer
-        // navMenuTitles = getResources().getStringArray(R.array.nav_drawer_items);
+       // navMenuTitles = getResources().getStringArray(R.array.nav_drawer_items);
         //navMenuIcons = getResources().obtainTypedArray(R.array.nav_drawer_icons);
         //set(navMenuTitles, navMenuIcons);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
 
         typeLabel.setText(Html.fromHtml("<h3>" + appt.getType() + "</h3>"));
         clinicLabel.setText(Html.fromHtml("<b>" + "Clinic: " + "</b>" + "<i>" + appt.getClinic() + "</i>"));
@@ -60,6 +64,7 @@ public class ApptInfoActivity extends BaseActivity implements View.OnClickListen
         timeLabel.setText(Html.fromHtml("<b>" + "Time: " + "</b>" + "<i>" + appt.getTime() + "hrs" + "</i>"));
 
     }
+
 
 
     @Override
@@ -81,12 +86,18 @@ public class ApptInfoActivity extends BaseActivity implements View.OnClickListen
             return true;
         }
 
-        switch (id) {
-            case R.id.home:
-                onBackPressed();
+        switch (item.getItemId()) {
+            case android.R.id.home:
+               // NavUtils.navigateUpFromSameTask(this);
+                Intent k = new Intent(getApplicationContext(),DisplayCurrAppt.class);
+                Gson gson = new Gson();
+                String myJson = gson.toJson(p1);
+                k.putExtra("Patient",myJson);
+                startActivity(k);
+                finish();
                 return true;
             case R.id.logout:
-                super.createLogoutDialog();
+                createLogoutDialog();
                 break;
         }
 
@@ -96,8 +107,9 @@ public class ApptInfoActivity extends BaseActivity implements View.OnClickListen
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.cancelApptBut:
-                CancelApptDialog dia = new CancelApptDialog(this, p1, appt);
-                dia.show();
+                //CancelApptDialog dia = new CancelApptDialog(this, p1, appt);
+                //dia.show();
+                cancelAppt();
                 break;
             case R.id.changeApptBut:
                 Intent k;
@@ -114,7 +126,6 @@ public class ApptInfoActivity extends BaseActivity implements View.OnClickListen
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
         createDialog();
     }
 
@@ -126,6 +137,55 @@ public class ApptInfoActivity extends BaseActivity implements View.OnClickListen
         alertDlg.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 ApptInfoActivity.super.onBackPressed();
+                finish();
+            }
+        });
+
+        alertDlg.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // We do nothing
+            }
+        });
+        alertDlg.create().show();
+        onPause();
+    }
+
+    public void createLogoutDialog() {
+        AlertDialog.Builder alertDlg = new AlertDialog.Builder(this);
+        alertDlg.setMessage("Are you sure you want to logout?");
+        alertDlg.setCancelable(false); // We avoid that the dialong can be cancelled, forcing the user to choose one of the options
+
+        alertDlg.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                Intent i = getBaseContext().getPackageManager()
+                        .getLaunchIntentForPackage( getBaseContext().getPackageName() );
+                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //clears history
+                startActivity(i);
+                Toast.makeText(getApplicationContext(), "Logout successful!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        alertDlg.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // We do nothing
+            }
+        });
+        alertDlg.create().show();
+        onPause();
+    }
+
+    private void cancelAppt() {
+        AlertDialog.Builder alertDlg = new AlertDialog.Builder(this);
+        alertDlg.setMessage("Are you sure you want to cancel appointment?");
+        alertDlg.setCancelable(false); // We avoid that the dialog can be cancelled, forcing the user to choose one of the options
+
+        alertDlg.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                DeleteBackground delete = new DeleteBackground(getApplicationContext(),p1,appt);
+                delete.execute();
+                //dismiss();
                 finish();
             }
         });

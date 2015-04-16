@@ -34,8 +34,8 @@
 
     <string name="type_prompt">Choose Appointment Type</string>
     <string-array name="apptType">
-        <item>New Consultation</item>
-        <item>Follow-Up Consultation</item>
+        <item>New Appointment</item>
+        <item>Follow Up Appointment</item>
         <item>Blood Test</item>
         <item>X-Ray/MRI</item>
     </string-array>

@@ -19,9 +19,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.jianlongguo.abs.DB.NewApptBackground;
-import com.example.jianlongguo.abs.DB.TypeCheck;
-import com.example.jianlongguo.abs.Drawer.ApptAdapter;
-import com.example.jianlongguo.abs.Entities.Appointment;
 import com.example.jianlongguo.abs.Entities.Patient;
 import com.google.gson.Gson;
 
@@ -31,7 +28,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnClickListener, AsyncResponse {
+public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnClickListener{
 
     final static int WEEKSINADV = 8, MINWEEKS = 2, TOTALWEEKS = 52;
     Spinner clinicDD,timeSpinner,dateSpinner,typeSpinner;
@@ -39,14 +36,11 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
     EditText descTxt;
     Button apptDateBut, apptTimeBut, confirmBut, exitNewBut;
     CheckBox referralChk;
-    private String[] clinicSel = {"Dental","ENT","Women's Health"};
+    private String[] clinicSel = {"Dental","ENT","Women Health"};
     Calendar calendar = Calendar.getInstance();
     private String[] navMenuTitles;
     private TypedArray navMenuIcons;
-    DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
-    private ApptAdapter myAdapter;
-    private String[] apptArray = new String[5];
-    private String[] array = {"abc", "dasd"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,6 +60,7 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
         set(navMenuTitles, navMenuIcons);
 
         timeSpinner = (Spinner)findViewById(R.id.timeSpinner);
+        typeSpinner = (Spinner)findViewById(R.id.typeSpinner);
         //dateSpinner = (Spinner)findViewById(R.id.dateSpinner);
         descTxt = (EditText)findViewById(R.id.descTxt);
         referralChk = (CheckBox)findViewById(R.id.referralChk);
@@ -84,21 +79,6 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
         adapter_clinicSel.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         clinicDD.setAdapter(adapter_clinicSel);
         clinicDD.setOnItemSelectedListener(this);
-
-
-        typeSpinner = (Spinner) findViewById(R.id.typeSpinner);
-        //Log.d("appt array:", apptArray[0].toString());
-       // Toast.makeText(context, apptArray[0] +"dsdasdasd", Toast.LENGTH_SHORT).show();
-
-        //ArrayAdapter<String> typeSpinner_Array = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, apptArray);
-        //Toast.makeText(getApplicationContext(), "HELLO " + apptArray, Toast.LENGTH_SHORT).show();
-
-        //typeSpinner_Array.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        //typeSpinner.setAdapter(typeSpinner_Array);
-        typeSpinner.setOnItemSelectedListener(this);
-
-        Toast.makeText(this, clinicDD.getSelectedItem().toString(), Toast.LENGTH_LONG).show();
-        new TypeCheck(this,this).execute("ENT");
 
         apptDateTxt.setOnClickListener(new OnClickListener() {
             @Override
@@ -133,7 +113,7 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
         public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
 
             String dateStr = (String.valueOf(dayOfMonth) + "-" + String.valueOf(monthOfYear+1) + "-" + String.valueOf(year));
-            DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
+            DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
             Date startDate = null;
             try {
                 startDate = df.parse(dateStr);
@@ -171,12 +151,9 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//        Toast.makeText(context, clinicDD.getSelectedItem().toString()+"dsdasdasd", Toast.LENGTH_LONG).show();
 
-        new TypeCheck(this,this).execute(clinicDD.getSelectedItem().toString());
-        switch(android.R.id.list){
+        switch(R.id.list_item){
             case R.id.clinicDD:
-                Toast.makeText(context, clinicDD.getSelectedItem().toString()+"dsdasdasd", Toast.LENGTH_LONG).show();
                 clinicDD.setSelection(position);
                 clinicDD.getSelectedItem();
                 break;
@@ -238,19 +215,4 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
         return cal;
     }
 
-    @Override
-    public void processFinish(Appointment output) {
-
-    }
-
-    @Override
-    public void processFinish(String response) {
-
-
-        apptArray = response.split("<br>", -1);
-        Toast.makeText(getApplicationContext(), response, Toast.LENGTH_SHORT).show();
-        Toast.makeText(getApplicationContext(), apptArray.toString(), Toast.LENGTH_SHORT).show();
-
-        myAdapter.notifyDataSetChanged();
-    }
 }

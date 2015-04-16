@@ -15,8 +15,6 @@ import java.io.OutputStreamWriter;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 /**
  * Created by Boonyh on 3/22/2015.
@@ -36,10 +34,7 @@ public class NewApptBackground extends AsyncTask<String, Void, String> {
         try {
             String nric = (String)arg0[0];
             String desStr = (String)arg0[1];
-            SimpleDateFormat from = new SimpleDateFormat("dd-MM-yyyy");
-            SimpleDateFormat to = new SimpleDateFormat("yyyy-MM-dd");
-            Date date = from.parse((String) arg0[2]);       // 01-02-2014
-            String dateStr = to.format(date);     // 2014-02-01
+            String dateStr = (String)arg0[2];
             String time = ((String) arg0[3]).substring(0,4);
             String referral = ((String)arg0[4]);
             String type = ((String)arg0[5]);
@@ -51,7 +46,7 @@ public class NewApptBackground extends AsyncTask<String, Void, String> {
                 link = "http://acecoders.netau.net/newDEN.php";
             else if (clinic.equals("ENT"))
                 link = "http://acecoders.netau.net/newENT.php";
-            else if (clinic.equals("Women's Health"))
+            else if (clinic.equals("Women Health"))
                 link = "http://acecoders.netau.net/newWO.php";
 
 
