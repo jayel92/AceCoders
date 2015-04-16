@@ -23,9 +23,9 @@ import com.google.gson.Gson;
 import java.util.ArrayList;
 
 
-public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemClickListener,View.OnClickListener,AsyncResponse{
+public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemClickListener, View.OnClickListener, AsyncResponse {
 
-    TextView currentApptTxt,nilAppt;
+    TextView currentApptTxt, nilAppt;
     GridView currApptGrid;
     ListView list;
 
@@ -39,9 +39,8 @@ public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemC
     private ApptAdapter myAdapter;
 
 
-
     void startMyTask(AsyncTask asyncTask) {
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
             asyncTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         else
             asyncTask.execute();
@@ -52,7 +51,7 @@ public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_curr_appt);
 
-        nilAppt = (TextView)findViewById(R.id.nilAppt);
+        nilAppt = (TextView) findViewById(R.id.nilAppt);
 
         context = getApplicationContext();
         String jsonpatient = null;
@@ -64,25 +63,24 @@ public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemC
         }
         p1 = new Gson().fromJson(jsonpatient, Patient.class);
 
-        DisplayBackground taskent = new DisplayBackground(context,p1);
-        taskent.delegate =this;
+        DisplayBackground taskent = new DisplayBackground(context, p1);
+        taskent.delegate = this;
         startMyTask(taskent);
 
-         DisplayDentalBackground taskden = new DisplayDentalBackground(context,p1);
-         taskden.delegate =this;
-         startMyTask(taskden);
+        DisplayDentalBackground taskden = new DisplayDentalBackground(context, p1);
+        taskden.delegate = this;
+        startMyTask(taskden);
 
-        DisplayWomenBackground taskwomen = new DisplayWomenBackground(context,p1);
-        taskwomen.delegate =this;
+        DisplayWomenBackground taskwomen = new DisplayWomenBackground(context, p1);
+        taskwomen.delegate = this;
         startMyTask(taskwomen);
 
 
+        //   Gson gson = new Gson();
+        //   p1 = gson.fromJson(getIntent().getStringExtra("myjson"), Patient.class);
 
-     //   Gson gson = new Gson();
-     //   p1 = gson.fromJson(getIntent().getStringExtra("myjson"), Patient.class);
 
-
-      //  userid = p1.getNric();
+        //  userid = p1.getNric();
 
         //Bundle b = getIntent().getExtras();
         //if (b!=null)
@@ -106,29 +104,29 @@ public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemC
         //PUT APPT INFO INTO AN ARRAY TO DISPLAY LATER
         // Appointment appt[] = ...
 
-   //     if (ent.getId() != null)
-   //         apptArray.add(ent);
-    //    if (den.getId() != null)
-   //         apptArray.add(den);
-    //    if (women.getId() != null)
-     //       apptArray.add(women);
+        //     if (ent.getId() != null)
+        //         apptArray.add(ent);
+        //    if (den.getId() != null)
+        //         apptArray.add(den);
+        //    if (women.getId() != null)
+        //       apptArray.add(women);
 
-    //    Appointment app4 = new Appointment("Dental", "1","test","desc", "16-06-2015", "1500","1","2");
+        //    Appointment app4 = new Appointment("Dental", "1","test","desc", "16-06-2015", "1500","1","2");
 
-     //   apptArray.add(app4);
+        //   apptArray.add(app4);
         myAdapter = new ApptAdapter(this, R.layout.appt_list, apptArray);
 
 
-            list.setAdapter(myAdapter);
-            list.setItemsCanFocus(true);
-            AdapterView.OnItemClickListener listener = new AdapterView.OnItemClickListener() {
+        list.setAdapter(myAdapter);
+        list.setItemsCanFocus(true);
+        AdapterView.OnItemClickListener listener = new AdapterView.OnItemClickListener() {
             @Override
-                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    goNext(position);
-                }
-            };
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                goNext(position);
+            }
+        };
 
-            list.setOnItemClickListener(listener);
+        list.setOnItemClickListener(listener);
 
         //nilAppt.setText(Html.fromHtml("<i>" + "<h3>" + "You do not have any appointments scheduled." + "</h3>" + "</i>"));
     }
@@ -148,25 +146,21 @@ public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemC
     private void goNext(int position) {
 // update the main content by replacing fragments
 
-                Intent k;
-                //Patient p1 = new Patient();
-                Appointment appt = apptArray.get(position);
-                Gson gson = new Gson();
-                String myJson = gson.toJson(appt);
-                String pat = gson.toJson(p1);
-                k = new Intent(this,ApptInfoActivity.class);
-                k.putExtra("myjson",myJson);
-                k.putExtra("patient",pat);
-                //Intent intent1 = new Intent(this, DisplayCurrAppt.class);
-                //Bundle c = new Bundle();
-                //c.putString("id",userid);
-                //intent1.putExtras(c);
-                startActivity(k);
-                finish();
+        Intent k;
+        //Patient p1 = new Patient();
+        Appointment appt = apptArray.get(position);
+        Gson gson = new Gson();
+        String myJson = gson.toJson(appt);
+        String pat = gson.toJson(p1);
+        k = new Intent(this, ApptInfoActivity.class);
+        k.putExtra("myjson", myJson);
+        k.putExtra("patient", pat);
+        startActivity(k);
+        this.finish();
     }
 
-    public void processFinish(Appointment result){
-        if(result.getClinic() != null) {
+    public void processFinish(Appointment result) {
+        if (result.getClinic() != null) {
             if (result.getClinic() == "ENT")
                 this.ent = result;
             else if (result.getClinic() == "Dental")
@@ -180,10 +174,14 @@ public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemC
 
     }
 
+    @Override
+    public void processFinish(String output) {
+
+    }
+
     public Patient getPatient() {
         return p1;
     }
-
 
 
 }

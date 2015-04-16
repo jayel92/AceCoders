@@ -63,19 +63,22 @@ public class LoginBackground extends AsyncTask<String, Void, String> {
     }
 
     protected void onPostExecute(String result) {
-        if(response.length()>0) {
-            String[] arr = new String[14];
-            for(int i=0;i<14; i++)
-                arr[i] = "";
-            arr = result.split("<br>",-1);
-            Patient pat = new Patient(arr[0],arr[1],arr[2],arr[3],arr[4],arr[5],arr[6],arr[7],arr[8],arr[9],arr[10],arr[11],arr[12]);
+        try {
+            if (response.length() > 0) {
+                String[] arr = new String[14];
+                for (int i = 0; i < 14; i++)
+                    arr[i] = "";
+                arr = result.split("<br>", -1);
+                Patient pat = new Patient(arr[0], arr[1], arr[2], arr[3], arr[4], arr[5], arr[6], arr[7], arr[8], arr[9], arr[10], arr[11], arr[12]);
 
-            Intent i = new Intent(context, DisplayCurrAppt.class);
-            i.putExtra("Patient",new Gson().toJson(pat));
-            context.startActivity(i);
+                Intent i = new Intent(context, DisplayCurrAppt.class);
+                i.putExtra("Patient", new Gson().toJson(pat));
+                context.startActivity(i);
+            } else
+                Toast.makeText(context, "Sorry! Incorrect Username or Password.", Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            Toast.makeText(context, "Database connection", Toast.LENGTH_SHORT).show();
         }
-        else
-            Toast.makeText(context, "Sorry! Incorrect Username or Password.", Toast.LENGTH_SHORT).show();
 
 
 

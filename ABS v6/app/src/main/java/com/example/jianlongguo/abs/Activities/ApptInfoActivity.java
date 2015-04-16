@@ -18,7 +18,7 @@ import com.google.gson.Gson;
 
 public class ApptInfoActivity extends BaseActivity implements View.OnClickListener {
 
-    TextView clinicLabel,typeLabel,locLabel,timeLabel,dateLabel,remarksLabel,remarksTxt;
+    TextView clinicLabel, typeLabel, locLabel, timeLabel, dateLabel, remarksLabel, remarksTxt;
     ImageButton changeApptBut, cancelApptBut;
     private String[] navMenuTitles;
     private TypedArray navMenuIcons;
@@ -35,29 +35,29 @@ public class ApptInfoActivity extends BaseActivity implements View.OnClickListen
         appt = gson.fromJson(getIntent().getStringExtra("myjson"), Appointment.class);
         p1 = gson.fromJson(getIntent().getStringExtra("patient"), Patient.class);
 
-        clinicLabel = (TextView)findViewById(R.id.clinicLabel);
-        typeLabel = (TextView)findViewById(R.id.typeLabel);
-        locLabel = (TextView)findViewById(R.id.locLabel);
-        dateLabel = (TextView)findViewById(R.id.timeLabel);
-        timeLabel = (TextView)findViewById(R.id.dateLabel);
-        remarksLabel = (TextView)findViewById(R.id.remarksLabel);
-        remarksTxt = (TextView)findViewById(R.id.remarksTxt);
-        changeApptBut = (ImageButton)findViewById(R.id.changeApptBut);
-        cancelApptBut = (ImageButton)findViewById(R.id.cancelApptBut);
+        clinicLabel = (TextView) findViewById(R.id.clinicLabel);
+        typeLabel = (TextView) findViewById(R.id.typeLabel);
+        locLabel = (TextView) findViewById(R.id.locLabel);
+        dateLabel = (TextView) findViewById(R.id.timeLabel);
+        timeLabel = (TextView) findViewById(R.id.dateLabel);
+        remarksLabel = (TextView) findViewById(R.id.remarksLabel);
+        remarksTxt = (TextView) findViewById(R.id.remarksTxt);
+        changeApptBut = (ImageButton) findViewById(R.id.changeApptBut);
+        cancelApptBut = (ImageButton) findViewById(R.id.cancelApptBut);
 
         changeApptBut.setOnClickListener(this);
         cancelApptBut.setOnClickListener(this);
         //set up the drawer
-        navMenuTitles = getResources().getStringArray(R.array.nav_drawer_items);
-        navMenuIcons = getResources().obtainTypedArray(R.array.nav_drawer_icons);
-        set(navMenuTitles, navMenuIcons);
+        // navMenuTitles = getResources().getStringArray(R.array.nav_drawer_items);
+        //navMenuIcons = getResources().obtainTypedArray(R.array.nav_drawer_icons);
+        //set(navMenuTitles, navMenuIcons);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        typeLabel.setText(Html.fromHtml("<h3>"+appt.getType()+"</h3>"));
-        clinicLabel.setText(Html.fromHtml("<b>"+"Clinic: "+"</b>"+"<i>"+appt.getClinic()+"</i>"));
-        dateLabel.setText(Html.fromHtml("<b>"+"Date: "+"</b>"+"<i>"+appt.getDate()+"</i>"));
-        timeLabel.setText(Html.fromHtml("<b>"+"Time: "+"</b>"+"<i>"+appt.getTime()+"hrs"+"</i>"));
+        typeLabel.setText(Html.fromHtml("<h3>" + appt.getType() + "</h3>"));
+        clinicLabel.setText(Html.fromHtml("<b>" + "Clinic: " + "</b>" + "<i>" + appt.getClinic() + "</i>"));
+        dateLabel.setText(Html.fromHtml("<b>" + "Date: " + "</b>" + "<i>" + appt.getDate() + "</i>"));
+        timeLabel.setText(Html.fromHtml("<b>" + "Time: " + "</b>" + "<i>" + appt.getTime() + "hrs" + "</i>"));
 
     }
 
@@ -93,10 +93,10 @@ public class ApptInfoActivity extends BaseActivity implements View.OnClickListen
         return super.onOptionsItemSelected(item);
     }
 
-    public void onClick(View v){
-        switch(v.getId()){
+    public void onClick(View v) {
+        switch (v.getId()) {
             case R.id.cancelApptBut:
-                CancelApptDialog dia = new CancelApptDialog(this,p1,appt);
+                CancelApptDialog dia = new CancelApptDialog(this, p1, appt);
                 dia.show();
                 break;
             case R.id.changeApptBut:
@@ -104,9 +104,9 @@ public class ApptInfoActivity extends BaseActivity implements View.OnClickListen
                 Gson gson = new Gson();
                 String myJson = gson.toJson(appt);
                 String pat = gson.toJson(p1);
-                k = new Intent(this,ChangeAppt.class);
-                k.putExtra("myjson",myJson);
-                k.putExtra("patient",pat);
+                k = new Intent(this, ChangeAppt.class);
+                k.putExtra("myjson", myJson);
+                k.putExtra("patient", pat);
                 startActivity(k);
                 break;
         }
@@ -126,6 +126,7 @@ public class ApptInfoActivity extends BaseActivity implements View.OnClickListen
         alertDlg.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 ApptInfoActivity.super.onBackPressed();
+                finish();
             }
         });
 
@@ -138,5 +139,6 @@ public class ApptInfoActivity extends BaseActivity implements View.OnClickListen
         alertDlg.create().show();
         onPause();
     }
+
 
 }

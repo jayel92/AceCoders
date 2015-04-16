@@ -21,18 +21,17 @@ import android.widget.Toast;
 import com.example.jianlongguo.abs.DB.NewApptBackground;
 import com.example.jianlongguo.abs.DB.TypeCheck;
 import com.example.jianlongguo.abs.Drawer.ApptAdapter;
+import com.example.jianlongguo.abs.Entities.Appointment;
 import com.example.jianlongguo.abs.Entities.Patient;
 import com.google.gson.Gson;
 
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
-
-public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnClickListener {
+public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnClickListener, AsyncResponse {
 
     final static int WEEKSINADV = 8, MINWEEKS = 2, TOTALWEEKS = 52;
     Spinner clinicDD,timeSpinner,dateSpinner,typeSpinner;
@@ -46,8 +45,8 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
     private TypedArray navMenuIcons;
     DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
     private ApptAdapter myAdapter;
-    ArrayList<String> apptArray = new ArrayList<>();
-
+    private String[] apptArray = new String[5];
+    private String[] array = {"abc", "dasd"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,14 +65,7 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
         navMenuIcons = getResources().obtainTypedArray(R.array.nav_drawer_icons);
         set(navMenuTitles, navMenuIcons);
 
-        clinicDD = (Spinner)findViewById(R.id.clinicDD);
-        ArrayAdapter<String> adapter_clinicSel = new ArrayAdapter<>(this,android.R.layout.simple_spinner_item,clinicSel);
-        adapter_clinicSel.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        clinicDD.setAdapter(adapter_clinicSel);
-        clinicDD.setOnItemSelectedListener(this);
-
         timeSpinner = (Spinner)findViewById(R.id.timeSpinner);
-        typeSpinner = (Spinner)findViewById(R.id.typeSpinner);
         //dateSpinner = (Spinner)findViewById(R.id.dateSpinner);
         descTxt = (EditText)findViewById(R.id.descTxt);
         referralChk = (CheckBox)findViewById(R.id.referralChk);
@@ -86,6 +78,25 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
         exitNewBut = (Button)findViewById(R.id.exitNewBut);
         confirmBut.setOnClickListener(this);
         exitNewBut.setOnClickListener(this);
+
+        clinicDD = (Spinner) findViewById(R.id.clinicDD);
+        ArrayAdapter<String> adapter_clinicSel = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, clinicSel);
+        adapter_clinicSel.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        clinicDD.setAdapter(adapter_clinicSel);
+        clinicDD.setOnItemSelectedListener(this);
+
+
+        typeSpinner = (Spinner) findViewById(R.id.typeSpinner);
+        ArrayAdapter<String> typeSpinner_Array = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, array);
+        Toast.makeText(getApplicationContext(), "HELLO " + apptArray, Toast.LENGTH_SHORT).show();
+
+        typeSpinner_Array.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        typeSpinner.setAdapter(typeSpinner_Array);
+        typeSpinner.setOnItemSelectedListener(this);
+
+        Toast.makeText(this, clinicDD.getSelectedItem().toString(), Toast.LENGTH_LONG).show();
+        new TypeCheck(this).execute(clinicDD.getSelectedItem().toString());
+
 
         apptDateTxt.setOnClickListener(new OnClickListener() {
             @Override
@@ -160,9 +171,10 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         switch(R.id.list_item){
             case R.id.clinicDD:
+                Toast.makeText(context, clinicDD.getSelectedItem().toString(), Toast.LENGTH_LONG).show();
+                new TypeCheck(this).execute(clinicDD.getSelectedItem().toString());
                 clinicDD.setSelection(position);
                 clinicDD.getSelectedItem();
-                new TypeCheck(context).execute(clinicDD.getSelectedItem().toString());
                 break;
             case R.id.timeSpinner:
                 timeSpinner.setSelection(position);
@@ -220,5 +232,21 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
         return cal;
+    }
+
+    @Override
+    public void processFinish(Appointment output) {
+
+    }
+
+    @Override
+    public void processFinish(String response) {
+
+
+        apptArray = response.split("<br>", -1);
+        Toast.makeText(getApplicationContext(), response, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), apptArray.toString(), Toast.LENGTH_SHORT).show();
+
+        myAdapter.notifyDataSetChanged();
     }
 }
