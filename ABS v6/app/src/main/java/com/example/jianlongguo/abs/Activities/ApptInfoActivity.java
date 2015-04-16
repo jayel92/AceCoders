@@ -63,6 +63,14 @@ public class ApptInfoActivity extends ActionBarActivity implements View.OnClickL
         dateLabel.setText(Html.fromHtml("<b>" + "Date: " + "</b>" + "<i>" + appt.getDate() + "</i>"));
         timeLabel.setText(Html.fromHtml("<b>" + "Time: " + "</b>" + "<i>" + appt.getTime() + "hrs" + "</i>"));
 
+        if(appt.getReferral().equals("1")){
+            remarksTxt.setText("For referrals, please bring along your referral letters and past medical records " +
+                    "if this is your first visit.");
+        }
+        if(appt.getType().equals("Blood Test")){
+            remarksTxt.append("For Blood Cholesterol Test, please refrain from eating anything and only drink water " +
+                    "for 9 to 12 hours before the test.");
+        }
     }
 
 
@@ -185,8 +193,6 @@ public class ApptInfoActivity extends ActionBarActivity implements View.OnClickL
             public void onClick(DialogInterface dialog, int id) {
                 DeleteBackground delete = new DeleteBackground(getApplicationContext(),p1,appt);
                 delete.execute();
-                //dismiss();
-                finish();
             }
         });
 
@@ -199,6 +205,5 @@ public class ApptInfoActivity extends ActionBarActivity implements View.OnClickL
         alertDlg.create().show();
         onPause();
     }
-
 
 }

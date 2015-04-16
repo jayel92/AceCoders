@@ -113,7 +113,7 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
         public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
 
             String dateStr = (String.valueOf(dayOfMonth) + "-" + String.valueOf(monthOfYear+1) + "-" + String.valueOf(year));
-            DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+            DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
             Date startDate = null;
             try {
                 startDate = df.parse(dateStr);
@@ -190,6 +190,7 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
                         referral = "0";
                     try {
                         new NewApptBackground(this,p1).execute(p1.getNric(),desStr,dateStr,time,referral,type,clinic);
+                        Toast.makeText(getApplicationContext(), "referral: "+referral, Toast.LENGTH_LONG).show();
 
                     } catch (Exception e) {
                         descTxt.setText(e.toString());

@@ -41,7 +41,7 @@ public class DeleteBackground extends AsyncTask<Void, Void, String> {
                     link = "http://acecoders.netau.net/deleteDental.php";
                 else if (appt.getClinic().equals("ENT"))
                     link = "http://acecoders.netau.net/deleteENT.php";
-                else if (appt.getClinic().equals("Women's Health"))
+                else if (appt.getClinic().equals("Women Health"))
                     link = "http://acecoders.netau.net/deleteWomen.php";
 
 
@@ -79,7 +79,7 @@ public class DeleteBackground extends AsyncTask<Void, Void, String> {
                 Intent z = new Intent(context,DisplayCurrAppt.class);
 
                 z.putExtra("Patient",new Gson().toJson(p1));
-
+                z.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(z);
 
             }

@@ -42,4 +42,5 @@
 
     <string name="message">Please wait...</string>
     <string name="title_activity_appt_info">ApptInfoActivity</string>
+
 </resources>

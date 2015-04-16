@@ -37,6 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/nilAppt"
+                android:text=""
                 android:layout_below="@+id/currentApptTxt"
                 android:layout_marginTop="33dp"
                 android:layout_alignRight="@+id/listView"

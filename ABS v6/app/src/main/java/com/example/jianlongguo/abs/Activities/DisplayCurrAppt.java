@@ -52,7 +52,7 @@ public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_curr_appt);
 
-        nilAppt = (TextView) findViewById(R.id.nilAppt);
+
 
         context = getApplicationContext();
         String jsonpatient = null;
@@ -81,6 +81,7 @@ public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemC
         navMenuIcons = getResources().obtainTypedArray(R.array.nav_drawer_icons);
         set(navMenuTitles, navMenuIcons);
 
+        nilAppt = (TextView) findViewById(R.id.nilAppt);
         currentApptTxt = (TextView) findViewById(R.id.currentApptTxt);
 
         if (apptArray == null){
@@ -90,22 +91,6 @@ public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemC
         }
 
         list = (ListView) findViewById(R.id.listView);
-        //ArrayList<String> myArrayList = new ArrayList<String>();
-        //String[] myStrArr = {"Dental:","ENT:","Women's Health:"};
-
-        //PUT APPT INFO INTO AN ARRAY TO DISPLAY LATER
-        // Appointment appt[] = ...
-
-        //     if (ent.getId() != null)
-        //         apptArray.add(ent);
-        //    if (den.getId() != null)
-        //         apptArray.add(den);
-        //    if (women.getId() != null)
-        //       apptArray.add(women);
-
-        //    Appointment app4 = new Appointment("Dental", "1","test","desc", "16-06-2015", "1500","1","2");
-
-        //   apptArray.add(app4);
         myAdapter = new ApptAdapter(this, R.layout.appt_list, apptArray);
 
 
@@ -119,8 +104,6 @@ public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemC
         };
 
         list.setOnItemClickListener(listener);
-
-        //nilAppt.setText(Html.fromHtml("<i>" + "<h3>" + "You do not have any appointments scheduled." + "</h3>" + "</i>"));
     }
 
     @Override

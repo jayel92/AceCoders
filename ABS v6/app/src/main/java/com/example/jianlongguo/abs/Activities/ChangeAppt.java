@@ -36,7 +36,7 @@ import java.util.Date;
  */
 public class ChangeAppt extends ActionBarActivity implements View.OnClickListener,AdapterView.OnItemSelectedListener {
 
-    Calendar calendar;
+    Calendar calendar = Calendar.getInstance();
     final static int WEEKSINADV = 8, MINWEEKS = 2, TOTALWEEKS = 52;
     Appointment appt;
     Spinner clinicDD, timeSpinner, dateSpinner, typeSpinner;
