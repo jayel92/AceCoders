@@ -88,9 +88,11 @@ public class RegisterBackground extends AsyncTask<String, Void, String> {
         if(response.length() == 4) {
             Intent i = new Intent(context,MainActivity.class);
             context.startActivity(i);
+
             Toast.makeText(context.getApplicationContext(), "Registration Successful." ,Toast.LENGTH_SHORT).show();
         }
         else {
+
             Toast.makeText(context, "Sorry! Registration Failed. Please try again.", Toast.LENGTH_SHORT).show();
             Toast.makeText(context, "Please ensure that your NRIC is unique.", Toast.LENGTH_SHORT).show();
         }

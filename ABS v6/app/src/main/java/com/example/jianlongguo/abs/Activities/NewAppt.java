@@ -87,16 +87,18 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
 
 
         typeSpinner = (Spinner) findViewById(R.id.typeSpinner);
-        ArrayAdapter<String> typeSpinner_Array = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, array);
-        Toast.makeText(getApplicationContext(), "HELLO " + apptArray, Toast.LENGTH_SHORT).show();
+        //Log.d("appt array:", apptArray[0].toString());
+       // Toast.makeText(context, apptArray[0] +"dsdasdasd", Toast.LENGTH_SHORT).show();
 
-        typeSpinner_Array.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        typeSpinner.setAdapter(typeSpinner_Array);
+        //ArrayAdapter<String> typeSpinner_Array = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, apptArray);
+        //Toast.makeText(getApplicationContext(), "HELLO " + apptArray, Toast.LENGTH_SHORT).show();
+
+        //typeSpinner_Array.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        //typeSpinner.setAdapter(typeSpinner_Array);
         typeSpinner.setOnItemSelectedListener(this);
 
         Toast.makeText(this, clinicDD.getSelectedItem().toString(), Toast.LENGTH_LONG).show();
-        new TypeCheck(this).execute(clinicDD.getSelectedItem().toString());
-
+        new TypeCheck(this,this).execute("ENT");
 
         apptDateTxt.setOnClickListener(new OnClickListener() {
             @Override
@@ -169,10 +171,12 @@ public class NewAppt extends BaseActivity implements OnItemSelectedListener, OnC
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        switch(R.id.list_item){
+//        Toast.makeText(context, clinicDD.getSelectedItem().toString()+"dsdasdasd", Toast.LENGTH_LONG).show();
+
+        new TypeCheck(this,this).execute(clinicDD.getSelectedItem().toString());
+        switch(android.R.id.list){
             case R.id.clinicDD:
-                Toast.makeText(context, clinicDD.getSelectedItem().toString(), Toast.LENGTH_LONG).show();
-                new TypeCheck(this).execute(clinicDD.getSelectedItem().toString());
+                Toast.makeText(context, clinicDD.getSelectedItem().toString()+"dsdasdasd", Toast.LENGTH_LONG).show();
                 clinicDD.setSelection(position);
                 clinicDD.getSelectedItem();
                 break;
