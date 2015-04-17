@@ -49,8 +49,7 @@
                 android:inputType="textPassword"
                 android:layout_below="@+id/pwdLabel"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:drawableRight="@drawable/pencil"/>
+                android:layout_alignParentStart="true"/>
 
 
             <TextView
@@ -63,8 +62,7 @@
                 android:inputType="textEmailAddress"
                 android:layout_below="@+id/emailLabel"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:drawableRight="@drawable/pencil"/>
+                android:layout_alignParentStart="true"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -76,8 +74,7 @@
                 android:layout_below="@+id/addLabel"
                 android:layout_alignLeft="@+id/emailTxt"
                 android:layout_alignStart="@+id/emailTxt"
-                android:inputType="textMultiLine"
-                android:drawableRight="@drawable/pencil"/>
+                android:inputType="textMultiLine"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -89,8 +86,7 @@
                 android:layout_below="@+id/contactLabel"
                 android:layout_alignLeft="@+id/addTxt"
                 android:layout_alignStart="@+id/addTxt"
-                android:inputType="text|textPostalAddress"
-                android:drawableRight="@drawable/pencil"/>
+                android:inputType="text|textPostalAddress"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -252,6 +248,58 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:textStyle="bold"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/changePwdBut"
+                android:src="@drawable/pencil"
+                style="?android:borderlessButtonStyle"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:layout_below="@+id/pwdLabel"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-7dp" />
+
+            <ImageButton
+                style="?android:borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/changeContBut"
+                android:src="@drawable/pencil"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:layout_alignTop="@+id/contactTxt"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-7dp" />
+
+            <ImageButton
+                style="?android:borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/changeAddBut"
+                android:src="@drawable/pencil"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:layout_alignTop="@+id/addTxt"
+                android:layout_alignRight="@+id/addTxt"
+                android:layout_alignEnd="@+id/addTxt"
+                android:layout_marginTop="-7dp" />
+
+            <ImageButton
+                style="?android:borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/changeEmailBut"
+                android:src="@drawable/pencil"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:layout_alignTop="@+id/emailTxt"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-7dp" />
 
         </RelativeLayout>
 

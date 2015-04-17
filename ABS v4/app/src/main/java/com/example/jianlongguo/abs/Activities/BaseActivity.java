@@ -28,37 +28,33 @@ import java.util.ArrayList;
 public class BaseActivity extends ActionBarActivity implements View.OnClickListener{
 
     //nav drawer title
-    private CharSequence mDrawerTitle;
     //used to store app title
     private CharSequence mTitle;
     private ArrayList<NavItem>navDrawerItems;
     private DrawerAdapter adapter;
-
-    public String userid;
     public ListView mDrawerList;
     RelativeLayout mDrawerPane;
     private ActionBarDrawerToggle mDrawerToggle;
     private DrawerLayout mDrawerLayout;
     String id = "";
-    public String[] layers;
     ArrayList<NavItem> mNavItems = new ArrayList<>();
-    Patient p = new Patient();
     Context context;
     public static Patient p1 = new Patient();
 
     protected void onCreate(Bundle savedInstanceState) {
-        // DrawerLayout
+        //Create DrawerLayout
         super.onCreate(savedInstanceState);
         setContentView(R.layout.drawer_item);
-        Bundle b = getIntent().getExtras();
-        if (b!=null)
-        {
-            this.id = b.getString("id");
+        String jsonMyObject = null;
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            jsonMyObject = extras.getString("Patient");
         }
+        p1 = new Gson().fromJson(jsonMyObject, Patient.class);
     }
 
     public void set(String[]navMenuTitles,TypedArray navMenuIcons) {
-        mTitle = mDrawerTitle = getTitle();
+        mTitle = getTitle();
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.navList);
 
@@ -121,45 +117,40 @@ public class BaseActivity extends ActionBarActivity implements View.OnClickListe
         switch (position) {
             case 0:
                 Intent intent = new Intent(this, NewAppt.class);
-                Bundle b = new Bundle();
-                b.putString("id",userid);
-                intent.putExtras(b);
+                Gson gson = new Gson();
+                String myJson = gson.toJson(p1);
+                intent.putExtra("Patient",myJson);
                 startActivity(intent);
                 finish();
                 break;
             case 1:
                 Intent intent1 = new Intent(this, DisplayCurrAppt.class);
-                //Bundle c = new Bundle();
-                //c.putString("id",userid);
-                //intent1.putExtras(c);
+                Gson gson1 = new Gson();
+                String myJson1 = gson1.toJson(p1);
+                intent1.putExtra("Patient",myJson1);
                 startActivity(intent1);
                 finish();
                 break;
             case 2:
                 Intent k;
-                Gson gson = new Gson();
-                String myJson = gson.toJson(p1);
+                Gson gson2 = new Gson();
+                String myJson2 = gson2.toJson(p1);
                 k = new Intent(this,ManageProfile.class);
-                k.putExtra("myjson",myJson);
-
+                k.putExtra("Patient",myJson2);
+                if (this instanceof NewAppt){
+                    onBackPressed();
+                    onPause();
+                }
                 startActivity(k);
                 finish();
                 break;
             case 3:
                 Intent intent3 = new Intent(this, ContactUsActivity.class);
+                Gson gson3 = new Gson();
+                String myJson3 = gson3.toJson(p1);
+                intent3.putExtra("Patient",myJson3);
                 startActivity(intent3);
                 finish();
-                break;
-         /*   case 4:
-                Intent intent4 = new Intent(this, fifth.class);
-                startActivity(intent4);
-                finish();
-                break;
-            case 5:
-                Intent intent5 = new Intent(this, sixth.class);
-                startActivity(intent5);
-                finish();
-                break;*/
             default:
                 break;
         }
@@ -184,7 +175,7 @@ public class BaseActivity extends ActionBarActivity implements View.OnClickListe
     }
 
 
-    /***
+    /**
      * Called when invalidateOptionsMenu() is triggered
      */
     @Override
@@ -194,39 +185,6 @@ public class BaseActivity extends ActionBarActivity implements View.OnClickListe
 // menu.findItem(R.id.action_settings).setVisible(!drawerOpen);
         return super.onPrepareOptionsMenu(menu);
     }
-
-    /** Called when a particular item from the navigation drawer
-    * is selected. */
-    private void selectItemFromDrawer(int position) {
-        /*Fragment fragment = new PreferencesFragment();
-
-        FragmentManager fragmentManager = getFragmentManager();
-        fragmentManager.beginTransaction()
-                .replace(R.id.mainContent, fragment)
-                .commit();*/
-        Intent k = new Intent();
-
-        switch(mNavItems.get(position).mTitle) {
-            case "Appointments":
-                k.setClass(this,ManageAppt.class);
-                startActivity(k);
-                break;
-            case "Profile":
-                k.setClass(this,ManageProfile.class);
-                startActivity(k);
-                break;
-
-        }
-
-
-        mDrawerList.setItemChecked(position, true);
-        setTitle(mNavItems.get(position).mTitle);
-
-        // Close the drawer
-        mDrawerLayout.closeDrawer(mDrawerPane);
-    }
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -265,23 +223,6 @@ public class BaseActivity extends ActionBarActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-     /*   Intent j = new Intent();
-        Bundle bun = new Bundle();
-        bun.putString("id",id);
-        j.putExtras(bun);
-
-        switch (v.getId()){
-            case R.id.apptBut:
-                j.setClass(this,ManageAppt.class);
-                startActivity(j);
-                break;
-            case R.id.profileBut:
-                j.setClass(this,ManageProfile.class);
-                startActivity(j);
-                break;
-            default:
-                break;
-        }*/
     }
 
     @Override
@@ -290,17 +231,9 @@ public class BaseActivity extends ActionBarActivity implements View.OnClickListe
         mDrawerToggle.syncState();
     }
 
- /*   // Called when invalidateOptionsMenu() is invoked
-    public boolean onPrepareOptionsMenu(Menu menu) {
-        // If the nav drawer is open, hide action items related to the content view
-        boolean drawerOpen = mDrawerLayout.isDrawerOpen(mDrawerList);
-        menu.findItem(R.id.action_settings).setVisible(!drawerOpen);
-        return super.onPrepareOptionsMenu(menu);
-    }*/
-
     @Override
     public void onBackPressed() {
-        createDialog();
+        //createDialog();
     }
 
     private void createDialog() {
@@ -324,7 +257,7 @@ public class BaseActivity extends ActionBarActivity implements View.OnClickListe
         onPause();
     }
 
-    private void createLogoutDialog() {
+    public void createLogoutDialog() {
         AlertDialog.Builder alertDlg = new AlertDialog.Builder(this);
         alertDlg.setMessage("Are you sure you want to logout?");
         alertDlg.setCancelable(false); // We avoid that the dialong can be cancelled, forcing the user to choose one of the options

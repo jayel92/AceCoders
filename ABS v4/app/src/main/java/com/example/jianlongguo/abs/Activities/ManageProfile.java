@@ -10,11 +10,12 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import com.example.jianlongguo.abs.DB.ProfileBackground;
 import com.example.jianlongguo.abs.DB.ProfileEditBackground;
 import com.example.jianlongguo.abs.Entities.Patient;
 import com.google.gson.Gson;
@@ -26,7 +27,8 @@ public class ManageProfile extends BaseActivity implements View.OnClickListener 
     EditText result;
     RadioGroup mocRadio;
     RadioButton smsRadio, emailRadio;
-    Button changeBut, changeAddBut, changeConBut, saveBut;
+    ImageButton changeContBut, changePwdBut, changeAddBut, changeEmailBut;
+    Button saveBut;
     String id = "";
     String mode = "";
 
@@ -38,13 +40,20 @@ public class ManageProfile extends BaseActivity implements View.OnClickListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manage_profile);
 
-            Gson gson = new Gson();
-            p1 = gson.fromJson(getIntent().getStringExtra("myjson"), Patient.class);
+        String jsonMyObject = null;
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            jsonMyObject = extras.getString("Patient");
+        }
+        p1 = new Gson().fromJson(jsonMyObject, Patient.class);
+
+        //       Gson gson = new Gson();
+        //         p1 = gson.fromJson(getIntent().getStringExtra("myjson"), Patient.class);
         //}catch (Exception e){
 
 //        }
 
-        id = p1.toString();
+        //  id = p1.toString();
 
         //set up the drawer
         navMenuTitles = getResources().getStringArray(R.array.nav_drawer_items);
@@ -74,11 +83,31 @@ public class ManageProfile extends BaseActivity implements View.OnClickListener 
         emailRadio = (RadioButton) findViewById(R.id.emailRadio);
         saveBut = (Button) findViewById(R.id.saveBut);
 
+        changePwdBut = (ImageButton)findViewById(R.id.changePwdBut);
+        changeContBut = (ImageButton)findViewById(R.id.changeContBut);
+        changeAddBut = (ImageButton)findViewById(R.id.changeAddBut);
+        changeEmailBut = (ImageButton)findViewById(R.id.changeEmailBut);
+
+        changePwdBut.setOnClickListener(this);
+        changeAddBut.setOnClickListener(this);
+        changeEmailBut.setOnClickListener(this);
+        changeContBut.setOnClickListener(this);
+        saveBut.setOnClickListener(saveHandler);
+
         mocRadio.setOnClickListener(radioHandler);
         smsRadio.setOnClickListener(radioHandler);
         emailRadio.setOnClickListener(radioHandler);
 
-        new ProfileBackground(this,nricTxt,pwdTxt,emailTxt,addTxt,contactTxt,dobTxt).execute(id);
+        nricTxt.setText(p1.getNric());
+        pwdTxt.setText(p1.getPassword());
+        emailTxt.setText(p1.getEmail());
+        addTxt.setText(p1.getAddress());
+        contactTxt.setText(p1.getContact());
+        dobTxt.setText(p1.getDob());
+        if (p1.getMOC().equals("1"))
+            smsRadio.toggle();
+        else
+            emailRadio.toggle();
 
     }
 
@@ -94,31 +123,54 @@ public class ManageProfile extends BaseActivity implements View.OnClickListener 
     public void onClick(final View v) {
         //gets activity_manage_profile.xml view
         LayoutInflater li = LayoutInflater.from(context);
-        View promptsView = li.inflate(R.layout.prompts, null);
+        final View promptsView;
+
+        if (v.getId()==R.id.changePwdBut)
+            promptsView = li.inflate(R.layout.password_prompt, null);
+        else
+            promptsView = li.inflate(R.layout.prompts, null);
+
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
 
         //set activity_manage_profile.xml to alertdialog builder
         alertDialogBuilder.setView(promptsView);
-        final EditText userInput = (EditText) promptsView.findViewById(R.id.editTextDialogUserInput);
 
         //set dialog message
-        alertDialogBuilder.setCancelable(false)
+        alertDialogBuilder.setCancelable(true)
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
 
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        TextView enter1 = (TextView) findViewById(R.id.enterTxt);
+                        EditText userInput1 = (EditText) promptsView.findViewById(R.id.userInput1);
+                        TextView enter2 = (TextView) findViewById(R.id.enter2);
+                        TextView enter3 = (TextView) findViewById(R.id.enter3);
+                        EditText userInput2 = (EditText) promptsView.findViewById(R.id.userInput2);
+                        EditText userInput3 = (EditText) promptsView.findViewById(R.id.userInput3);
                         switch (v.getId()) {
-                            /*case R.id.changeAddBut:
-                                ((InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE))
-                                        .showSoftInput(addTxt, InputMethodManager.SHOW_FORCED);
-                               // addTxt.setText(userInput.getText());
+                            case R.id.changeAddBut:
+                                // ((InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE))
+                                //       .showSoftInput(addTxt, InputMethodManager.SHOW_FORCED);
+                                addTxt.setText(userInput1.getText());
+
                                 break;
                             case R.id.changeEmailBut:
-                                emailTxt.setText(userInput.getText());
+                                emailTxt.setText(userInput1.getText());
                                 break;
-                            case R.id.changeConBut:
-                                contactTxt.setText(userInput.getText());
-                                break;**/
+                            case R.id.changeContBut:
+
+                                contactTxt.setText(userInput1.getText());
+                                break;
+                            case R.id.changePwdBut:
+                                if (userInput1.getText().toString().equals(p1.getPassword().toString())) {
+                                    if (userInput2.getText().toString().equals(userInput3.getText().toString())) {
+                                        pwdTxt.setText(userInput3.getText());
+                                    }
+                                } else
+                                    Toast.makeText(context, "Please ensure your password is typed in correctly.", Toast.LENGTH_SHORT).show();
+
+                            default:
+                                break;
                         }
 
                     }
@@ -156,15 +208,19 @@ public class ManageProfile extends BaseActivity implements View.OnClickListener 
 
     View.OnClickListener saveHandler = new View.OnClickListener(){
         public void onClick(View v){
+            String password = pwdTxt.getText().toString();
             String email = emailTxt.getText().toString();
             String address = addTxt.getText().toString();
             String contact = contactTxt.getText().toString();
             if (smsRadio.isChecked())
-                mode = "0";
-            else if (emailRadio.isChecked())
                 mode = "1";
-            new ProfileEditBackground(context).execute(id,email,address,contact,mode);
+            else if (emailRadio.isChecked())
+                mode = "0";
+
+            new ProfileEditBackground(context,p1,password,email,address,contact,mode).execute();
+
+
+
         }
     };
 }
-

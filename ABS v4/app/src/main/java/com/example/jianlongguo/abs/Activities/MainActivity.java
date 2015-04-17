@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.jianlongguo.abs.Entities.Patient;
+import com.example.jianlongguo.abs.DB.LoginBackground;
 import com.google.gson.Gson;
 
 
@@ -81,10 +81,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         //this is what runs when you click the button
         String name = username.getText().toString();
         String pass = password.getText().toString();
-        Patient p1 = new Patient();
+       // Patient p1 = new Patient(name,pass);
         Intent k;
-        p1.setNric(name);
-        p1.setPassword(pass);
+
 
         switch (v.getId()){
             case R.id.loginBut:
@@ -92,20 +91,21 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                     Toast.makeText(getBaseContext(), "No network connection! Please ensure that you have access to the Internet!", Toast.LENGTH_SHORT).show();
                 else{
                     if (name.isEmpty() || pass.isEmpty()) {
-                       // Display toast
+                        Toast.makeText(getBaseContext(), "Please fill in both fields!", Toast.LENGTH_SHORT).show();
+                        // Display toast
                     } else {
-                    try {
-                        Gson gson = new Gson();
-                        String myJson = gson.toJson(p1);
-                        k = new Intent(this,DisplayCurrAppt.class);
-                        k.putExtra("myjson",myJson);
-                        startActivity(k);
-                        //new LoginBackground(this).execute(name, pass);
-                            } catch (Exception e) {
-                                username.setText(e.toString());
-                            }
+                        try {
+                            Gson gson = new Gson();
+                   //         String myJson = gson.toJson(p1);
+                   //         k = new Intent(this,DisplayCurrAppt.class);
+                    //        k.putExtra("myjson",myJson);
+                   //         startActivity(k);
+                            new LoginBackground(this).execute(name, pass);
+                        } catch (Exception e) {
+                            username.setText(e.toString());
                         }
                     }
+                }
                 break;
 
             case R.id.registerBut:
@@ -113,7 +113,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 startActivity(k);
                 break;
             case R.id.forgotPassBut:
-                Toast.makeText(getApplicationContext(), "Why you forget your password!",Toast.LENGTH_SHORT).show();
+                ResetPasswordDialog dia = new ResetPasswordDialog(this);
+                dia.show();
             default:
                 break;
         }

@@ -35,20 +35,21 @@ public class ApptAdapter extends ArrayAdapter<Appointment> {
             v = vi.inflate(R.layout.appt_list, null);
         }
         Appointment appt = items.get(position);
-        if (appt != null) {
+
+        if (appt.getId() != null) {
             TextView clinic = (TextView) v.findViewById(R.id.clinic);
             TextView type = (TextView) v.findViewById(R.id.type);
             TextView date = (TextView) v.findViewById(R.id.date);
             TextView time = (TextView) v.findViewById(R.id.time);
-            if (clinic != null) {
-                clinic.setText(appt.getClinic());
+
+            clinic.setText(appt.getClinic());
                 if (type != null)
                     type.setText("Type: " + appt.getType());
                 if (date != null)
                     date.setText("Date: " + appt.getDate());
                 if (time != null)
                     time.setText("Time: " + appt.getTime() + "hrs");
-            }
+
         }
         return v;
 

@@ -46,7 +46,19 @@
         </activity>
         <activity
             android:name=".ApptInfoActivity"
-            android:label="@string/title_activity_appt_info" >
+            android:label="Details"
+            android:parentActivityName="com.example.jianlongguo.abs.Activities.DisplayCurrAppt">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jianlongguo.abs.Activities.DisplayCurrAppt" />
+        </activity>
+        <activity
+            android:name=".ChangeAppt"
+            android:label="Change Appointment"
+            android:parentActivityName="com.example.jianlongguo.abs.Activities.ApptInfoActivity">>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jianlongguo.abs.Activities.DisplayCurrAppt" />
         </activity>
     </application>
 

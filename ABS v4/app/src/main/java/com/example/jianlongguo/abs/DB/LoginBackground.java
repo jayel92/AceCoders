@@ -7,10 +7,11 @@ package com.example.jianlongguo.abs.DB;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.os.Bundle;
 import android.widget.Toast;
 
 import com.example.jianlongguo.abs.Activities.DisplayCurrAppt;
+import com.example.jianlongguo.abs.Entities.Patient;
+import com.google.gson.Gson;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -25,9 +26,12 @@ public class LoginBackground extends AsyncTask<String, Void, String> {
     private Exception exception;
     private String response = null;
     private String res = null;
+
     public LoginBackground(Context context) {
         this.context = context;
     }
+
+
     protected String doInBackground(String... arg0) {
         try {
             String name = (String)arg0[0];
@@ -59,17 +63,24 @@ public class LoginBackground extends AsyncTask<String, Void, String> {
     }
 
     protected void onPostExecute(String result) {
-        if(response.length()>0) {
-            Intent i = new Intent(context, DisplayCurrAppt.class);
+        try {
+            if (response.length() > 0) {
+                String[] arr = new String[14];
+                for (int i = 0; i < 14; i++)
+                    arr[i] = "";
+                arr = result.split("<br>", -1);
+                Patient pat = new Patient(arr[0], arr[1], arr[2], arr[3], arr[4], arr[5], arr[6], arr[7], arr[8], arr[9], arr[10], arr[11], arr[12]);
 
-            Bundle b = new Bundle();
-            b.putString("id",response);
-            i.putExtras(b);
-
-            context.startActivity(i);
+                Intent i = new Intent(context, DisplayCurrAppt.class);
+                i.putExtra("Patient", new Gson().toJson(pat));
+                context.startActivity(i);
+            } else
+                Toast.makeText(context, "Sorry! Incorrect Username or Password.", Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            Toast.makeText(context, "Database connection is unavailable now. Please try again later", Toast.LENGTH_SHORT).show();
         }
-        else
-            Toast.makeText(context, "Sorry! Incorrect Username or Password.", Toast.LENGTH_SHORT).show();
+
+
 
     }
 }

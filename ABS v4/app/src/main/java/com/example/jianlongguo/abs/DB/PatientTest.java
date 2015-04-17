@@ -65,7 +65,7 @@ public class PatientTest {
     }
 
     public void setEmail(String password){
-        this.pwd = password;
+        this.emailStr = password;
     }
 
     public void setAddress(String address){this.address = address; }

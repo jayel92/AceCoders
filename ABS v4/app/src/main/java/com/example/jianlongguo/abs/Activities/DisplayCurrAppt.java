@@ -2,14 +2,18 @@ package com.example.jianlongguo.abs.Activities;
 
 import android.content.Intent;
 import android.content.res.TypedArray;
+import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.jianlongguo.abs.DB.DisplayBackground;
+import com.example.jianlongguo.abs.DB.DisplayDentalBackground;
+import com.example.jianlongguo.abs.DB.DisplayWomenBackground;
 import com.example.jianlongguo.abs.Drawer.ApptAdapter;
 import com.example.jianlongguo.abs.Entities.Appointment;
 import com.example.jianlongguo.abs.Entities.Patient;
@@ -18,76 +22,83 @@ import com.google.gson.Gson;
 import java.util.ArrayList;
 
 
-public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemClickListener,View.OnClickListener {
+public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemClickListener, View.OnClickListener, AsyncResponse {
 
     TextView currentApptTxt;
-    GridView currApptGrid;
     ListView list;
+    int counter;
 
     private String[] navMenuTitles;
     private TypedArray navMenuIcons;
     ArrayList<Appointment> apptArray = new ArrayList<>();
+    private Patient p1 = new Patient();
+    private Appointment ent = new Appointment();
+    private Appointment den = new Appointment();
+    private Appointment women = new Appointment();
+    private ApptAdapter myAdapter;
 
+
+    void startMyTask(AsyncTask asyncTask) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
+            asyncTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+        else
+            asyncTask.execute();
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_display_curr_appt);
 
-        Gson gson = new Gson();
-        p1 = gson.fromJson(getIntent().getStringExtra("myjson"), Patient.class);
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_display_curr_appt);
+            context = getApplicationContext();
 
+            String jsonpatient = null;
 
-        userid = p1.getNric();
-        //Bundle b = getIntent().getExtras();
-        //if (b!=null)
-        //{
-        //  userid = b.getString("id");
-        //}
+            Bundle extras = getIntent().getExtras();
+            if (extras != null) {
+                jsonpatient = extras.getString("Patient");
 
-        //set up the drawer
-        navMenuTitles = getResources().getStringArray(R.array.nav_drawer_items);
-        navMenuIcons = getResources().obtainTypedArray(R.array.nav_drawer_icons);
-        set(navMenuTitles, navMenuIcons);
-
-        currentApptTxt = (TextView) findViewById(R.id.currentApptTxt);
-        //currApptGrid = (GridView)findViewById(R.id.currApptGrid);
-
-
-        list = (ListView) findViewById(R.id.listView);
-        //ArrayList<String> myArrayList = new ArrayList<String>();
-        //String[] myStrArr = {"Dental:","ENT:","Women's Health:"};
-
-        //PUT APPT INFO INTO AN ARRAY TO DISPLAY LATER
-        // Appointment appt[] = ...
-
-        //KOK CHIN, LOOK HERE!
-        //KOK CHIN, LOOK HERE!
-        // KOK CHIN, LOOK HERE!
-        // KOK CHIN, LOOK HERE!
-        // KOK CHIN, LOOK HERE!
-        // KOK CHIN, LOOK HERE! Following are Temporary display.... if can put each appointment out
-        //as an object then can just .add them!
-        Appointment app1 = new Appointment("Dental", "1", "16-06-2015", "1500-1545");
-        Appointment app2 = new Appointment("Women's Health Clinic", "3", "20-06-2015", "1100-1145");
-        Appointment app3 = new Appointment("ENT", "2", "16-07-2015", "0900-0945");
-        Appointment app4 = new Appointment("Dental", "1", "16-06-2015", "1500-1545");
-        apptArray.add(app1);
-        apptArray.add(app2);
-        apptArray.add(app3);
-        apptArray.add(app4);
-        ApptAdapter myAdapter = new ApptAdapter(this, R.layout.appt_list, apptArray);
-        list.setAdapter(myAdapter);
-        list.setItemsCanFocus(true);
-
-        AdapterView.OnItemClickListener listener = new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                goNext(position);
             }
-        };
+            p1 = new Gson().fromJson(jsonpatient, Patient.class);
 
-        list.setOnItemClickListener(listener);
+            DisplayBackground taskent = new DisplayBackground(context, p1);
+            taskent.delegate = this;
+            startMyTask(taskent);
+
+            DisplayDentalBackground taskden = new DisplayDentalBackground(context, p1);
+            taskden.delegate = this;
+            startMyTask(taskden);
+
+            DisplayWomenBackground taskwomen = new DisplayWomenBackground(context, p1);
+            taskwomen.delegate = this;
+            startMyTask(taskwomen);
+
+            //set up the drawer
+            navMenuTitles = getResources().getStringArray(R.array.nav_drawer_items);
+            navMenuIcons = getResources().obtainTypedArray(R.array.nav_drawer_icons);
+            set(navMenuTitles, navMenuIcons);
+
+
+            currentApptTxt = (TextView) findViewById(R.id.currentApptTxt);
+
+
+
+          //  String[] x = new String[1];
+            //x[1]= "ab";
+
+            list = (ListView) findViewById(R.id.listView);
+            myAdapter = new ApptAdapter(this, R.layout.appt_list, apptArray);
+            list.setAdapter(myAdapter);
+            list.setItemsCanFocus(true);
+            AdapterView.OnItemClickListener listener = new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    goNext(position);
+                }
+            };
+
+            list.setOnItemClickListener(listener);
 
     }
 
@@ -106,40 +117,46 @@ public class DisplayCurrAppt extends BaseActivity implements AdapterView.OnItemC
     private void goNext(int position) {
 // update the main content by replacing fragments
 
-                Intent k;
-                //Patient p1 = new Patient();
-                Appointment appt = apptArray.get(position);
-                Gson gson = new Gson();
-                String myJson = gson.toJson(appt);
-                k = new Intent(this,ApptInfoActivity.class);
-                k.putExtra("myjson",myJson);
-                //Intent intent1 = new Intent(this, DisplayCurrAppt.class);
-                //Bundle c = new Bundle();
-                //c.putString("id",userid);
-                //intent1.putExtras(c);
-                startActivity(k);
-                finish();
+        Intent k;
+        //Patient p1 = new Patient();
+        Appointment appt = apptArray.get(position);
+        Gson gson = new Gson();
+        String myJson = gson.toJson(appt);
+        String pat = gson.toJson(p1);
+        k = new Intent(this, ApptInfoActivity.class);
+        k.putExtra("myjson", myJson);
+        k.putExtra("patient", pat);
+        startActivity(k);
+        this.finish();
     }
 
-    private void displayView(int position) {
-// update the main content by replacing fragments
-        switch (position) {
-            case 2:
-                Intent k;
-                Appointment appt = apptArray.get(position);
-                Gson gson = new Gson();
-                String myJson = gson.toJson(appt);
-                k = new Intent(this,ManageProfile.class);
-                k.putExtra("myjson",myJson);
+    public void processFinish(Appointment result) {
+        if (result.getClinic() != null) {
+            if (result.getClinic() == "ENT")
+                this.ent = result;
+            else if (result.getClinic() == "Dental")
+                this.den = result;
+            else if (result.getClinic() == "Women Health")
+                this.women = result;
 
-                startActivity(k);
-                finish();
-                break;
+            apptArray.add(result);
+
+            myAdapter.notifyDataSetChanged();
         }
+        counter++;
+        if (counter == 3)
+            if (apptArray.isEmpty()) {
+                currentApptTxt.setText("You have no scheduled appointment yet.");
+            }
+            else {
+                currentApptTxt.setText("Your upcoming appointments:");
+            }
     }
 
 
     public Patient getPatient() {
         return p1;
     }
+
+
 }

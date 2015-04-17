@@ -1,7 +1,8 @@
 <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#ffffff">
 
     <FrameLayout
         android:id="@+id/content_frame"
@@ -32,6 +33,19 @@
                 android:layout_centerHorizontal="true"
                 android:choiceMode="singleChoice"
                 android:layout_below="@+id/currentApptTxt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nilAppt"
+                android:text=""
+                android:layout_below="@+id/currentApptTxt"
+                android:layout_marginTop="33dp"
+                android:layout_alignRight="@+id/listView"
+                android:layout_alignEnd="@+id/listView"
+                android:textAlignment="center"
+                android:focusableInTouchMode="false"/>
+
 
         </RelativeLayout>
 

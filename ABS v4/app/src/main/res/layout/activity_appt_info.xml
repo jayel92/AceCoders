@@ -1,7 +1,8 @@
 <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
 android:id="@+id/drawer_layout"
 android:layout_width="match_parent"
-android:layout_height="match_parent">
+android:layout_height="match_parent"
+    android:background="#ffffff">
 
 <FrameLayout
     android:id="@+id/content_frame"
@@ -20,23 +21,25 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/clinicLabel"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="96dp"
             android:text="Clinic:"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/typeLabel" />
+            android:layout_alignParentStart="true" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/typeLabel"
-            android:text="Type:"
+            android:text="fsdfasdfdsf/nsadfasdfasd/ndfasdfa/nfsdfsdf/nsdfasdf"
             android:textAppearance="?android:attr/textAppearanceLarge"
+            android:paddingRight="120dp"
+            android:inputType="textMultiLine"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="20dp" />
+            android:layout_marginTop="20dp"
+            android:layout_alignBottom="@+id/clinicLabel" />
 
         <TextView
             android:layout_width="match_parent"
@@ -53,11 +56,10 @@ android:layout_height="match_parent">
             android:layout_height="wrap_content"
             android:id="@+id/dateLabel"
             android:text="Date:"
-            android:layout_centerVertical="true"
+            android:layout_below="@+id/locLabel"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="16dp"
-            android:layout_below="@+id/locLabel" />
+            android:layout_marginTop="12dp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -87,6 +89,29 @@ android:layout_height="match_parent">
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginTop="8dp" />
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancelApptBut"
+                android:src="@drawable/cancel"
+            style="?android:borderlessButtonStyle"
+            android:minWidth="0dp"
+            android:layout_alignTop="@+id/typeLabel"
+            android:layout_alignRight="@+id/clinicLabel"
+            android:layout_alignEnd="@+id/clinicLabel" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/changeApptBut"
+            android:src="@drawable/change"
+            style="?android:borderlessButtonStyle"
+            android:minWidth="0dp"
+            android:layout_alignTop="@+id/typeLabel"
+            android:layout_toLeftOf="@+id/cancelApptBut"
+            android:layout_toStartOf="@+id/cancelApptBut" />
+
 
     </RelativeLayout>
 

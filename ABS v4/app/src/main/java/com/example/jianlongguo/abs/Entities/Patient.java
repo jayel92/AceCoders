@@ -1,27 +1,34 @@
 package com.example.jianlongguo.abs.Entities;
 
-import java.util.Date;
-
 /**
  * Created by jianlongguo on 11/4/15.
  */
 public class Patient{
 
     String name, email, address, gender, mode, nric, password;
-    Date dob;
-    int contact;
+    String dob;
+    String contact;
+    String test, apptdental, apptent, apptwomen;
 
-    public Patient(){};
+    public Patient(){}
 
-    public Patient(String nric, String password){
+    public Patient(String nric, String name,String password, String email, String address, String gender, String contact, String mode, String dob, String test, String apptdental,String apptent, String apptwomen){
         this.nric = nric;
         this.password = password;
-        this.email = this.address = this.gender = this.mode = this.name = null;
-        this.dob = null;
-        this.contact = 0;
+        this.email = email;
+        this.address = address;
+        this.gender = gender;
+        this.name = name;
+        this.dob = dob;
+        this.contact = contact;
+        this.mode = mode;
+        this.apptent = apptent;
+        this.apptdental = apptdental;
+        this.apptwomen = apptwomen;
+        this.test = test;
     }
 
-    public void setDetails(String name, String address, String gender, String mode, String email, Date dob, int contact){
+    public void setDetails(String name, String address, String gender, String mode, String email, String dob, String contact){
         this.email = email;
         this.address = address;
         this.contact = contact;
@@ -29,6 +36,11 @@ public class Patient{
         this.gender = gender;
         this.mode = mode;
         this.name = name;
+    }
+
+    public Patient(String nric, String password){
+        this.nric = nric;
+        this.password = password;
     }
 
     public String getName() {
@@ -47,15 +59,15 @@ public class Patient{
         return this.gender;
     }
 
-    public String getMode() {
+    public String getMOC() {
         return this.mode;
     }
 
-    public Date getDob(){
+    public String getDob(){
         return this.dob;
     }
 
-    public int getContact() {
+    public String getContact() {
         return this.contact;
     }
 
@@ -73,6 +85,20 @@ public class Patient{
 
     public void setPassword(String password){
         this.password = password;
+    }
+
+    public void setEmail(String password){
+        this.email = password;
+    }
+
+    public void setAddress(String address){this.address = address; }
+
+    public void setContact(String contact){
+        this.contact = contact;
+    }
+
+    public void setMOC(String mode){
+        this.mode = mode;
     }
 
 }
