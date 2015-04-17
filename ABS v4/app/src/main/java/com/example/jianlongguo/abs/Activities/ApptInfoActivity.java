@@ -134,7 +134,7 @@ public class ApptInfoActivity extends ActionBarActivity implements View.OnClickL
 
     @Override
     public void onBackPressed() {
-        createDialog();
+        //createDialog();
     }
 
     private void createDialog() {
