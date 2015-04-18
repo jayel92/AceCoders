@@ -115,9 +115,7 @@ public class CreateApptUI extends BaseActivity implements OnItemSelectedListener
             } catch (ParseException e) {
                 e.printStackTrace();
             }
-            int week = calendar.get(Calendar.WEEK_OF_YEAR);
-            Toast.makeText(getApplicationContext(), dayOfMonth +" "+ monthOfYear+" "+ year +" "+ week, Toast.LENGTH_SHORT).show();
-            boolean check = apptMgr.checkValidDate(dayOfMonth, monthOfYear, year, week);
+            boolean check = apptMgr.checkValidDate(dayOfMonth, monthOfYear, year, dateStr);
             if (!check){
                 Toast.makeText(getApplicationContext(), "Appointment can only be booked between 2 week to 2 months in advance" +
                         " from current Date!", Toast.LENGTH_SHORT).show();

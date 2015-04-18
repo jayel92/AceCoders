@@ -1,7 +1,6 @@
 package com.example.jianlongguo.abs.Activities;
 
 import android.app.Activity;
-import android.widget.Toast;
 
 import com.example.jianlongguo.abs.Entities.Appointment;
 
@@ -22,20 +21,20 @@ public class ApptManager extends Activity{
 
     public ApptManager (){}
 
-    public boolean checkValidDate(int apptDay, int apptMonth, int apptYear, int apptWeek){
+    public boolean checkValidDate(int apptDay, int apptMonth, int apptYear, String date){
         String dateStr = (String.valueOf(apptDay) + "-" + String.valueOf(apptMonth+1) + "-" + String.valueOf(apptYear));
         DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
         Date startDate = null;
+
         try {
             startDate = df.parse(dateStr);
         } catch (ParseException e) {
             e.printStackTrace();
         }
+        Calendar cal = DateToCalendar(startDate);
         int curWeek = currDate.get(Calendar.WEEK_OF_YEAR);
         int curYear = currDate.get(Calendar.YEAR);
-        Toast.makeText(getApplicationContext(), curWeek, Toast.LENGTH_SHORT).show();
-        Toast.makeText(getApplicationContext(), curYear, Toast.LENGTH_SHORT).show();
-        Toast.makeText(getApplicationContext(), apptDay + " " + apptMonth + " " + curYear + " " + curWeek, Toast.LENGTH_SHORT).show();
+        int apptWeek = cal.get(Calendar.WEEK_OF_YEAR);
 
         //to allow appointments for at least 2 weeks in advance
         if ((curWeek + MINWEEKS < apptWeek && apptWeek <= curWeek + WEEKSINADV && curYear == apptYear)
