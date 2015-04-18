@@ -3,7 +3,6 @@ package com.example.jianlongguo.abs.UI;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.text.Html;
@@ -22,10 +21,8 @@ import com.google.gson.Gson;
 
 public class ApptInfoUI extends ActionBarActivity implements View.OnClickListener {
 
-    TextView clinicLabel, typeLabel, locLabel, timeLabel, dateLabel, remarksLabel, remarksTxt;
+    TextView clinicLabel, typeLabel, timeLabel, dateLabel, remarksLabel, remarksTxt;
     ImageButton changeApptBut, cancelApptBut;
-    private String[] navMenuTitles;
-    private TypedArray navMenuIcons;
     Appointment appt;
     Patient p1;
 
@@ -51,10 +48,6 @@ public class ApptInfoUI extends ActionBarActivity implements View.OnClickListene
 
         changeApptBut.setOnClickListener(this);
         cancelApptBut.setOnClickListener(this);
-        //set up the drawer
-       // navMenuTitles = getResources().getStringArray(R.array.nav_drawer_items);
-        //navMenuIcons = getResources().obtainTypedArray(R.array.nav_drawer_icons);
-        //set(navMenuTitles, navMenuIcons);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
@@ -64,17 +57,21 @@ public class ApptInfoUI extends ActionBarActivity implements View.OnClickListene
         dateLabel.setText(Html.fromHtml("<b>" + "Date: " + "</b>" + "<i>" + appt.getDate() + "</i>"));
         timeLabel.setText(Html.fromHtml("<b>" + "Time: " + "</b>" + "<i>" + appt.getTime() + "hrs" + "</i>"));
 
-        if(appt.getReferral().equals("1")){
-            remarksTxt.setText("For referrals, please bring along your referral letters and past medical records " +
-                    "if this is your first visit.");
-        }
-        if(appt.getType().equals("Blood Test")){
-            remarksTxt.append("For Blood Cholesterol Test, please refrain from eating anything and only drink water " +
-                    "for 9 to 12 hours before the test.");
-        }
-        if (!appt.getReferral().equals("1") || appt.getType().equals("Blood Test")){
+        if (!appt.getReferral().equals("1") && appt.getType().equals("Blood Test")){
             remarksTxt.setText("NIL");
         }
+
+        else{
+            if(appt.getReferral().equals("1")){
+                remarksTxt.setText("For referrals, please bring along your referral letters and past medical records " +
+                        "if this is your first visit.\n");
+            }
+            if(appt.getType().equals("Blood Test")){
+                remarksTxt.append("For Blood Cholesterol Test, please refrain from eating anything and only drink water " +
+                        "for 9 to 12 hours before the test.");
+            }
+        }
+
     }
 
 

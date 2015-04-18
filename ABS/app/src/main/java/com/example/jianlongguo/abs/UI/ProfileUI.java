@@ -18,8 +18,8 @@ import android.widget.Toast;
 
 import com.example.jianlongguo.abs.Activities.BaseActivity;
 import com.example.jianlongguo.abs.Activities.R;
-import com.example.jianlongguo.abs.DB.ProfileEditBackground;
 import com.example.jianlongguo.abs.Entities.Patient;
+import com.example.jianlongguo.abs.Manager.ProfileManager;
 import com.google.gson.Gson;
 
 public class ProfileUI extends BaseActivity implements View.OnClickListener {
@@ -209,8 +209,8 @@ public class ProfileUI extends BaseActivity implements View.OnClickListener {
                 mode = "1";
             else if (emailRadio.isChecked())
                 mode = "0";
-
-            new ProfileEditBackground(context,p1,password,email,address,contact,mode).execute();
+            ProfileManager man = new ProfileManager();
+            man.change(context, p1, password, email, address, contact, mode);
 
 
 

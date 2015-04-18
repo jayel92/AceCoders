@@ -35,7 +35,6 @@ public class DeleteBackground extends AsyncTask<Void, Void, String> {
 
         protected String doInBackground(Void... arg0) {
             try {
-                ;
                 String link = "";
                 if (appt.getClinic().equals("Dental"))
                     link = "http://acecoders.netau.net/deleteDental.php";

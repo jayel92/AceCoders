@@ -3,7 +3,6 @@ package com.example.jianlongguo.abs.DB;
 import android.content.Context;
 import android.os.AsyncTask;
 
-import com.example.jianlongguo.abs.Activities.AsyncResponse;
 import com.example.jianlongguo.abs.Entities.Appointment;
 import com.example.jianlongguo.abs.Entities.Patient;
 

@@ -14,7 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.jianlongguo.abs.Activities.R;
-import com.example.jianlongguo.abs.DB.RegisterBackground;
+import com.example.jianlongguo.abs.Manager.ProfileManager;
 
 public class RegAccDetailUI extends ActionBarActivity implements View.OnClickListener{
 
@@ -116,7 +116,8 @@ public class RegAccDetailUI extends ActionBarActivity implements View.OnClickLis
                     else if (feRad.isChecked())
                         gender = "1";
                     try {
-                        new RegisterBackground(this).execute(user,pwd,nameStr,emailStr,addressStr,gender,phoneNoStr,mode,dobStr);
+                        ProfileManager man = new ProfileManager();
+                        man.add(this, user, pwd, nameStr, emailStr, addressStr, gender, phoneNoStr, mode, dobStr);
                     } catch (Exception e) {
                         name.setText(e.toString());
                     }

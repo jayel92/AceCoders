@@ -62,6 +62,8 @@ public class NewApptBackground extends AsyncTask<String, Void, String> {
                     + "=" + URLEncoder.encode(referral, "UTF-8");
             data += "&" + URLEncoder.encode("Type", "UTF-8")
                     + "=" + URLEncoder.encode(type, "UTF-8");
+            data += "&" + URLEncoder.encode("Clinic", "UTF-8")
+                    + "=" + URLEncoder.encode(clinic, "UTF-8");
             URL url = new URL(link);
             URLConnection conn = url.openConnection();
             conn.setDoOutput(true);

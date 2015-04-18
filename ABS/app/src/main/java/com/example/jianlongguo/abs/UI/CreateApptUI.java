@@ -20,16 +20,11 @@ import android.widget.Toast;
 
 import com.example.jianlongguo.abs.Activities.BaseActivity;
 import com.example.jianlongguo.abs.Activities.R;
-import com.example.jianlongguo.abs.DB.NewApptBackground;
 import com.example.jianlongguo.abs.Entities.Patient;
 import com.example.jianlongguo.abs.Manager.ApptManager;
 import com.google.gson.Gson;
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 
 public class CreateApptUI extends BaseActivity implements OnItemSelectedListener, OnClickListener{
 
@@ -105,22 +100,13 @@ public class CreateApptUI extends BaseActivity implements OnItemSelectedListener
     OnDateSetListener onDate = new OnDateSetListener() {
         @Override
         public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-            String dateStr = (String.valueOf(dayOfMonth) + "-" + String.valueOf(monthOfYear + 1) + "-" + String.valueOf(year));
-            DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
-            Date startDate = null;
-            try {
-                startDate = df.parse(dateStr);
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
-            boolean check = apptMgr.checkValidDate(dayOfMonth, monthOfYear, year, dateStr);
-            if (!check){
+            String check = apptMgr.checkValidDate(dayOfMonth,monthOfYear,year);
+            if (check.equals("-1")){
                 Toast.makeText(getApplicationContext(), "Appointment can only be booked between 2 week to 2 months in advance" +
                         " from current Date!", Toast.LENGTH_SHORT).show();
                 showDatePicker();
             }
-            String newDateString = df.format(startDate);
-            apptDateTxt.setText(newDateString);
+            apptDateTxt.setText(check);
         }
     };
 
@@ -171,12 +157,12 @@ public class CreateApptUI extends BaseActivity implements OnItemSelectedListener
                     else
                         referral = "0";
                     try {
-                        new NewApptBackground(this,p1).execute(p1.getNric(),desStr,dateStr,time,referral,type,clinic);
+                        ApptManager apptMgr = new ApptManager();
+                        apptMgr.add(this, p1, p1.getNric(), desStr, dateStr, time, referral, type, clinic);
 
                     } catch (Exception e) {
-                        descTxt.setText(e.toString());
+                        Toast.makeText(getApplicationContext(), "Error! Please re-login!", Toast.LENGTH_LONG).show();
                     }
-
                 }
                 break;
             case R.id.exitNewBut:

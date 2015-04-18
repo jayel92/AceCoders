@@ -7,7 +7,6 @@ import android.widget.Toast;
 
 import com.example.jianlongguo.abs.Entities.Appointment;
 import com.example.jianlongguo.abs.Entities.Patient;
-import com.example.jianlongguo.abs.UI.ChangeApptUI;
 import com.example.jianlongguo.abs.UI.DispCurrApptUI;
 import com.google.gson.Gson;
 
@@ -99,11 +98,11 @@ public class ChangeApptBackground extends AsyncTask<String, Void, String> {
                 Toast.makeText(context.getApplicationContext(), "Appointment successfully changed.", Toast.LENGTH_LONG).show();
             }
             else {
-                Intent c = new Intent(context,ChangeApptUI.class);
-                c.putExtra("Patient",new Gson().toJson(p1));
-                c.putExtra("myjson",new Gson().toJson(appt));
-                context.startActivity(c);
-                Toast.makeText(context, response , Toast.LENGTH_SHORT).show();
+                //Intent c = new Intent(context,ChangeApptUI.class);
+                //c.putExtra("Patient",new Gson().toJson(p1));
+                //c.putExtra("myjson",new Gson().toJson(appt));
+                //context.startActivity(c);
+                Toast.makeText(context.getApplicationContext(), response , Toast.LENGTH_SHORT).show();
             }
 
 

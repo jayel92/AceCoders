@@ -8,9 +8,9 @@ import android.view.Window;
 import android.widget.Button;
 
 import com.example.jianlongguo.abs.Activities.R;
-import com.example.jianlongguo.abs.DB.DeleteBackground;
 import com.example.jianlongguo.abs.Entities.Appointment;
 import com.example.jianlongguo.abs.Entities.Patient;
+import com.example.jianlongguo.abs.Manager.ApptManager;
 
 /**
  * Created by jianlongguo on 15/4/15.
@@ -47,8 +47,8 @@ public class CancelApptDialog extends Dialog implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_yes:
-                DeleteBackground delete = new DeleteBackground(super.getContext(),p1,appt);
-                delete.execute();
+                ApptManager apptMgr = new ApptManager();
+                apptMgr.delete(super.getContext(),p1,appt);
                 dismiss();
                 break;
             case R.id.btn_no:

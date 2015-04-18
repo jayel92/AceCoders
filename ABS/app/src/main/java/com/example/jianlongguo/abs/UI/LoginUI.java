@@ -15,22 +15,29 @@ import android.widget.Toast;
 
 import com.example.jianlongguo.abs.Activities.R;
 import com.example.jianlongguo.abs.DB.LoginBackground;
+import com.example.jianlongguo.abs.Manager.SessionManager;
 
 public class LoginUI extends ActionBarActivity implements View.OnClickListener{
 
     EditText username, password;
     Button loginBut, registerBut, forgotPassBut;
+    SessionManager session;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        session = new SessionManager(getApplicationContext());
+
         username= (EditText)findViewById(R.id.usernameTxt);
         password = (EditText)findViewById(R.id.passwordTxt);
         loginBut = (Button)findViewById(R.id.loginBut);
         registerBut = (Button)findViewById(R.id.registerBut);
         forgotPassBut = (Button)findViewById(R.id.forgotPassBut);
+
+        Toast.makeText(getApplicationContext(), "User Login Status: " + session.isLoggedIn(), Toast.LENGTH_LONG).show();
+
         loginBut.setOnClickListener(this);
         registerBut.setOnClickListener(this);
         forgotPassBut.setOnClickListener(this);
@@ -84,6 +91,8 @@ public class LoginUI extends ActionBarActivity implements View.OnClickListener{
                         Toast.makeText(getBaseContext(), "Please fill in both fields!", Toast.LENGTH_SHORT).show();
                     } else {
                         try {
+                            //create user login session
+                            session.createLoginSession(name);
                             new LoginBackground(this).execute(name, pass);
                         } catch (Exception e) {
                             Toast.makeText(getBaseContext(), "Error connecting to server. Please try again later.", Toast.LENGTH_SHORT).show();

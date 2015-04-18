@@ -20,52 +20,533 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="255d0b90-47ab-4c64-8430-9427f652bfeb" name="Default" comment="latest&#10;">
 <<<<<<< .mine
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Activities/ApptInfoActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Activities/ApptManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Activities/CancelApptDialog.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Activities/ChangeAppt.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Activities/ContactUsActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Activities/CustomOnItemSelectedListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Activities/DashBoardActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Activities/DatePickerFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Activities/DisplayCurrAppt.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Activities/RegisterActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Activities/RegisterActivity2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Activities/ResetPasswordDialog.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Drawer/NavItem.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/01/0128c3d7fd6e05e316b60b450c5a2b72d320d855.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/01/01a1e3768cc51fadff7b30948f6f5e32e6a28525.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/01/01c27ff93b2b6c9c974ecbab581a1183f656397b.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/02/025374964c9336052796ee354bdaa6432c7f0613.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/02/029619216965295ca121c1b102b2ba34363163a6.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/02/0296d5e5b9f924bef38edefa50b3bcc064be1fd6.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/02/029fb18d75227ed5ffd5032f983c630307ac4859.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/03/03200b079dd7a17bee2b5c718c2d5b715b15650e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/03/035f6f094a087d3f8ceb24bbde1aa75bbd55803e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/03/03e35dedc4700edcf3ad3b389ed81c16be5fe080.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/04/0421034ce424007cc4d6453dd1f4456067aff4b3.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/04/0441426f8e76a1e4e51a71c6d8004c6641ddc863.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/05/052eab3c0121edb0efec67eb5e999a8a36e7c879.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/05/05f4ae689a719523a773b660cd88a579c0451f0f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/06/063a5d4b58c893cf4e25958284aebc38a07b2531.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/06/063f9f48caaf0ee7769d1e2c7e01e06cfa1bf3e8.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/06/0647e81edcf6a9ac08bc76550eba37857db922e9.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/07/07066997f4dba2f303d698664a099f652fcbd9ea.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/08/084ee929d23b932120956c9681e87efb7e07dfcc.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/08/0861f1007b810425d0cbcb24553ae4aa156fee21.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/09/0971cb305a522233fd83efa10e8e4d89e333c3ee.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/09/09d6e9bd4d1cc836df82387c0303daeee7e4994e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/0a/0a41be135230706060c09c512f5eca974209cca8.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/0b/0ba8b0671927c24618e6b4a91fe55db30601e0d2.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/0b/0bd3f2f93f66b6057725de69d60515714f2ecde3.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/0c/0cdd8ae1c07e46af85e9e4935c3fd0df8fd9c0fd.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/0d/0d4a8285adc452535e6c5b1516214ae17926209b.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/0e/0e9b177a0b257971dca55c8251c63b27405ca4db.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/0f/0f47219018b70b2d7aaaab958541b3d403d82b4a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/10/102279edbb2f99bc9eedbda3e65c37a9fe613e88.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/10/103c2f21025ac5a23b9f564c98b227bc0bc65b20.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/10/10bdfab1bccf0804559cc95134d00465068eb0bd.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/11/11a1813ce60f74ee193e2b776af04846c76308a4.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/11/11f8d64aa7476c59c1ec73899252d9e1ddffdb0f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/12/1276a8632016bff28297aaaffd1df6d83db5231b.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/14/149aa650db67eea493fcce5e3598394a181128a1.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/14/14c9d0b9a88acf6a68745e0db5d48c09e7694298.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/14/14d720c96065af3c23553b2165c38cede5a90837.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/14/14e2ebc72703ac8d0e274f3bac191d2500dda199.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/15/15630860afe6dfd2c480743df23718f8b211f158.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/15/15d188333c8e9f0688f6d0c18b407be004c7b68c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/16/1627316b450dfab6cede0300d0c0174bb18cce61.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/17/1717a56f317d93e4666fbe0d5c2f2cc4738a6628.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/18/187b7f0dfa455f4e7dc6f4c68195a391a284e96a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/18/189e3085ee83a5393ddde68de7115d6b012f2ccf.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/18/18abfdafffcc7e697a0d21eb3c8477344f5645fa.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/18/18b5b6f80445bd1bb117298ad7e0b8d360fae62c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/1a/1a1343085c59236a746dbbe188e6b64a94ae9d67.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/1a/1a14e3c81fd16b0b73169006397f1f452518af09.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/1a/1a8680ab1dbbdb4968ff0b46e8911c9774230098.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/1a/1ac70586e3cbe3371c47ca246bdd15e3b3c1296e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/1b/1b0c05d5727fc4600380dac8f26e5d10088f0bfe.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/1b/1bb23a1e79f6bbabaf3d3affb092c14d600b4926.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/1b/1be56c6bc66677e50c4227effa8a0c198f6a95ba.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/1c/1c4d5ea6cb1ccc9bef396b700d6cb972cb7f47fd.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/1c/1ca45b4f53225ef299ed28fd28412e06eff74d8b.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/1c/1cd84c1ad669e0e35c46c5f365cd6c3ecf9b3010.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/1c/1cf2f20235ac1015c840a7601e477e0f437c13c2.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/1d/1d3421653c355a36781e2a7fd24fa1fe6281d182.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/1e/1e53934cac21beb45014926a4bedd60bda16603c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/1f/1f9300ec531042c3aeb6edcb837a2b30187c3f1c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/1f/1fb33fc517a1dea357ae4db106d4658ffa5e606a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/21/212b5469d9ae28ea77e8e38f7bcd1666cdc4abd5.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/22/2237c08da13d5910d88407b27a473db63d7f9faf.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/22/22b66525276c664850740460e3d114dde0a4b130.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/22/22ce58ee05d95c1314114428a2cd61a89c6352c8.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/23/232c2def19aaa04da2f7e4c2fe2518b5622d9da4.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/23/23af72fc4ec4d7e8d66f78c30a5fbe2ee61ecee2.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/23/23c632fe282f9e44a4d61f3813192f90d5d16301.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/24/24a853a4baeb3663d86df394cf72c774deeb1861.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/25/2559bf4b44bdacab5a4bc9d437c5c1c1d713acd4.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/25/255bd921da44afae9ec92dce4bf5a4acfbfbfe2f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/25/25f0a8b9beb67bfbc4d23f46b903cfbaa5350e7e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/26/26efa4bb453adda7a151af2a7a46f66bf94c0167.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/26/26f9e80a971675633262f1f32c4a098444e79d54.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/27/2771678c130d38b3372725cfbd179bcb4cf1b2e8.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/27/27875f68b7956afbe147dcd8b00c357dd2ec739d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/27/279be90ed200b89b91b26ccefd5c21989436d6fa.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/27/27d6f28c297049801027b7e2b5dbe3312af7d98a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/28/281703f39db189f1c1e8809b039d5a90df55ec5a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/28/286bd46ee501a242cdc9ee22a1c0980083062173.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/29/296dd89ca2c19d629c9618a1dd37ac5f09a1d917.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/2b/2b813d4c83cb179c56982f0df3c2ddb7c985af9f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/2b/2bd3bf601ae16ba9fff7a6804d635c206ef206c5.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/2b/2bdef4f387b6ad3d65832907d424e31b4277ee72.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/2c/2caa1820a701ffdc1d54277bb73287c27c1609ad.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/2d/2d61258963a9b7dd47f2dbd77e6a5d6ebd54ce6f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/2d/2d707e30a895250637674e56a9febab967d07660.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/2d/2d7ddc4f991ff6a50b94132f860935bf2de1c748.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/2d/2df693923abbe003adc485bf9d958ecd3a8de280.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/2e/2e7691443b265b53b00d6d8bcbe88657b12b357c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/2e/2ec4af88709cfeca519d35436b181962fa4a5a0e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/2e/2ed3ff9425c6bae4de6049f015c3cbbfaa858509.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/2f/2f051f88ddcd7bdeaeadd3160a21ee73edda504e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/2f/2f3fb817820b70b245f9bb92de7f26c2007dfa7f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/2f/2f441dc2af3bdb437bd2bde7de38321c44caf9a3.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/2f/2f70e1e083c07eb3b5c8b7eb85bb0c26db3d7d2c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/2f/2fcbdadf7630c1736c4d446e79fcb79e49f2ea39.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/2f/2fcc6b09e6a50bacaa530ec499b6ff4167abd1a7.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/2f/2fdaf0c3f6d4f745cd7ff45adb1d1fde26db8690.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/30/302116bad98cabcf8cd86c3701209cec3a8655e4.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/30/305461f1b66ccc3a53214026ad076a8b125158f9.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/31/31027c219c2434e0a07876f32ce3c578270c0ba6.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/33/338240b4b676761b3ce2d9381a079b34482d3469.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/33/33c40af6e8747fcabc7244ad6b2b7250c5fa56d1.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/33/33c8e8de9b4cc5dad5c05a75e1de49f8e02920c0.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/33/33d830653f6664f8cea07440fb7a62006c074606.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/33/33da63412d3ce75a50335f58726c82c394452186.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/34/342f96d1203632b891ca8af6958585c04fda0815.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/34/34a1108691ddee19e065070fdb7655af10b40a0e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/35/354d0674218727086b23c742d3be5899368d510d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/35/35cdb1c60658ff94a5fe1d6fa78e6a6c9d4d8bb3.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/36/3612b0e9bcddb22187755209a1edeb4bbeeed74b.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/36/36a231b6995190a010d161737b0946b75fd8b626.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/37/37594a90f3cef8001d137935c3145194a66179e2.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/37/375ed9f4d20022f0f867fbfa8b06fdf9db93d109.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/37/379ee35e09eaf6fdebd6b5465968346c5d20b0ac.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/38/38bd718c2081ded1fc7de90605bf95743259d074.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/39/392dba102994a917803b8b4331174ed5218778c3.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/39/39d051e312cecf98e8ebc3b2b4629fae2bf53258.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/39/39ee028155089c945892109b1824620a22c50c55.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/3b/3b296a9c3ef4fe3f4ccf13b2fc2475ba07677220.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/3b/3b8c33e98408baeab41506e51939040fe6fbe6be.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/3c/3cf7618663499a1622bf4d3d375567e394cc7750.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/3d/3d4d7fee62a3f374483ebfcc82dce2b92aebe8b9.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/3d/3d75d64123242cabc7705e4dd44428fe1ea989d7.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/3d/3dcc08f2a0ce8df4d4bc9dba5c1d5408e5fe3e75.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/3d/3ddd2a6b40f54bb777742c3a65be8173839de794.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/3d/3de336027c2cd863fabeec048a5ff9723ce79da7.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/3e/3e1e4906d1d95dcecbc98f4cf5e89251a6ac87e1.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/3e/3e4a415b3e5a9dd564a8071a9eb742304bb7cd4c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/3e/3ec7230fad5fe4d5a2891bb4586224716bec48e6.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/3f/3f2bdcf75cd81d70a2900267f2d49d3c28343359.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/3f/3f86c29b1b25ee43aeeadc6a112dea174e0288c5.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/3f/3f8a6bbc3a2a423c3853ca7fca3ea07d1d981806.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/40/4036f8eb4ce7be80ba9e0e48266e654e5f8a3c58.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/40/408b8856c71d1d3936a3c016e6e8461185e555e6.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/41/41180e2251d2d144ed51a32fbd6fe4a5f0e0ce13.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/41/41d7e17f0ee0d9b86a8b8198b8c1bc3c14eb8d37.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/42/4223e030ed86f747aa806e39ac75a6b6f9513d0d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/44/441f00570ea59536ecf33bffc98e1bbac3593f95.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/44/447108efe5a99b3b48cbdbc12904f8f2ad4e572a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/44/44b28c33d13eb1aca926b266ca6544d20a2481d6.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/45/4539e5149487d25f1b0bd9bd127c7015c21771ed.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/45/4598d94b7cd4ceabf1d2619d3f80416e017c03b9.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/47/47ff27e67008ee2ff68c6302aef4fc9923bc05fb.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/49/499c322dcaafc58944185b3593aaa70fdd1e27bc.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/49/49e84da19f53d92ae90b88585884f931a9674e9c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/4a/4a506944fc8663b4c8e2a4c2fb843662eaf4796a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/4b/4be9f8e967de6f54d3d3cfbef24394f407a041dd.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/4c/4cc972904d75f8c3bd820d721f2a2df3d3e523b0.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/4c/4ce9088288b98b50957aac92bfb212946d9e0681.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/4c/4cea785fa08ac59a445924efd28e63254e4844d1.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/4c/4cfa3677ed8823fc652aa896b58b562a9dc29faa.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/4d/4d8fdb5ccee5e9ccc28036db1233750b27347cbe.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/4e/4e0076d4e0ee36c7c4b0e4fe7606f554df739852.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/4e/4e3916d4626a18f7a957b6297e41ee7d4d02de4b.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/4e/4ea55eac0c5f8636c9df10fc3a75f2d4798a3eee.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/4e/4ec0fd6a70393ec9a0c58ce8c1779b45e002a162.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/4e/4ec865e753a6fd22b96b92138ed0413e1d1a097c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/4f/4f3dd00003c7871792c37cec131fbfa05a9e1d99.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/4f/4f876dff5a56adefa66c5075b7385d396dfff114.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/50/504993161d125fb25b2fde8c301afd7c01af3b2d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/52/5224adefbad514a5efc116cfcbcc4f493f7fd8ee.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/53/53031c5932b333e9ca5c8438458fa6334d34d987.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/53/533bf20dcd92dd829e8dc282638049feb6aec926.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/53/5361486bc6ecdc27fe8c40866d8bf62a3dac0e69.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/53/53a021c565ed6d61b983bb601a750972b42720b1.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/54/541e66e212d83eae0ad014977fee3c917cc941a6.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/55/554bcc44874030721b0fafbcf9cc556a1dd68f78.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/55/5560acba5cf940ba4103b71904b52de65391fb94.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/55/55996bf32cd5ff75bed138e41f8816377ed8ed02.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/55/55cf8d9e416ff507825d01dc4cddaf437fa8e4a3.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/57/571b4002b462d4e14f568c267124689357d31335.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/58/5815c05dda915487367ed7bb92857b640f6e70f5.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/58/58218f1cb5b26c4a7b127332f79b812106acc6d3.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/58/5870d88c35f96574627888f64515b43186b2b2f6.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/59/590646ee993ed3df5ccbd6089ae944322bc3bd24.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/59/59f2c78de9550a4ebb7f0b81f7dd93950099afec.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/5a/5a479eefef3688eae72ccabfaffcd4d1ffe496a1.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/5a/5acafd1434c2e6b8148eacf070abc24606c2030a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/5a/5afeb01ed4b8dfff8997ebf5998a5453dd78091f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/5b/5b2f98fd9ef4678a99cc3e27f621b6db34dcef37.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/5b/5b40937c40b333674a4d3106beb668c0d11d6e7c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/5b/5b869bdab98e62dae5d359e16fcb996e542ff706.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/5c/5ccbd62c7ced0f50774c56f08ee98467d37f646c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/5d/5d14977b9cb1cf08db28835963e504e2910429f1.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/5d/5dc960afc585d941a2c6ccfd47c2e9d218ee3417.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/5e/5e1f9c63081a6cbfed2b3489c1afc1997216bc27.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/5e/5e3ec50ff72c2e4f825d7afa8678a4b2d8685cff.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/5e/5e51ff47c9a17bb553defafe14484fb08d4fde07.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/5e/5ec7c5461313ac1a43554f5b6844406e8b84ae84.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/5f/5f4c5ba0cb14efb9e3cb1ba283be8c1a6406a07d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/60/600e50ac0091148e652da7f48be0ffdb95599548.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/60/601343b402a5734695f9dc5740069672f8845f8a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/60/607397558a23d3373ed512be8122c5ba4038522d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/61/61679d5c41b1bc5452744b05e851082d3402c2a7.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/62/622d8dd77d34214ddd9048d0c41c4b8aeb6871e8.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/62/626efd41970d9b49a2420d346e11e8aa3d891ac8.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/63/6306cc5883888cbf1b59587b0f971b3c947f7e68.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/63/638f82bd67a8193f7b13d647a73829c7a8ca2e7b.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/63/63a6f1d409b981bec8c5cf519718ff665b18657a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/63/63bfb289fbe11ebd47c46212dbd9a5b2d113927b.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/64/64034b173704f4c7f8ac188d1f68565c475484d7.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/64/6432095d3356dc86293b7e427f9ae2782d69e233.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/64/64953a2800ddd0ab6cdeaa74985ace74654cb032.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/64/64a1e739d5640ebc33df1690924692cb680e37c6.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/65/65c18e36efff2d1b906c70c972d4f71a3278b9cb.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/65/65cba9237b5788909d2e03895fcea3ed2c26ace0.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/65/65d66e2f53ee26602b8c58545223428d651523d7.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/65/65fba614cd36268eb2e928e186cfb528669e029f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/66/660c85cb6325ffc80d5fe81e2c49d9a08a4f553c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/66/6623ee079a4144cf2f9d286972928c8a604ca0c9.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/67/671dec66ad344c2f29766e36b45be0bb03014e12.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/67/672eb4bea7e32fba3204d44e5b08244eaf8b82ce.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/67/673a1017b28fb6d14a6b1c328c6c1212abcb8a0a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/67/678cfab7317378b29759f957053fe7bfb91a3d39.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/68/68699d4f99638ec35174ffe2af732a3f3d85b475.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/68/68ad4084960375ca8b4a05ad379cf3ea0a54822d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/6a/6a18becea4f9e99575f367438693d9cd0e0eec7d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/6b/6b2cf5623539d48f62ab60522a2583933bf1a32a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/6b/6b4a662d99272e87e2db2ef59e7313a6a2f102f7.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/6b/6be0c4a1b4c2f7beda88e4847e7b0aeaae113214.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/6c/6c28b175de6ab7dc63b0a1e6e50593f49aabdf0f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/6c/6c63725209b9ef477f29d215f2846885526af652.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/6c/6c9e1043fbfe354f634defd2f4d2262d8ea2be7d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/6c/6ca263de394cdc26e914c5c608ebd0eb82ab9f4f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/6c/6cd1db5b079c268a6920b655b9780a78fd3a5b56.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/6d/6daf182db168ca218604ca3533dbed5327c0803d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/6e/6e633237c0290c9ed6d609a95c359a7c0809b6db.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/6e/6e65cf518fbe183d599dace8e0e7850f182ab6af.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/6e/6e75ffc946bfa7928091e2fcbf2bde813765754a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/6f/6ff9697cfcf00c59b0a698988635a2534c7ab24a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/70/70359a07ceaef89f2b771a45c5bfa7ddd397910b.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/71/7140c961703f828524cad6849750da3adc13ded2.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/71/717d23e7586c54582a08c0ef4bc13dfcba38ddfd.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/71/71aeea175dd0156b81b8cf8ad6cc5081d58d9f6c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/71/71cab81a15aa713a1241cc97cee742d333b010ab.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/71/71eb988443410e7616fb3dc46833588644c52039.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/72/72a18a42554249139fcf3a0c437d105ec26226eb.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/72/72d22d8a892aaa8c210664bb85fae0b13e949858.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/72/72dc5c5dbbc1a2834c25bc3a179144be7364b4e4.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/73/732a17a25d218c9b3c85cdb0d31021e59e3ed9d2.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/73/7364413296b49cbecf52d5a69c9012127cb1ee63.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/73/739c5b139113f6deb48fdbfef213a7961fc37573.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/76/764fdfed3c689a6ab4a1c04b654079a214d6822c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/76/7693a6bb18df9e6f15bcb6fe7bc1684520019c86.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/77/7767ae49d5ca78c684983c54fb8922e503f69aaa.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/78/78540e622aed7eca15ff2c68416461054fc6f1d6.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/79/7979eebc17264d65a10f7a2e128f67d2a82d0afd.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/7a/7a5223f1c86d848853400c70bb86d3b0708d9009.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/7a/7a97acdbfbd78d01b4783dfe089958900be08e8d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/7a/7a99cdb6edebcd03bc1d38d2de58be78991459c0.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/7b/7b1e9548926b58ebe91e90e01e1e0f3527d502e1.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/7b/7b9186a5992fe07b7a6212be93f7d50db11642f3.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/7b/7bac21e1079fdc29a793a3ace17de74737aa945e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/7b/7bc609dc55ef86c45aaf1297525060cffc804a28.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/7c/7c84dcf38594196acf7f7c0b0988005a45d9e90a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/7c/7c90a17420fe007004000fced8c581b7dfd90153.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/7c/7cb2e19f1ca9a685d1483978ba4a033f5b13ad9e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/7c/7ccccf29f47168b186a4d4bb240d2a27275cb0a0.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/7d/7d2b353506fc8c728d469e07fde05375a1edce67.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/7d/7d465fb05f7a9d6061d571cc6686e4abae1c709c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/7d/7d7caafbe4039d91c277d1d504f3b368e55027c9.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/7d/7df18cfaeddec7e7d602e9026fd3ccdedfd3498f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/7e/7e09a6183c2e7650ceb196fd2e73814a62b5712f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/7e/7e1acbefb3ab84646499c52e09146a6326482ba7.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/7e/7e602b978fa36fc86be0523564ed6066d5f02265.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/7e/7eaa7e826d46f56b72ca62e979f7925edb28b502.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/7f/7f7d3119e6d2fd6152e257063c000c4d604dff2d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/7f/7f99eeb1b9f3f578e76d989cf9db797dea39a7ce.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/7f/7ffa6a76abe80315d5764eabd90f198b7f0daf9b.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/80/80fba605e3d6d9fcd08dbe053bd1dcfe44728900.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/80/80ff742c18a070ec78fd696117734cdaf7f2eaa5.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/81/8108f12e11f63fdf510bbcd99c22bec86985ec63.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/81/813c569fc24937a1c145213b21af737e6e515559.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/81/81854a07859e58565a3cb7982ebc3280b49672ad.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/83/83f4a78b5555ec842e54a22f6adfa13dc715d6fc.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/85/853d0b06c34049c3ac9a58a2e675cf8483042086.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/86/865acd244a805d4dc18c1e31e5118f3c68ffde26.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/86/869fa601e61fa80a74d7c2edf5880f479fb1205c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/87/87103f3a9275ef06d97617dc56d66898ef867843.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/87/87c5765a0dfddaebef3972395de3fdba1bc0cd89.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/87/87f4833cfd185827bd1e81609a8fcca9c2885d37.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/88/88569eacb80cb36a46704a802bd40e0afa598e44.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/88/886961ee5d60cc6d6d6d22898d575780d15d7e0e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/88/88d63a9901fa2ef6dad030c0aabec8a41d7bde37.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/8a/8a497aa7b1c2217dad3cfe1379d23b5cc62db9ab.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/8c/8cff0feea7f833b71cf2f491eff37d72d80b01ca.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/8d/8d54d0acdac82356cc325d6c3811bcd1976598d6.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/8d/8d5f24c237c782f6934417b9c7b6f21a7fa0565e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/8d/8dcbd0283c5b8c742bf77657181991358115d2c7.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/8e/8e30e305f0694cfab143615aa8dbf0df6ef9a846.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/8e/8e793f4235699b3a07e2a37596b5d7818ac7d7b5.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/8e/8e844c0286d96cdde2d2dab9c93ec197058f9282.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/8e/8ee541ed639362552e40c0a2eff56d3872568226.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/8e/8ef7747d380448a046c0bb2530530d411e4626a0.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/91/916d323fe276faeb0ba2155947181030271d9bd9.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/94/948846faa828d589eb8c69c43a6efb0a12bb43b8.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/95/95655645e3e8c34d96d5f9700a337810833c7c00.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/96/961d18681c89e55db1972813c5af137ae3ce3a22.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/96/96eab4aabc7377ca90b532b2051d049a85895df9.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/97/97204eec5f9b8a5f8f528c4902d9abe8d0936c4d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/97/972715a830685543feeeb40fffe8d4d2ad3a64a7.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/97/974a9137013e7ae09db5156df4d2b105faa14fb4.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/98/980b8e0d86de568649ab3bca25736812f15fe248.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/98/98a4ecf547fccef3631a8f904d60033fb813b88e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/98/98a6c43411507c7c86906b4c09596bea8ba43856.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/98/98dd50fa36eeb1fdd37498c51537e093dfff09ec.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/9b/9be31444d50e50a66b86fbdcf2c2c8dd1a758a38.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/9b/9bef6cba261db0e4143aac2fd3fd112d1abef4ac.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/9c/9cdeda8e76b97ac4f78f7e1a177e320abd162066.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/9c/9cf500fae95bc6b7fd5c54f9521a31bbb72ee5e0.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/9d/9d2cf451bee30cd3857e455e18be3deb9cf0cfe4.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/9d/9d8439515a2f933a0f25dd44b3df80df1edf71ac.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/9d/9db6703fcbbbb2f940f2bca0752190d084b06684.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/9d/9dd866a5f0c4812deda80ada7c13490b755a78b7.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/9e/9e6c98de762a476311a7d5744e074b5832657b28.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/9f/9f0ae2073f905f6495e0d57860e35489e440e07c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/9f/9f1a3ed39e6131f9622eefc557b08800fdfa5fde.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a0/a028eed073ad2e38df500d6977ddc049121fbe37.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a0/a0bb0bc63ff8858bcf38a66dd6eaf839dcf05a9d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a1/a18aae74da502a8457d9029e275f1186b4376fa0.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a2/a22fed1aaaf960b328b4f65386249fd7c1fbac5d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a2/a2a41fc603c803e3a19d770d0fbd889e2481f9c6.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a2/a2a42f19d89a4fe38ab769016dbd5b03d0be46b1.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a2/a2cce2dfea28deff664b3f762c7d6bb6833316f2.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a3/a31ab4bbab0655bee7a1c1e195b03e4b622fbd5b.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a3/a386c7ef0f0167499e1dceba03349c51c7a32e86.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a3/a3ad2f5245f55fe659df0a657ce012969013c325.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a3/a3c60ad0049ddc6b2de86df3c98b20177388c199.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a4/a40b33f99a9b5b3aeec8d97d2a80e115e6754300.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a4/a48a87e668a93018f465982a2932a68fa6fb0290.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a4/a4cbaa98fb086b25cccc7518f5c48effacf77f36.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a6/a63a0e19b9d80553a085e8042a05147a1d922a07.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a6/a6542b41a8d0d3bdd80a8a0af7d28cdd6c699424.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a6/a6613bb3b36d4429c5eded8559e5738b04fd6ad8.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a6/a66b8a4be18493f47afde50ab0660b68c4e9c5a4.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a6/a67e462866ae5ed3c674431d93fcef985ccca688.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a6/a68d7fef8073e2163377f0091d57eab06f0d0846.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a6/a6c7abd11165ae816d1e733f6f7a026d62d3cbe4.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a6/a6ecb1ff9685fdc4317630e17c562cfd31597360.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a7/a76fd787948fd3a01141d45c73f45cc2c9f3b16a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a7/a772370f41caaca844efd003d5d8fe18f8dfac12.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a7/a7c1356e4cd862e0357ed8a990fd30c6af4aaed1.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a8/a810fcd01ab1ee4e03ae8894d3ec59e1ed39373c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a8/a896639674b59681fd9d3a84a7cd710b631ad109.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/a9/a9f5b64924219fdade4e4334c7507f7ef8a1afbf.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/aa/aad2571e03c0217692421d53a05b0c13edc1df1f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ab/abcd92a88a86c3be9470d045d862aa37643c0da8.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ab/abe07258b5b7385b0745e8842b46930deb83a0e0.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ac/ac1d0ab65730449f30e4fa0048e56bc9207d3176.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ac/ac69620b95d525a2b80a71908822c847ada5e9a4.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ad/adf164ffb8a4f7a9e0e27e94b8a59673ebd1f794.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ae/ae647328b02be11b4b9e2d262bed17d4fb5cd07e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ae/ae6824012ef85f53097fe330a6420af88bfcc1bc.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ae/aebd6ba65324fbe61642f63438773a2e03717264.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ae/aec11bd4c180fbb5b18ab6928b208fbf22a4d390.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/b1/b1528b922120066c827e274e864f1f0f262a32d0.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/b1/b15de9510ff845b4589419a054a90c71d0a410ff.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/b2/b2a1a5ea8d33f44357f39a3ccd1c51a2b72803cf.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/b2/b2f877d2e7b0d5b747f463165a76ee50c17c0bfc.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/b3/b3a87047117916b9a98a2001e1b3d4589442e550.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/b4/b40dc242f050f3476afeca04418904f0bd349e8b.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/b4/b49bf38a2ae5574ccafb3645a155f18551c932b4.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/b5/b5037fc5288feef9bf93087916fc4b0eff567b4d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/b7/b742049248beed42445ca826b525d4749ebe23a7.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/b8/b88a6be0df5e817beffdd8b36469f2a0eb8172ab.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/b8/b8cd87db28a8a9b4e1f4e1314845d63de964b37d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/b9/b91eb7829fa4c6dd38571e734a65931549281517.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/b9/b996770ee108dfc4cb35ba7488c02b868c3872fd.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/b9/b9b9cfda286f7e8b2d34b886e7e2ee37d0aa9fe7.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ba/ba3833e2dd93c20c485f862f4757e371aabf59c6.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/bb/bb45a528f997c05c5c27cc040f719cf0b2dce0ee.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/bb/bbe3dbc994878d5fe89524c6c5bfc8c5e45f3835.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/bc/bc9c348e1ab2698bd73cbfbbdad655e275540710.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/bf/bf88528c1dcb03561dcf8e3d775cf2aad2a55da3.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/c0/c07446420bdd1df72d137e05b5bce11d09f6aa88.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/c1/c13ee40f720ffb44efd71f38c8006dc0e0bbff42.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/c1/c1bd9802068022ccfc3b8dd6722238e03b35a30d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/c1/c1c156fd626693162f9503ba9854b4d30f5153a0.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/c2/c2cd160526fe57fd402783f53566f2d3384c4e0e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/c3/c331fdf841335925f04de5e8cd633b9d07d14905.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/c3/c37bdefccc6b9e665e0c3677169a6202e837a280.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/c3/c3a91e240acb32ac487ba475d0bd89b7889f8099.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/c4/c45d7ab0ee3597236b0c19d6c201044e5670157b.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/c4/c4b31d697db70c24ebbaa029d8127dcc794dc4ff.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/c6/c6343314ac40bf2f496e0731347cb10de8909e5d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/c6/c6a8ec6c4f8c3775afaff2bcd492b76b546e454a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/c7/c7cfc5819c1a6111a72eb97dbcd19e633a8d71ae.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/c7/c7d461f12ac155ef82ab260c68dc78fa1363ee01.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/c7/c7da282fe35acbafa9104992596ce4f87580a8ea.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/c8/c86b05d124d996ff9565683070e9d4173a9ce94c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/c8/c8afff982d425574902491156411ce56470b1efd.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/c8/c8c1dce53436f8fe71d776c9e7cb465fd157da1d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/c9/c94dc845cb7d00e060b7755b65fddf8bfffcb8e0.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/c9/c975d0a7389d0c8a12d3d970f4284ddd6fe347b9.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/c9/c9ae2d257d610ba685f243f72034c985f2999082.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ca/ca311e8c819c7f384045e44d8f3ef767eb9f29de.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ca/ca3324dee3a758027098ba8f30e766f212be893e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ca/cac9ae7b2e6ee5634c8aa3658fe5f97b0a25735f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/cb/cb5cb721e03d7b74d5eda22a4782b947de9ad1b4.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/cc/cc5c8e174a72379a8243a1d7834a841814eb7362.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/cd/cd13067d4707b56f68425b2b789f47f0fb07386b.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/cd/cd7acdcf632654118e87245ba52d001bd462df20.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/cd/cdf51c75edff21970e9ae03f5b388ce9a1bca9e2.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ce/ce0da52db884516b3447b433ee49fc3aa8fb4f66.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ce/ce83e1ef481be197b406ef24f5b029cf2ee652df.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ce/cedf9dda1ecbe4075bd432602393af5c10296b45.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/cf/cf58f391c928d3332328035a431ba4fdcd3d558a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/cf/cfcf8d891571bf0b05370a9d38d79a4a0a932538.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/d0/d035b7f1f9d192399eb4672e0ae5336ba09981ee.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/d0/d0844ad4c2d710c9f59ebbc3cbf4f511b9f87de6.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/d1/d1157d9b58b01651b32a2e51af7eb8732526ee02.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/d2/d2565bc98daf065a99fbbb173229f3e0348a9506.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/d2/d29974611e8321aab5b30a33bbca544e15eb339d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/d3/d3111b7551f316b8a9de650358c0fc3512a44ae7.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/d3/d3412f57cbe980fc8263627f87d0c25b3b317062.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/d3/d3de66e24bb56ff1ce996133dd235d07430b0862.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/d4/d4cf0c8eaf64092e015b3aa1239355c5ebf96a1c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/d5/d5719ca5158dc295897de18c589e1d68e627ba19.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/d5/d5fc291e2b31c9609f2be63c3d2f34b783a8e071.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/d7/d72d19ee2ef9301564e6d78721a27e090f04a2c5.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/d7/d78401d88f59aa175c38ed9defc6c4f84b8bb946.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/d8/d863b3055c2a76699de63dbd87537aa69ec0c026.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/d8/d8b30a0a424d568cc0502561115a3193b7461b31.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/d8/d8bb1e036bb216f91edb38165c2be589bf4d2021.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/d8/d8d58a8b04be0e4b51f259447aa403e91be32f5b.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/d9/d953b41c8c12288d5f3f59617ace0c897f29205a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/d9/d9e496bdd0f9d13b90317f52e8c311d463d36962.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/d9/d9f9a363f36bab8f4e84552d00504ce71f214af6.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/db/db93b1be8cdc365400c44e6317862745c306f0ce.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/df/df7d87b8beb04c2bbb2da8be54e28b5119f40f8a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/df/dfa5c3ea4051a42a456e3315ac6f18877c3a7c01.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e0/e0e63894065b90744cd5fb8db2a383b49b7f929d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e1/e1033af053faac816c450e6e5163e6352a066156.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e1/e179d0267fad07edcc5ad54e9a44f1ca75f0d000.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e1/e1e156b600755c2135e90565d88306282feac201.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e2/e2013e29aeb4a9670d14365fbf12107b621a0308.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e2/e227b43390e01422b734ec83dfd5fdd62d60ad09.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e2/e2bbcfb67c94b8d4d69d697e0935fabdfb3826c8.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e3/e36113bab8189235c3ccb0fec7132eb6f5441205.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e4/e42673741707db282e2580ed16d09bf8f7c377ad.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e4/e4650df84933d7773236ca65d7278aa62622a892.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e4/e4a7960f7e496751c05e504769c79272b5090d9a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e4/e4bb7705c670f5179de7def52ef7ad98343ca381.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e4/e4fd15635b25d90e776d9966dfb8d512d139d889.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e5/e5111e26d233ec518452e7febe342b6d32e50811.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e5/e5d18c616b36a3ca7c083efb172512ae4824940a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e5/e5ec1689a99b5c5766aad0a47b2d02678febdcf5.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e6/e62706ce1ab1dff5995a1d9d7b907babaa4afa5e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e6/e62726d98b558068fcc9424b1639999e7d3ca2ec.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e6/e6e8adc7c6b3514e3adfc61ecee77438c7521233.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e6/e6f7ccd55ec5d6ea26f00554022183b94e891c5d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e7/e7ec5cc47201a1be53b7f567e79d044138ff496d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e8/e8a45f3e86a8bcb70a9785bd50080529a53cc753.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e9/e9957859c06e40468470d7ba40d77f987c71e818.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/e9/e99a4b334572666db1481c35e6a96c2458a8b74a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ea/ea0c08728c3852bc00b7283614ec4dbb9d993c08.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ea/ea0de78102fb1829886d78364067509a9b044963.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ea/eaa1dad99ece8316cb0930f95d1ed6bbcbe7945d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/eb/eb101b6de3cbf1c17251dd8e9468cfa6f718b001.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/eb/eb1c44f24458847a0280cc058c1eb9475b0f3ca8.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/eb/eb78a922c8974fa9bd79d2b6c73dd8d23be63371.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/eb/eb91c1827dd58634c91d930e11adf638a87ecdce.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/eb/ebdfcd598753222616184dc593e9fd6c4d06d571.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ec/ec12bac75bd9f60a0320376ff0143eaf0fceec79.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ec/ec2ef66371e7b93c34a3b25a5d2539a0a7a55672.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ed/edaeb15a48b04d2b3c241530aad163ee1a93bccb.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ee/ee48dd21696db2d71700c51b99875412d72094a1.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ee/ee96c3009f08e8663d32c5782b8259fc47a1425c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ee/eeb313055eaf22e5f0375015d6d793916bc85b29.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ef/ef2544f487dea76c1cc23ee8833700b173c8c85f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ef/ef44b082d069a240031ea80658c056b65cb4bcaa.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f0/f084e27a67609f280b1b930e6654b2229a722ffd.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f0/f0a4692d9ba393ec9ee474eb05f26fba0a5ca2eb.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f1/f17ce0cc77de7b724b01077e0f272e0806e20b2a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f2/f252d87ae56aac9f32592b31a660353489eebd67.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f2/f254622888da55bf4d1150378976b7e24fa5dc00.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f2/f2bc73f172466e136c8381c81af6bcdd69ead816.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f2/f2bcb748267a7acdcb288bc9addd802eebdf0dcd.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f3/f349f52125dc78b6427f299d4e02285d512124b4.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f3/f37aaa2f2643802a5181f00ceeb3d080f5f4280c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f3/f3895b20a8d771afd3c928f5e5d276f851e5721f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f3/f39bd935e0adc7650a50eb36b3950d349102884d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f4/f44fc5fb8ada711ee15031dd6e227d8338bfba22.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f4/f45980e184362bf1ef0fad3e6c8c3670a5b562ab.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f4/f4a38f304a7244832436f3cf399de3c93a90f0e4.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f5/f529aa14ad709efafc5cb1e2d59458265c92caa1.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f5/f58e6ccba7fd10e44270ac1acc244c126358b0b2.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f5/f59b970f6b5e8c2b20f15b15ae05555009ae2c48.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f5/f5a32c9888c1063c13b0ab9b42d77a52ee675c60.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f5/f5dacfc8094066779dadda518b9148fa4031136a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f6/f699a2d3632eab573040bfb3ca77adceba38e765.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f7/f71e5b1d7624481e1e0bbc99d411bb9e75c95b68.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f7/f76504a900e6c418668071b872dd7de68e07aae8.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f7/f77678b9a5d910a8882175e62b8191c94acb8a5f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f7/f77fccad8ba2fe74e235e036def525accfc50767.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f7/f7cb41cc5116a3b3536ca81c7719aaa1b0c29d4e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f7/f7d545509ea73cdf57a5f255daaa99f28ce71bbb.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f8/f8cd058cbf8df11a4f27f18ef6d5d89ee1ec4949.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f9/f91882edf0bc577bbf1be138a41d370f165b3609.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f9/f925b94cef1c718d3993acaccef91d3c94263efa.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/f9/f973ab033745c7718a03a92dccc16a4d8c3f4c83.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/fa/fa749385b905d7cb902b82495166efbc696854bc.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/fa/fac50bd77e2afc00945a870643120a9ad5e67ce7.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/fb/fb9758aa662651c7870c90505263584d2fa549ef.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/fb/fbaadf652f2ae04e16ce9a07500d36ba3c24292f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/fb/fbe276b09f8a6cec0a97425ff9e525636526b6eb.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/fb/fbe7f227f796a3ca3ed3364b963d318a9195ba22.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/fc/fc6d1a5252f8fe16bd2dac443f01ef926e140a06.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/fc/fcd0041cbb0da35dceb6b45107e7298ac7941211.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/fd/fd281903f03cc4efe9812e46686c06025a331410.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/fd/fdaefe46408a46f6003a3d7c9849bae83411bccb.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/fd/fdb5b8f76209389bda610db08ea3aee41562aa1b.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/fd/fdf1eac3ecae160ffa7ca163e4c7a973177f8952.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/fe/fe119ecdf3e21889e38d7aaf8d584416b91a81e0.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/fe/fec087ca90c837bc086d83eeda57ebb694d4fd76.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/fe/fedba64e3b76db038513b0391c042868d4cadb45.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ff/ff5b1581040eb93d8bf971d35feb55f306438f73.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.svn/pristine/ff/ffa52cad5305eb4b60a9af07940946536bfe11c1.svn-base" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.svn/wc.db" afterPath="$PROJECT_DIR$/../.svn/wc.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Activities/BaseActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Activities/BaseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/DB/ChangeApptBackground.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/DB/ChangeApptBackground.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/CreateApptUI.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/CreateApptUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/DB/DeleteBackground.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/DB/DeleteBackground.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Drawer/DrawerAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Drawer/DrawerAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/DB/LoginBackground.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/DB/LoginBackground.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/LoginUI.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/LoginUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/DB/NewApptBackground.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/DB/NewApptBackground.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_appt_info.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_appt_info.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_contact_us.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_contact_us.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_appt.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_appt.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_new_appt.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_new_appt.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_appt_info.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_appt_info.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_contact_us.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_contact_us.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.svn/tmp/workspace.xml.tmp" afterPath="$PROJECT_DIR$/../.svn/tmp/workspace.xml.tmp" />
 =======
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Manager/ProfileManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Manager/ProfileManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/ProfileUI.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/ProfileUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/jianlongguo/abs/Activities/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/jianlongguo/abs/Activities/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/RegAccDetailUI.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/RegAccDetailUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Manager/DBManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Manager/DBManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
->>>>>>> .r7815
+>>>>>>> .r7817
     </list>
     <list id="31cbe921-30ed-4396-8b90-19bab53ba1d4" name="manageprof" comment="problem with edittext&#10;" />
     <ignored path="ABS v6.iws" />
@@ -89,29 +570,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ProfileUI.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/ProfileUI.java">
+      <file leaf-file-name="ApptManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Manager/ApptManager.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< .mine
-            <state vertical-scroll-proportion="0.0" vertical-offset="1845" max-vertical-offset="2880">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2775" max-vertical-offset="3375">
               <caret line="185" column="0" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
-              <folding />
 =======
-            <state vertical-scroll-proportion="0.0" vertical-offset="2661" max-vertical-offset="3264">
-              <caret line="212" column="75" selection-start-line="212" selection-start-column="75" selection-end-line="212" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
->>>>>>> .r7815
+            <state vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="884">
+              <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+>>>>>>> .r7817
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBManager.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DBManager.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Manager/DBManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.5891089" vertical-offset="0" max-vertical-offset="404">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -120,8 +598,33 @@
       <file leaf-file-name="ProfileManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Manager/ProfileManager.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< .mine
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+=======
             <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="697">
-              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+>>>>>>> .r7817
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< .mine
+      <file leaf-file-name="ApptManager.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Manager/ApptManager.java">
+=======
+      <file leaf-file-name="NewApptBackground.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/DB/NewApptBackground.java">
+>>>>>>> .r7817
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< .mine
+            <state vertical-scroll-proportion="0.7338552" vertical-offset="0" max-vertical-offset="780">
+              <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+=======
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
+              <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+>>>>>>> .r7817
               <folding />
             </state>
           </provider>
@@ -130,61 +633,38 @@
 <<<<<<< .mine
       <file leaf-file-name="DispCurrApptUI.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/DispCurrApptUI.java">
-=======
-      <file leaf-file-name="Patient.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Entities/Patient.java">
->>>>>>> .r7815
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< .mine
-            <state vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="2160">
+            <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="2580">
               <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-=======
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
-              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
->>>>>>> .r7815
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< .mine
       <file leaf-file-name="ApptAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Drawer/ApptAdapter.java">
-=======
-      <file leaf-file-name="LoginUI.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/LoginUI.java">
->>>>>>> .r7815
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< .mine
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
+            <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1185">
               <caret line="36" column="47" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="47" />
-=======
-            <state vertical-scroll-proportion="0.0" vertical-offset="757" max-vertical-offset="1666">
-              <caret line="95" column="33" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
->>>>>>> .r7815
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< .mine
       <file leaf-file-name="NavItem.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Entities/NavItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+            <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="615">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-=======
->>>>>>> .r7815
       <file leaf-file-name="TypeCheck.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/DB/TypeCheck.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< .mine
-            <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1035">
+            <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="1185">
               <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
               <folding />
             </state>
@@ -194,52 +674,25 @@
       <file leaf-file-name="BaseActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Activities/BaseActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="74" max-vertical-offset="3825">
+            <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="4320">
               <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
-=======
-            <state vertical-scroll-proportion="0.0" vertical-offset="978" max-vertical-offset="1581">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
->>>>>>> .r7815
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< .mine
-      <file leaf-file-name="Patient.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Entities/Patient.java">
-=======
-      <file leaf-file-name="RegAccDetailUI.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/RegAccDetailUI.java">
->>>>>>> .r7815
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< .mine
-            <state vertical-scroll-proportion="0.0" vertical-offset="471" max-vertical-offset="1215">
-              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
-=======
-            <state vertical-scroll-proportion="0.5148515" vertical-offset="1577" max-vertical-offset="2567">
-              <caret line="119" column="114" selection-start-line="119" selection-start-column="114" selection-end-line="119" selection-end-column="114" />
->>>>>>> .r7815
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< .mine
-      <file leaf-file-name="RegAccBasicUI.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RegAccBasicUI.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/RegAccBasicUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32730925" vertical-offset="107" max-vertical-offset="1590">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1590">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
 =======
->>>>>>> .r7815
+>>>>>>> .r7817
     </leaf>
   </component>
   <component name="FindManager">
@@ -1503,10 +1956,9 @@
     <option name="changedFiles">
       <list>
 <<<<<<< .mine
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_datepickertest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Activities/DatePickerTestActivity.java" />
 =======
->>>>>>> .r7815
+>>>>>>> .r7817
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Activities/LogoutDialog.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Activities/DatePickerFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Activities/RegisterActivity.java" />
@@ -1556,12 +2008,13 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/DispCurrApptUI.java" />
 <<<<<<< .mine
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Entities/NavItem.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/RegAccBasicUI.java" />
 =======
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Manager/DBManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/ProfileUI.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Manager/ProfileManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/RegAccDetailUI.java" />
->>>>>>> .r7815
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Manager/ProfileManager.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Manager/DBManager.java" />
+>>>>>>> .r7817
       </list>
     </option>
   </component>
@@ -1613,152 +2066,13 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+<<<<<<< .mine
+      <pane id="Scope" />
+      <pane id="AndroidView">
+=======
       <pane id="Scope" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ABS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ABS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ABS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ABS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ABS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ABS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ABS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ABS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ABS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ABS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ABS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ABS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ABS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ABS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ABS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="AndroidView">
+>>>>>>> .r7817
         <subPane>
           <PATH>
             <PATH_ELEMENT>
@@ -1792,10 +2106,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abs" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1859,7 +2169,245 @@
               <option name="myItemId" value="abs" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ABS" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abs" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Drawer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ABS" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abs" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ABS" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abs" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Activities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ABS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ABS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ABS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ABS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ABS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+<<<<<<< .mine
+              <option name="myItemId" value="ABS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ABS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+=======
+>>>>>>> .r7817
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+<<<<<<< .mine
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+=======
+>>>>>>> .r7817
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ABS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ABS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+<<<<<<< .mine
+              <option name="myItemId" value="main" />
+=======
+              <option name="myItemId" value="UI" />
+>>>>>>> .r7817
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abs" />
+<<<<<<< .mine
+=======
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Manager" />
+>>>>>>> .r7817
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ABS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ABS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+<<<<<<< .mine
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+=======
+              <option name="myItemId" value="abs" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+>>>>>>> .r7817
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ABS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ABS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+<<<<<<< .mine
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ABS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ABS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+=======
+>>>>>>> .r7817
         </subPane>
       </pane>
     </panes>
@@ -2243,7 +2791,7 @@
       </list>
     </option>
   </component>
->>>>>>> .r7815
+>>>>>>> .r7817
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="255d0b90-47ab-4c64-8430-9427f652bfeb" name="Default" comment="" />
@@ -2323,7 +2871,11 @@
       <created>1429337982247</created>
       <updated>1429337982247</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="latest&#10;">
+      <created>1429338840143</created>
+      <updated>1429338840143</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2347,22 +2899,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-<<<<<<< .mine
-    <frame x="0" y="22" width="1359" height="878" extended-state="0" />
-    <editor active="false" />
-=======
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
->>>>>>> .r7815
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986626" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39970282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986626" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32919255" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32763976" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -2373,11 +2920,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-<<<<<<< .mine
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1602126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-=======
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15983607" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
->>>>>>> .r7815
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24934383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2400,8 +2943,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986626" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1602126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24934383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -2447,6 +2990,8 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+<<<<<<< .mine
+=======
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
@@ -2455,6 +3000,7 @@
         </state>
       </provider>
     </entry>
+>>>>>>> .r7817
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
@@ -2589,13 +3135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/DB/NewApptBackground.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.461538" vertical-offset="909" max-vertical-offset="1380">
-          <caret line="91" column="101" selection-start-line="91" selection-start-column="96" selection-end-line="91" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/DB/PatientTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.8846154" vertical-offset="0" max-vertical-offset="900">
@@ -2625,7 +3164,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.7777777" vertical-offset="90" max-vertical-offset="855">
           <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2636,7 +3174,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="705">
           <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2647,7 +3184,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2755,14 +3291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Manager/ApptManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="900">
-          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/CreateApptUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2610" max-vertical-offset="3000">
@@ -2775,7 +3303,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="503">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2783,7 +3310,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
           <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2803,8 +3329,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< .mine
-=======
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/LoginUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="757" max-vertical-offset="1666">
@@ -2813,7 +3337,6 @@
         </state>
       </provider>
     </entry>
->>>>>>> .r7815
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/DatePickerFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
@@ -2822,41 +3345,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Manager/DBManager.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/DatePickerFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+<<<<<<< .mine
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/RegAccBasicUI.java">
-      <provider selected="true" editor-type-id="text-editor">
+=======
         <state vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="1590">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Activities/BaseActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/ProfileUI.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< .mine
-        <state vertical-scroll-proportion="0.0" vertical-offset="74" max-vertical-offset="3825">
-          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
-=======
         <state vertical-scroll-proportion="0.0" vertical-offset="2661" max-vertical-offset="3264">
           <caret line="212" column="75" selection-start-line="212" selection-start-column="75" selection-end-line="212" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
+>>>>>>> .r7817
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Manager/ProfileManager.java">
+<<<<<<< .mine
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Activities/BaseActivity.java">
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Entities/Patient.java">
+>>>>>>> .r7817
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="697">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
->>>>>>> .r7815
+<<<<<<< .mine
+        <state vertical-scroll-proportion="0.0" vertical-offset="74" max-vertical-offset="3825">
+          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="471" max-vertical-offset="1215">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+>>>>>>> .r7817
           <folding />
         </state>
       </provider>
@@ -2864,33 +3389,25 @@
 <<<<<<< .mine
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/DispCurrApptUI.java">
 =======
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Entities/Patient.java">
->>>>>>> .r7815
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/RegAccDetailUI.java">
+>>>>>>> .r7817
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< .mine
         <state vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="2160">
           <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
 =======
-        <state vertical-scroll-proportion="0.0" vertical-offset="471" max-vertical-offset="1215">
-          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
->>>>>>> .r7815
+        <state vertical-scroll-proportion="0.0" vertical-offset="1577" max-vertical-offset="2567">
+          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+>>>>>>> .r7817
           <folding />
         </state>
       </provider>
     </entry>
 <<<<<<< .mine
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Drawer/ApptAdapter.java">
-=======
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/RegAccDetailUI.java">
->>>>>>> .r7815
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< .mine
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
           <caret line="36" column="47" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="47" />
-=======
-        <state vertical-scroll-proportion="0.5148515" vertical-offset="1577" max-vertical-offset="2567">
-          <caret line="119" column="114" selection-start-line="119" selection-start-column="114" selection-end-line="119" selection-end-column="114" />
->>>>>>> .r7815
           <folding />
         </state>
       </provider>
@@ -2912,23 +3429,82 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/ProfileUI.java">
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Manager/ApptManager.java">
+>>>>>>> .r7817
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< .mine
         <state vertical-scroll-proportion="0.0" vertical-offset="1845" max-vertical-offset="2880">
           <caret line="185" column="0" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="884">
+          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+>>>>>>> .r7817
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< .mine
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/UI/RegAccBasicUI.java">
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/DB/NewApptBackground.java">
+>>>>>>> .r7817
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32730925" vertical-offset="107" max-vertical-offset="1590">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+<<<<<<< .mine
+        <state vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="1590">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+>>>>>>> .r7817
+          <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< .mine
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Manager/DBManager.java">
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Manager/ProfileManager.java">
+>>>>>>> .r7817
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< .mine
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="697">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+>>>>>>> .r7817
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< .mine
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Manager/ProfileManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Manager/ApptManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7338552" vertical-offset="0" max-vertical-offset="780">
+          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jianlongguo/abs/Manager/DBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5891089" vertical-offset="0" max-vertical-offset="404">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> .r7817
   </component>
 </project>
 

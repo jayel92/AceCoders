@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="F:\allAboutABS\AceCoders\ABS\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="F:\allAboutABS\AceCoders\ABS\app\build\intermediates\pre-dexed\debug\classes-9984f41469beeadf0a49bde5f689a0986d4d9177.jar" />
+    </item>
+    <item
+        jar="F:\allAboutABS\AceCoders\ABS\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="F:\allAboutABS\AceCoders\ABS\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-cbb2ecf906302aa8bdcfa6f4d9cea7cd460079f8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Boon Kok Chin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="F:\allAboutABS\AceCoders\ABS\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-5e59f5e2b71d2fcbcdbdb5808dea73f05f118245.jar" />
+    </item>
+    <item
+        jar="F:\allAboutABS\AceCoders\ABS\app\libs\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="03c7a303e11af0fafbc7c9f3646ebf3ede248916">
+        <dex dex="F:\allAboutABS\AceCoders\ABS\app\build\intermediates\pre-dexed\debug\gson-2.2.4-4b49cd358789f40d19bc9bb61fd7b225c516621d.jar" />
+    </item>
+    <item
+        jar="F:\allAboutABS\AceCoders\ABS\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="F:\allAboutABS\AceCoders\ABS\app\build\intermediates\pre-dexed\debug\classes-ed96e7b3a851d53345162e34a6d4b3a313c83e86.jar" />
+    </item>
+    <item
+        jar="C:\Users\Boon Kok Chin\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.4\a60a5e993c98c864010053cb901b7eab25306568\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="F:\allAboutABS\AceCoders\ABS\app\build\intermediates\pre-dexed\debug\gson-2.2.4-56929d39b4f4f1f2014230d4496ca5f3c2142cca.jar" />
+    </item>
+
+</items>

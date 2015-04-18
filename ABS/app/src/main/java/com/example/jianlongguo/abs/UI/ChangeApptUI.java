@@ -19,14 +19,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.jianlongguo.abs.Activities.R;
-import com.example.jianlongguo.abs.DB.ChangeApptBackground;
 import com.example.jianlongguo.abs.Entities.Appointment;
 import com.example.jianlongguo.abs.Entities.Patient;
+import com.example.jianlongguo.abs.Manager.ApptManager;
 import com.google.gson.Gson;
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -40,7 +37,7 @@ public class ChangeApptUI extends ActionBarActivity implements View.OnClickListe
     final static int WEEKSINADV = 8, MINWEEKS = 2, TOTALWEEKS = 52;
     Appointment appt;
     Spinner clinicDD, timeSpinner, dateSpinner, typeSpinner;
-    TextView apptDateTxt, apptTimeTxt, clinicLabel, typeLabel;
+    TextView apptDateTxt, apptTimeTxt, apptDateLabel, typeLabel;
     EditText descTxt;
     Button apptDateBut, apptTimeBut, confirmBut, exitNewBut;
     CheckBox referralChk;
@@ -53,11 +50,10 @@ public class ChangeApptUI extends ActionBarActivity implements View.OnClickListe
 
         timeSpinner = (Spinner) findViewById(R.id.timeSpinner);
         typeSpinner = (Spinner) findViewById(R.id.typeSpinner);
-        //dateSpinner = (Spinner)findViewById(R.id.dateSpinner);
         descTxt = (EditText) findViewById(R.id.descTxt);
         referralChk = (CheckBox) findViewById(R.id.referralChk);
         typeLabel = (TextView) findViewById(R.id.typeLabel);
-        // apptDateTxt = (TextView)findViewById(R.id.apptDateLabel);
+        apptDateLabel = (TextView)findViewById(R.id.apptDateLabel);
         apptTimeTxt = (TextView) findViewById(R.id.apptTimeLabel);
         apptDateTxt = (TextView) findViewById(R.id.apptDateTxt);
         confirmBut = (Button) findViewById(R.id.confirmBut);
@@ -68,13 +64,8 @@ public class ChangeApptUI extends ActionBarActivity implements View.OnClickListe
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
-        String jsonMyObject = null;
-        Bundle extras = getIntent().getExtras();
-        // if (extras != null) {
-        //   jsonMyObject = extras.getString("Patient");
-        //}
         Gson gson = new Gson();
-        p1 = gson.fromJson(getIntent().getStringExtra("patient"), Patient.class);
+        p1 = gson.fromJson(getIntent().getStringExtra("Patient"), Patient.class);
         appt = gson.fromJson(getIntent().getStringExtra("myjson"), Appointment.class);
 
 
@@ -137,38 +128,7 @@ public class ChangeApptUI extends ActionBarActivity implements View.OnClickListe
 
     @Override
     public void onBackPressed() {
-        //createDialog();
-    }
-
-    private void createDialog() {
-        AlertDialog.Builder alertDlg = new AlertDialog.Builder(this);
-        alertDlg.setMessage("Are you sure you want to proceed without saving the changes?");
-        alertDlg.setCancelable(false); // We avoid that the dialog can be cancelled, forcing the user to choose one of the options
-
-        alertDlg.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                //ChangeAppt.super.onBackPressed();
-
-                finish();
-                Intent k = new Intent(getApplicationContext(),DispCurrApptUI.class);
-                Gson gson = new Gson();
-                String myJson = gson.toJson(appt);
-                String pat = gson.toJson(p1);
-                k.putExtra("myjson", myJson);
-                k.putExtra("patient", pat);
-                startActivity(k);
-
-            }
-        });
-
-        alertDlg.setNegativeButton("No", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                // We do nothing
-            }
-        });
-        alertDlg.create().show();
-        onPause();
+        //dont do anything, disable the back button
     }
 
     public void showDatePicker(){
@@ -188,34 +148,14 @@ public class ChangeApptUI extends ActionBarActivity implements View.OnClickListe
     DatePickerDialog.OnDateSetListener onDate = new DatePickerDialog.OnDateSetListener() {
         @Override
         public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-
-            String dateStr = (String.valueOf(dayOfMonth) + "-" + String.valueOf(monthOfYear+1) + "-" + String.valueOf(year));
-            DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
-            Date startDate = null;
-            try {
-                startDate = df.parse(dateStr);
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
-            Calendar cal = DateToCalendar(startDate);
-
-            int curWeek = calendar.get(Calendar.WEEK_OF_YEAR);
-            int curYear = calendar.get(Calendar.YEAR);
-            int apptWeek = cal.get(Calendar.WEEK_OF_YEAR);
-
-            //to allow appointments for at least 2 weeks in advance
-            if ((curWeek + MINWEEKS < apptWeek && apptWeek <= curWeek + WEEKSINADV && curYear == year)
-                    || (curYear < year && TOTALWEEKS - curWeek + apptWeek < WEEKSINADV)) {
-                String newDateString = df.format(startDate);
-                apptDateTxt.setText(newDateString);
-
-            } else if (apptWeek > curWeek + WEEKSINADV || (curYear < year && TOTALWEEKS - curWeek + apptWeek > WEEKSINADV)) {
-                Toast.makeText(getApplicationContext(), "Appointment can only be booked 2 months in advance!", Toast.LENGTH_SHORT).show();
-                showDatePicker();
-            } else {
-                Toast.makeText(getApplicationContext(), "Appointment must be booked at least 2 weeks in advance!", Toast.LENGTH_SHORT).show();
+            ApptManager apptMgr = new ApptManager();
+            String check = apptMgr.checkValidDate(dayOfMonth,monthOfYear,year);
+            if (check.equals("-1")){
+                Toast.makeText(getApplicationContext(), "Appointment can only be booked between 2 week to 2 months in advance" +
+                        " from current Date!", Toast.LENGTH_SHORT).show();
                 showDatePicker();
             }
+            apptDateTxt.setText(check);
         }
     };
 
@@ -256,25 +196,17 @@ public class ChangeApptUI extends ActionBarActivity implements View.OnClickListe
         Gson gson = new Gson();
         switch (v.getId()){
             case R.id.confirmBut:
-                if (dateStr.equals("Appt Date"))
-                {
-                    Toast.makeText(getApplicationContext(), "Please enter all fields!", Toast.LENGTH_LONG).show();
+                if (referralChk.isChecked())
+                    referral = "1";
+                else
+                    referral = "0";
+                try {
+                    ApptManager apptMgr = new ApptManager();
+                    apptMgr.change(this, p1, appt, p1.getNric(), desStr, dateStr, time, referral, type);
+
+                } catch (Exception e) {
+                    descTxt.setText(e.toString());
                 }
-                else {
-                    if (referralChk.isChecked())
-                        referral = "1";
-                    else
-                        referral = "0";
-                    try {
-                        ChangeApptBackground change = new ChangeApptBackground(this,p1,appt);
-                        change.execute(p1.getNric(), desStr, dateStr, time, referral, type);
-
-                    } catch (Exception e) {
-                        descTxt.setText(e.toString());
-                    }
-
-                }
-
                 break;
             case R.id.exitNewBut:
                 String myJson = gson.toJson(p1);

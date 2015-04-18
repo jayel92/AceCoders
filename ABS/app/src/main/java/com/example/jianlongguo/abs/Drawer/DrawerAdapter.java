@@ -8,7 +8,6 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.example.jianlongguo.abs.Activities.R;
-import com.example.jianlongguo.abs.Entities.NavItem;
 
 import java.util.ArrayList;
 

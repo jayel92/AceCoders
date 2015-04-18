@@ -2,13 +2,18 @@ package com.example.jianlongguo.abs.Manager;
 
 import android.content.Context;
 
+import com.example.jianlongguo.abs.DB.ProfileEditBackground;
 import com.example.jianlongguo.abs.DB.RegisterBackground;
+import com.example.jianlongguo.abs.Entities.Appointment;
 import com.example.jianlongguo.abs.Entities.Patient;
 
 /**
  * Created by Boon Kok Chin on 18/4/2015.
  */
 public class ProfileManager implements DBManager{
+
+    public ProfileManager(){}
+
     @Override
     public void add(Context c, String... arg0) {
         new RegisterBackground(c).execute((String)arg0[0],(String)arg0[1],(String)arg0[2],
@@ -18,17 +23,23 @@ public class ProfileManager implements DBManager{
     }
 
     @Override
-    public void edit(Context c, Patient p, String... arg0) {
+    public void add(Context c, Patient p, String... arg0) {
+
+    }
+
+
+    public void change(Context c, Patient p, String... arg0) {
+        new ProfileEditBackground(c,p,(String)arg0[0],(String)arg0[1],(String)arg0[2],(String)arg0[3],(String)arg0[4]);
+
+    }
+
+    public void change(Context c, Patient p, Appointment a, String... arg0) {
 
     }
 
     @Override
-    public void delete() {
+    public void delete(Context c, Patient p, Appointment a) {
 
     }
 
-    @Override
-    public void display() {
-
-    }
 }

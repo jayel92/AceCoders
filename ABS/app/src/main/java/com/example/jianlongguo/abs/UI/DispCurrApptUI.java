@@ -12,15 +12,16 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.jianlongguo.abs.Activities.AsyncResponse;
 import com.example.jianlongguo.abs.Activities.BaseActivity;
 import com.example.jianlongguo.abs.Activities.R;
+import com.example.jianlongguo.abs.DB.AsyncResponse;
 import com.example.jianlongguo.abs.DB.DisplayBackground;
 import com.example.jianlongguo.abs.DB.DisplayDentalBackground;
 import com.example.jianlongguo.abs.DB.DisplayWomenBackground;
 import com.example.jianlongguo.abs.Drawer.ApptAdapter;
 import com.example.jianlongguo.abs.Entities.Appointment;
 import com.example.jianlongguo.abs.Entities.Patient;
+import com.example.jianlongguo.abs.Manager.SessionManager;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
@@ -41,7 +42,7 @@ public class DispCurrApptUI extends BaseActivity implements AdapterView.OnItemCl
     private Appointment women = new Appointment();
     private ApptAdapter myAdapter;
     public Context context;
-
+    SessionManager session;
 
     void startMyTask(AsyncTask asyncTask) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
@@ -58,6 +59,11 @@ public class DispCurrApptUI extends BaseActivity implements AdapterView.OnItemCl
             setContentView(R.layout.activity_display_curr_appt);
             context = getApplicationContext();
 
+            //session class instance
+            session = new SessionManager(getApplicationContext());
+        //call this function to check if user is logged in
+        //directs user to login page if he's not
+        session.checkLogin();
             String jsonpatient = null;
 
             Bundle extras = getIntent().getExtras();
@@ -87,11 +93,6 @@ public class DispCurrApptUI extends BaseActivity implements AdapterView.OnItemCl
 
             currentApptTxt = (TextView) findViewById(R.id.currentApptTxt);
 
-
-
-          //  String[] x = new String[1];
-            //x[1]= "ab";
-
             list = (ListView) findViewById(R.id.listView);
             myAdapter = new ApptAdapter(this, R.layout.appt_list, apptArray);
             list.setAdapter(myAdapter);
@@ -120,10 +121,8 @@ public class DispCurrApptUI extends BaseActivity implements AdapterView.OnItemCl
     }
 
     private void goNext(int position) {
-// update the main content by replacing fragments
-
+    // update the main content by replacing fragments
         Intent k;
-        //Patient p1 = new Patient();
         Appointment appt = apptArray.get(position);
         Gson gson = new Gson();
         String myJson = gson.toJson(appt);
@@ -162,6 +161,5 @@ public class DispCurrApptUI extends BaseActivity implements AdapterView.OnItemCl
     public Patient getPatient() {
         return p1;
     }
-
 
 }

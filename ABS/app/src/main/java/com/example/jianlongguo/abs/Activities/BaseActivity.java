@@ -18,8 +18,9 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.jianlongguo.abs.Drawer.DrawerAdapter;
-import com.example.jianlongguo.abs.Entities.NavItem;
+import com.example.jianlongguo.abs.Drawer.NavItem;
 import com.example.jianlongguo.abs.Entities.Patient;
+import com.example.jianlongguo.abs.Manager.SessionManager;
 import com.example.jianlongguo.abs.UI.ContactUsUI;
 import com.example.jianlongguo.abs.UI.CreateApptUI;
 import com.example.jianlongguo.abs.UI.DispCurrApptUI;
@@ -41,6 +42,7 @@ public class BaseActivity extends ActionBarActivity implements View.OnClickListe
     private ActionBarDrawerToggle mDrawerToggle;
     String id = "";
     Context context;
+    SessionManager session;
     public static Patient p1 = new Patient();
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -231,27 +233,6 @@ public class BaseActivity extends ActionBarActivity implements View.OnClickListe
         //dont do anything - back button disabled
     }
 
-    /*private void createDialog() {
-        AlertDialog.Builder alertDlg = new AlertDialog.Builder(this);
-        alertDlg.setMessage("Are you sure you want to exit?");
-        alertDlg.setCancelable(false); // We avoid that the dialong can be cancelled, forcing the user to choose one of the options
-
-        alertDlg.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                BaseActivity.super.onBackPressed();
-            }
-        });
-
-        alertDlg.setNegativeButton("No", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                // We do nothing
-            }
-        });
-        alertDlg.create().show();
-        onPause();
-    }*/
-
     public void createLogoutDialog() {
         AlertDialog.Builder alertDlg = new AlertDialog.Builder(this);
         alertDlg.setMessage("Are you sure you want to logout?");
@@ -262,6 +243,8 @@ public class BaseActivity extends ActionBarActivity implements View.OnClickListe
                 Intent i = getBaseContext().getPackageManager()
                         .getLaunchIntentForPackage( getBaseContext().getPackageName() );
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //clears history
+                //clears session data and redirect user to login activity;
+                session.logoutUser();
                 startActivity(i);
                 Toast.makeText(getApplicationContext(), "Logout successful!", Toast.LENGTH_SHORT).show();
             }
