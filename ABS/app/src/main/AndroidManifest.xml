@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ManageProfile"
+            android:name="com.example.jianlongguo.abs.UI.ProfileUI"
             android:label="Profile" >
         </activity>
         <activity

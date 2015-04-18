@@ -1,4 +1,4 @@
-package com.example.jianlongguo.abs.Activities;
+package com.example.jianlongguo.abs.UI;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -16,11 +16,13 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.jianlongguo.abs.Activities.BaseActivity;
+import com.example.jianlongguo.abs.Activities.R;
 import com.example.jianlongguo.abs.DB.ProfileEditBackground;
 import com.example.jianlongguo.abs.Entities.Patient;
 import com.google.gson.Gson;
 
-public class ManageProfile extends BaseActivity implements View.OnClickListener {
+public class ProfileUI extends BaseActivity implements View.OnClickListener {
 
     Context context = this;
     TextView nricLabel, nricTxt, pwdLabel, pwdTxt, emailLabel, emailTxt, addLabel, addTxt, contactLabel, contactTxt, dobLabel, dobTxt, mocLabel;
@@ -47,20 +49,11 @@ public class ManageProfile extends BaseActivity implements View.OnClickListener 
         }
         p1 = new Gson().fromJson(jsonMyObject, Patient.class);
 
-        //       Gson gson = new Gson();
-        //         p1 = gson.fromJson(getIntent().getStringExtra("myjson"), Patient.class);
-        //}catch (Exception e){
-
-//        }
-
-        //  id = p1.toString();
-
         //set up the drawer
         navMenuTitles = getResources().getStringArray(R.array.nav_drawer_items);
         navMenuIcons = getResources()
                 .obtainTypedArray(R.array.nav_drawer_icons);
-        //set(navMenuTitles,navMenuIcons);
-
+        set(navMenuTitles,navMenuIcons);
 
         //instantiate all widgets on the layout
         nricLabel = (TextView) findViewById(R.id.nricLabel);

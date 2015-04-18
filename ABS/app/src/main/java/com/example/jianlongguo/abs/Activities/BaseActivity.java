@@ -21,6 +21,7 @@ import com.example.jianlongguo.abs.Drawer.DrawerAdapter;
 import com.example.jianlongguo.abs.Drawer.NavItem;
 import com.example.jianlongguo.abs.Entities.Patient;
 import com.example.jianlongguo.abs.UI.CreateApptUI;
+import com.example.jianlongguo.abs.UI.ProfileUI;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
@@ -130,7 +131,7 @@ public class BaseActivity extends ActionBarActivity implements View.OnClickListe
                 finish();
                 break;
             case 2: //manage profile
-                nextIntent = new Intent(this,ManageProfile.class);
+                nextIntent = new Intent(this,ProfileUI.class);
                 nextIntent.putExtra("Patient",myJson);
                 if (this instanceof CreateApptUI){
                     onBackPressed();

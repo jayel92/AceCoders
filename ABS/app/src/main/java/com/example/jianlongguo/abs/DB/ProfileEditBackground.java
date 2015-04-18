@@ -5,8 +5,8 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
-import com.example.jianlongguo.abs.Activities.ManageProfile;
 import com.example.jianlongguo.abs.Entities.Patient;
+import com.example.jianlongguo.abs.UI.ProfileUI;
 import com.google.gson.Gson;
 
 import java.io.BufferedReader;
@@ -86,7 +86,7 @@ public class ProfileEditBackground extends AsyncTask<Void, Void, String> {
                 p1.setContact(contact);
                 p1.setMOC(mode);
 
-                Intent z = new Intent(context,ManageProfile.class);
+                Intent z = new Intent(context,ProfileUI.class);
 
                 z.putExtra("Patient",new Gson().toJson(p1));
 
