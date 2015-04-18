@@ -1,0 +1,74 @@
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity"
+        android:background="#ffffff"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/usernameTxt"
+        android:text="S9288775A"
+        android:singleLine="true"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordTxt"
+        android:layout_below="@+id/usernameTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="pass" />
+
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:text="Register"
+        android:id="@+id/registerBut"
+        android:layout_below="@+id/loginBut"
+        android:layout_alignLeft="@+id/loginBut"
+        android:layout_alignStart="@+id/loginBut"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Login"
+        android:id="@+id/loginBut"
+        android:layout_below="@+id/passwordTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/greenhealth"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:text="Forget Password"
+        android:id="@+id/forgotPassBut"
+        android:layout_alignTop="@+id/registerBut"
+        android:layout_alignRight="@+id/loginBut"
+        android:layout_alignEnd="@+id/loginBut"
+        android:backgroundTint="#DEF867"/>
+
+
+</RelativeLayout>

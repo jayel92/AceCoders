@@ -33,6 +33,8 @@ public class ApptManager extends Activity{
         }
         int curWeek = currDate.get(Calendar.WEEK_OF_YEAR);
         int curYear = currDate.get(Calendar.YEAR);
+        Toast.makeText(getApplicationContext(), curWeek, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), curYear, Toast.LENGTH_SHORT).show();
         Toast.makeText(getApplicationContext(), apptDay + " " + apptMonth + " " + curYear + " " + curWeek, Toast.LENGTH_SHORT).show();
 
         //to allow appointments for at least 2 weeks in advance
