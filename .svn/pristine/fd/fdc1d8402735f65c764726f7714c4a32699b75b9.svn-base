@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/enter1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your NRIC. An email containing a new password will be sent to your registered email account. "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/userInput1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submitBut"
+        android:layout_below="@+id/userInput1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/cancelBut"
+        android:layout_gravity="right"
+        android:layout_alignTop="@+id/submitBut"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout><!-- From: file:/Users/jianlongguo/Documents/AceCoders/ABS/app/src/main/res/layout/dialog_reset_password.xml -->

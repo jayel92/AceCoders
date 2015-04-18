@@ -18,9 +18,11 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.jianlongguo.abs.Drawer.DrawerAdapter;
-import com.example.jianlongguo.abs.Drawer.NavItem;
+import com.example.jianlongguo.abs.Entities.NavItem;
 import com.example.jianlongguo.abs.Entities.Patient;
+import com.example.jianlongguo.abs.UI.ContactUsUI;
 import com.example.jianlongguo.abs.UI.CreateApptUI;
+import com.example.jianlongguo.abs.UI.DispCurrApptUI;
 import com.example.jianlongguo.abs.UI.ProfileUI;
 import com.google.gson.Gson;
 
@@ -125,7 +127,7 @@ public class BaseActivity extends ActionBarActivity implements View.OnClickListe
                 finish();
                 break;
             case 1: //display current appointment
-                nextIntent = new Intent(this, DisplayCurrAppt.class);
+                nextIntent = new Intent(this, DispCurrApptUI.class);
                 nextIntent.putExtra("Patient",myJson);
                 startActivity(nextIntent);
                 finish();
@@ -141,7 +143,7 @@ public class BaseActivity extends ActionBarActivity implements View.OnClickListe
                 finish();
                 break;
             case 3: //contact us
-                nextIntent = new Intent(this, ContactUsActivity.class);
+                nextIntent = new Intent(this, ContactUsUI.class);
                 nextIntent.putExtra("Patient",myJson);
                 startActivity(nextIntent);
                 finish();

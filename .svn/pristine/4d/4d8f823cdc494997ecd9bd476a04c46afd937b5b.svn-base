@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/jianlongguo/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/jianlongguo/Documents/AceCoders/ABS/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-f9b9fad1bab99fe7117b74b5157024ccfddac365.jar" />
+    </item>
+    <item
+        jar="/Users/jianlongguo/Documents/AceCoders/ABS/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/jianlongguo/Documents/AceCoders/ABS/app/build/intermediates/pre-dexed/debug/classes-9073ad53d84455a3be07953b014856685827d2e7.jar" />
+    </item>
+    <item
+        jar="/Users/jianlongguo/Downloads/gradle-1.10/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="/Users/jianlongguo/Documents/AceCoders/ABS/app/build/intermediates/pre-dexed/debug/gson-2.2.4-41dd996e447260f93281e73f0fde9c6d073c3f33.jar" />
+    </item>
+    <item
+        jar="/Users/jianlongguo/Documents/AceCoders/ABS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/jianlongguo/Documents/AceCoders/ABS/app/build/intermediates/pre-dexed/debug/classes-c65a7039ac319eb834d3e05fb87b829af6679b04.jar" />
+    </item>
+    <item
+        jar="/Users/jianlongguo/Documents/AceCoders/ABS/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/jianlongguo/Documents/AceCoders/ABS/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-235140b4167fad0dbf58048377b5ff4b9f0f4333.jar" />
+    </item>
+
+</items>

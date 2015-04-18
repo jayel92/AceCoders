@@ -1,0 +1,10 @@
+package com.example.jianlongguo.abs.Manager;
+
+/**
+ * Created by Boon Kok Chin on 18/4/2015.
+ */
+public interface DBManager {
+    public void add();
+    public void edit();
+    public void delete();
+}
